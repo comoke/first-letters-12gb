@@ -13,7 +13,7 @@
 | fine-tune demo | with the new labels, +0.046 / +0.050 AUC over zero-shot on pair 1 and +0.136 / +0.141 on pair 2, and ahead of the same training without them in every comparison; 24–27 min per training run | "Demo: fine-tuning on new labels from Scroll 1" |
 | Apple Silicon | all five maps and the winner's fusion on an M5 Pro: TRACE r 0.999999, members r ≥ 0.99999993, fused product r 0.99999977 against the 4070 | [`apple-silicon.md`](apple-silicon.md) |
 
-<!-- UPSTREAM-PR: at publication, link the pull request to the winner's repository here (12 GB configs and a REPRODUCE note). -->
+**Upstream:** a pull request to the winner's repository adds the 12 GB configs and a REPRODUCE note: [SirProdigle/pherc0306b-first-letters#8](https://github.com/SirProdigle/pherc0306b-first-letters/pull/8).
 
 ## The retrain: scope, cost and what makes it fit
 
