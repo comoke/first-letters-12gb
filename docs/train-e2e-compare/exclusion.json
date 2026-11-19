@@ -1,0 +1,202 @@
+{
+ "stage": "exclusion",
+ "ours": "/data/train_e2e/exclusion",
+ "shipped": "/data/winner/hf-data/data/0_exclusion_zone",
+ "regions": {
+  "A6": {
+   "tiles": {
+    "ours": 14233,
+    "shipped": 14233
+   },
+   "rule_a_centre_corners_pad07_ok": {
+    "ours": 14233,
+    "shipped": 14233
+   },
+   "rule_b_grid25_pad0_ok": {
+    "ours": 14233,
+    "shipped": 14233
+   },
+   "labelled_px_sampled": {
+    "ours": 64376,
+    "shipped": 64378
+   },
+   "rule_c_labelled_px_ok": {
+    "ours": 64376,
+    "shipped": 64378
+   },
+   "min_distance_mm_tile_grid": {
+    "ours": 2.925,
+    "shipped": 2.925
+   },
+   "median_distance_mm_tile_grid": {
+    "ours": 4.328,
+    "shipped": 4.328
+   }
+  },
+  "w052": {
+   "tiles": {
+    "ours": 2810,
+    "shipped": 2810
+   },
+   "rule_a_centre_corners_pad07_ok": {
+    "ours": 2810,
+    "shipped": 2810
+   },
+   "rule_b_grid25_pad0_ok": {
+    "ours": 2810,
+    "shipped": 2810
+   },
+   "labelled_px_sampled": {
+    "ours": 13676,
+    "shipped": 13676
+   },
+   "rule_c_labelled_px_ok": {
+    "ours": 13676,
+    "shipped": 13676
+   },
+   "min_distance_mm_tile_grid": {
+    "ours": 2.925,
+    "shipped": 2.925
+   },
+   "median_distance_mm_tile_grid": {
+    "ours": 3.564,
+    "shipped": 3.564
+   }
+  },
+  "w053": {
+   "tiles": {
+    "ours": 2066,
+    "shipped": 2065
+   },
+   "rule_a_centre_corners_pad07_ok": {
+    "ours": 2066,
+    "shipped": 2065
+   },
+   "rule_b_grid25_pad0_ok": {
+    "ours": 2066,
+    "shipped": 2065
+   },
+   "labelled_px_sampled": {
+    "ours": 10144,
+    "shipped": 10144
+   },
+   "rule_c_labelled_px_ok": {
+    "ours": 10144,
+    "shipped": 10144
+   },
+   "min_distance_mm_tile_grid": {
+    "ours": 2.925,
+    "shipped": 2.925
+   },
+   "median_distance_mm_tile_grid": {
+    "ours": 3.633,
+    "shipped": 3.633
+   }
+  },
+  "w059": {
+   "tiles": {
+    "ours": 1503,
+    "shipped": 1503
+   },
+   "rule_a_centre_corners_pad07_ok": {
+    "ours": 1503,
+    "shipped": 1503
+   },
+   "rule_b_grid25_pad0_ok": {
+    "ours": 1503,
+    "shipped": 1503
+   },
+   "labelled_px_sampled": {
+    "ours": 6472,
+    "shipped": 6472
+   },
+   "rule_c_labelled_px_ok": {
+    "ours": 6472,
+    "shipped": 6472
+   },
+   "min_distance_mm_tile_grid": {
+    "ours": 2.929,
+    "shipped": 2.929
+   },
+   "median_distance_mm_tile_grid": {
+    "ours": 5.252,
+    "shipped": 5.252
+   }
+  },
+  "w109": {
+   "tiles": {
+    "ours": 2720,
+    "shipped": 2720
+   },
+   "rule_a_centre_corners_pad07_ok": {
+    "ours": 2720,
+    "shipped": 2720
+   },
+   "rule_b_grid25_pad0_ok": {
+    "ours": 2720,
+    "shipped": 2720
+   },
+   "labelled_px_sampled": {
+    "ours": 11640,
+    "shipped": 11640
+   },
+   "rule_c_labelled_px_ok": {
+    "ours": 11640,
+    "shipped": 11640
+   },
+   "min_distance_mm_tile_grid": {
+    "ours": 2.931,
+    "shipped": 2.931
+   },
+   "median_distance_mm_tile_grid": {
+    "ours": 5.274,
+    "shipped": 5.274
+   }
+  }
+ },
+ "files": {
+  "ours": [
+   "/data/train_e2e/exclusion/exclusion_audit.json",
+   "/data/train_e2e/exclusion/tile_regions.json"
+  ],
+  "shipped": "/data/winner/hf-data/data/0_exclusion_zone/exclusion_audit.json"
+ },
+ "top_level": {
+  "train_config": {
+   "ours": "/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/denoise/configs/hn4_s0.json",
+   "shipped": "/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/denoise/configs/hn4_s0.json"
+  },
+  "lane": {
+   "ours": "self",
+   "shipped": "self"
+  },
+  "radius_mm": {
+   "ours": 2.0,
+   "shipped": 2.0
+  },
+  "slab_mm": {
+   "ours": 0.2,
+   "shipped": 0.2
+  },
+  "tiles_total": {
+   "ours": 23332,
+   "shipped": 23331
+  },
+  "all_allowed": {
+   "ours": true,
+   "shipped": true
+  },
+  "teacher_input_rule": {
+   "ours": "CT set to 0 wherever the pad-0 rule fails (< 2.2 mm from the zone, or no mesh) before any teacher ran (m306/self/code/teachers.py region_vol); label z-scores use pool pixels only (>= 2.9 mm from the zone)",
+   "shipped": "CT set to 0 wherever the pad-0 rule fails (< 2.2 mm from the zone, or no mesh) before any teacher ran (m306/self/code/teachers.py region_vol); label z-scores use pool pixels only (>= 2.9 mm from the zone)"
+  },
+  "finalist": {
+   "ours": null,
+   "shipped": "v7_trace_x_Ahn_product"
+  },
+  "rule": {
+   "ours": null,
+   "shipped": "a training tile is allowed iff its 3-D points are >= 2.0 mm (zone buffer) + 0.2 mm (render slab) + pad from every point of every surface shown in any lead-A claim image (versions 1-7: mesh V5Rc u -30..+30 x v -20..+15 mm and the v1 mesh window, +2 mm in-plane margin), on any winding"
+  }
+ }
+}

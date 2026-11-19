@@ -1,0 +1,14 @@
+{
+ "kind": "s0",
+ "mac": "~/Workspace/vesuvius-data-mac/runs/native_full/s0_full.npy",
+ "cols": null,
+ "cuda": {
+  "px": 7749169,
+  "nan_mismatch": 0,
+  "pearson": 0.9999999560339193,
+  "max_abs": 0.0006312727928161621,
+  "mean_abs": 6.940427556401119e-05,
+  "p999_abs": 0.00028842687606811523,
+  "same_u8": 0.9823427518486175
+ }
+}

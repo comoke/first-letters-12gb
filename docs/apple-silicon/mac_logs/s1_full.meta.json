@@ -1,0 +1,52 @@
+{
+ "version": "aclick-infer-1",
+ "zarr": "~/Workspace/vesuvius-data-mac/render/claim_surface_render_41layers.zarr",
+ "array": null,
+ "layer0": 8,
+ "reverse": false,
+ "cov_layer": 20,
+ "roi": [
+  1516,
+  2915,
+  2038,
+  7638
+ ],
+ "frame": [
+  1516,
+  2915,
+  2038,
+  7638
+ ],
+ "tta": 1,
+ "nsig": 3,
+ "min_cov": 0.25,
+ "stride": 21,
+ "grid_origin": [
+  115,
+  694
+ ],
+ "ckpt_sha256": "5c2740c1f33ee5db73ca97425669607a2ffe4ae9af8b9d09d61f1c43165e60ad",
+ "alpha": 1.0,
+ "part_tiles": 2500,
+ "clip_to_roi": true,
+ "ckpt": "~/Workspace/vesuvius-data-mac/ckpt/hn4_s1_final/model.safetensors",
+ "tiles": 16896,
+ "render_shape": [
+  41,
+  4900,
+  7780
+ ],
+ "out_shape": [
+  1399,
+  5600
+ ],
+ "recipe": "v8-in 24 layers 8..31, clip 200, /255, 64 px tiles stride 21 (grid origin [115, 694]), admitted at >= 0.25 CT on layer 20, fp16 autocast, sigmoid, +-3 sigma window / weight sum, TTA 1; NaN = no tile",
+ "minutes_last_session": 59.16,
+ "finished": "2026-11-16 20:02:26",
+ "mac": {
+  "device": "mps",
+  "amp": "ref",
+  "torch": "2.15.0",
+  "batch": 1
+ }
+}

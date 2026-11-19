@@ -1,0 +1,118 @@
+{"ensA": "775e88d58e9b", "prod": "09e7efd66602", "prodd": "543b7775a7b7"}
+{
+ "ensA": {
+  "cuda": {
+   "crop": {
+    "pearson": 0.99999988,
+    "max_abs": 0.00048828,
+    "top1_jaccard": 0.9936458,
+    "nan_mismatch": 0
+   },
+   "claim_box": {
+    "pearson": 0.99999989,
+    "max_abs": 0.00048828,
+    "top1_jaccard": 0.99170459,
+    "nan_mismatch": 0
+   }
+  },
+  "shipped": {
+   "crop": {
+    "pearson": 0.99786365,
+    "max_abs": 0.47741699,
+    "top1_jaccard": 0.98950856,
+    "nan_mismatch": 72631
+   },
+   "claim_box": {
+    "pearson": 0.99999985,
+    "max_abs": 0.00048828,
+    "top1_jaccard": 0.99086868,
+    "nan_mismatch": 0
+   }
+  },
+  "cuda_vs_shipped_crop": {
+   "crop": {
+    "pearson": 0.99786359,
+    "max_abs": 0.47753906,
+    "top1_jaccard": 0.9917445,
+    "nan_mismatch": 72631
+   }
+  }
+ },
+ "prod": {
+  "cuda": {
+   "crop": {
+    "pearson": 0.99999977,
+    "max_abs": 0.00195312,
+    "top1_jaccard": 0.99888097,
+    "nan_mismatch": 0
+   },
+   "claim_box": {
+    "pearson": 0.99999977,
+    "max_abs": 0.00195312,
+    "top1_jaccard": 0.99361251,
+    "nan_mismatch": 0
+   }
+  },
+  "shipped": {
+   "crop": {
+    "pearson": 0.9994892,
+    "max_abs": 0.19854736,
+    "top1_jaccard": 0.99880387,
+    "nan_mismatch": 72631
+   },
+   "claim_box": {
+    "pearson": 0.99999976,
+    "max_abs": 0.00195312,
+    "top1_jaccard": 0.99377475,
+    "nan_mismatch": 0
+   }
+  },
+  "cuda_vs_shipped_crop": {
+   "crop": {
+    "pearson": 0.99948931,
+    "max_abs": 0.19854736,
+    "top1_jaccard": 0.99956235,
+    "nan_mismatch": 72631
+   }
+  }
+ },
+ "prodd": {
+  "cuda": {
+   "crop": {
+    "pearson": 0.99999962,
+    "max_abs": 0.00158691,
+    "top1_jaccard": 0.99884215,
+    "nan_mismatch": 0
+   },
+   "claim_box": {
+    "pearson": 0.99999964,
+    "max_abs": 0.00158691,
+    "top1_jaccard": 0.99837952,
+    "nan_mismatch": 0
+   }
+  },
+  "shipped": {
+   "crop": {
+    "pearson": 0.99950723,
+    "max_abs": 0.11480713,
+    "top1_jaccard": 0.99817368,
+    "nan_mismatch": 72631
+   },
+   "claim_box": {
+    "pearson": 0.99999952,
+    "max_abs": 0.00170898,
+    "top1_jaccard": 0.99706883,
+    "nan_mismatch": 0
+   }
+  },
+  "cuda_vs_shipped_crop": {
+   "crop": {
+    "pearson": 0.99950742,
+    "max_abs": 0.11480713,
+    "top1_jaccard": 0.99886734,
+    "nan_mismatch": 72631
+   }
+  }
+ }
+}
+python mac/fuse_compare.py $MD/runs/native_ref/fwd_tr.npy $N/s0_full.npy    $  2.40s user 0.65s system 94% cpu 3.241 total

@@ -1,0 +1,7 @@
+{
+ "tensors": 284,
+ "params": 83374531,
+ "bit_equal_share": 6.092987797436605e-06,
+ "max_abs": 0.9557230472564697,
+ "tensors_identical": 0
+}

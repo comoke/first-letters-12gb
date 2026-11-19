@@ -1,0 +1,18 @@
+Loading weights from local directory
+infer: ~/Workspace/vesuvius-data-mac/ckpt/hn4_decoy_final/model.safetensors alpha 1.0  decoy_full.npy: 16896 tiles x tta 1 in 7 parts
+    band: 2640 tiles 823.1s 3.2 tiles/s  mps driver 3.47 GB
+  part 1/7: 2640 tiles 823 s (3 fwd/s)
+    band: 2640 tiles 837.4s 3.2 tiles/s  mps driver 3.47 GB
+  part 2/7: 2640 tiles 837 s (3 fwd/s)
+    band: 2640 tiles 817.7s 3.2 tiles/s  mps driver 3.47 GB
+  part 3/7: 2640 tiles 818 s (3 fwd/s)
+    band: 2640 tiles 821.9s 3.2 tiles/s  mps driver 3.47 GB
+  part 4/7: 2640 tiles 822 s (3 fwd/s)
+    band: 2640 tiles 841.1s 3.1 tiles/s  mps driver 3.47 GB
+  part 5/7: 2640 tiles 841 s (3 fwd/s)
+    band: 2640 tiles 871.9s 3.0 tiles/s  mps driver 3.47 GB
+  part 6/7: 2640 tiles 872 s (3 fwd/s)
+    band: 1056 tiles 349.2s 3.0 tiles/s  mps driver 3.47 GB
+  part 7/7: 1056 tiles 349 s (3 fwd/s)
+wrote decoy_full.npy (1399, 5600)
+{"rc": 0, "wall_s": 5365.5, "mps_driver_peak_gb": 3.47, "max_rss_gb": 0.93}

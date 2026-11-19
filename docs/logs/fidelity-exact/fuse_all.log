@@ -1,0 +1,5 @@
+/data/p0306b/fidelity_exact/fwd_hn4_s0.npy (4051, 6944) -> (4900, 7780)
+/data/p0306b/fidelity_exact/fwd_hn4_s1.npy (4051, 6944) -> (4900, 7780)
+/data/p0306b/fidelity_exact/fwd_hn4_s2.npy (4051, 6944) -> (4900, 7780)
+/data/p0306b/fidelity_exact/fwd_hn4_decoy.npy (4051, 6944) -> (4900, 7780)
+{"ensA": "8df89f682765", "prod": "9ed84400a299", "prodd": "1c786e60db20"}

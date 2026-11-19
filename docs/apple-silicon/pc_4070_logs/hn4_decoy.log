@@ -1,0 +1,10 @@
+Loading weights from local directory
+infer: /data/winner/hf-model/checkpoints/hn4_decoy_final/model.safetensors alpha 1.0  fwd_hn4_decoy.npy: 16896 tiles x tta 1 in 7 parts
+  part 1/7: 2640 tiles 137 s (19 fwd/s)
+  part 2/7: 2640 tiles 136 s (19 fwd/s)
+  part 3/7: 2640 tiles 136 s (19 fwd/s)
+  part 4/7: 2640 tiles 138 s (19 fwd/s)
+  part 5/7: 2640 tiles 140 s (19 fwd/s)
+  part 6/7: 2640 tiles 140 s (19 fwd/s)
+  part 7/7: 1056 tiles 56 s (19 fwd/s)
+wrote /data/b0/runs/native/fwd_hn4_decoy.npy (1399, 5600)

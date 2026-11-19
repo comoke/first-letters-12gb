@@ -1,0 +1,36 @@
+{
+ "prod": {
+  "top1_jaccard": 0.9672,
+  "top5_jaccard": 0.9856,
+  "n": 4864188,
+  "files": [
+   "/mnt/d/Workspace/vesuvius-data/train_e2e/maps/fused/fwd_prod.npy",
+   "/mnt/d/Workspace/vesuvius-data/winner/hf-data/results/fused/fwd_prod.npy"
+  ]
+ },
+ "ensA": {
+  "top1_jaccard": 0.7032,
+  "top5_jaccard": 0.8827,
+  "n": 4864188,
+  "files": [
+   "/mnt/d/Workspace/vesuvius-data/train_e2e/maps/fused/fwd_ensA.npy",
+   "/mnt/d/Workspace/vesuvius-data/winner/hf-data/results/fused/fwd_ensA.npy"
+  ]
+ },
+ "prodd": {
+  "top1_jaccard": 0.9744,
+  "top5_jaccard": 0.9886,
+  "n": 4864188,
+  "files": [
+   "/mnt/d/Workspace/vesuvius-data/train_e2e/maps/fused/fwd_prodd.npy",
+   "/mnt/d/Workspace/vesuvius-data/winner/hf-data/results/fused/fwd_prodd.npy"
+  ]
+ },
+ "box_render_px": [
+  1639,
+  2745,
+  2431,
+  6829
+ ],
+ "note": "fusion metric from the plan (item 8); computed after the chain, pc/train_e2e/fused_topk.py"
+}

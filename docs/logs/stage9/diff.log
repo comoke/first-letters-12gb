@@ -1,0 +1,21 @@
+CONTROL_TRACE_x_DECOY_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 0.256183, 'px_differ_gt8_share': 1.3e-05, 'mean_abs': 0.1866, 'max_abs': 240}
+Rv2_TRACE_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 1e-06, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 1}
+Rv2_TRACE_primary.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+Rv2_TRACE_secondary_rung_L050.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+Rv2_v8Q_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+Rv2_v8Q_secondary_rung_L050.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+Rv2_v8in_primary.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+Rv2_v8in_secondary_rung_L050.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+TRACE_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 1}
+TRACE_plus_v8306H3_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 0.341085, 'px_differ_gt8_share': 0.000729, 'mean_abs': 0.481, 'max_abs': 14}
+TRACE_v8in_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 1e-06, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 1}
+TRACE_v8in_secondary_rung_L050.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+TRACE_x_v8306H3_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 0.316294, 'px_differ_gt8_share': 0.000416, 'mean_abs': 0.3978, 'max_abs': 240}
+TRACE_x_v8306H3_secondary_rung_L050.png {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 0.014634, 'px_differ_gt8_share': 0.000275, 'mean_abs': 0.031, 'max_abs': 240}
+V3_TRACE_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 1}
+V3_TRACE_secondary_rung_L050.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+V3_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+V3_v8Q_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+v8306H3_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 0.403062, 'px_differ_gt8_share': 0.033206, 'mean_abs': 1.3778, 'max_abs': 255}
+v8in_grey_page.png {'shape': [4417, 7385, 3], 'byte_identical': True, 'px_differ_share': 0.0, 'px_differ_gt8_share': 0.0, 'mean_abs': 0.0, 'max_abs': 0}
+lead ['PHerc0306B_20250521133212_w074own_touchup_V5Rc.png'] {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 0.316294, 'px_differ_gt8_share': 0.000416, 'mean_abs': 0.3978, 'max_abs': 240}

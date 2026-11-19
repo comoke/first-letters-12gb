@@ -1,0 +1,12 @@
+{
+ "trace_regenerated_vs_earlier": {
+  "r": 1.0,
+  "max_abs": 0.0,
+  "bit_equal_share": 1.0
+ },
+ "s0_rerun_vs_e2e": {
+  "r": 1.0,
+  "max_abs": 0.0,
+  "bit_equal_share": 1.0
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "variant": "native",
+ "run": "/data/b0/runs/native",
+ "letter_metric_basis": "agreement with the shipped TRACE x A-hn product map (no ground truth)",
+ "letter_ap": 0.9999998299591808,
+ "letter_auc": 0.9999999910364581,
+ "ref_pearson_box": 0.9999999411989722,
+ "box_px": 4864188,
+ "decoy_jaccard_top1": 0.8213489997420202,
+ "prod_top1_threshold": 0.5419921875,
+ "stage_wall_seconds": [
+  [
+   "TRACE",
+   307
+  ],
+  [
+   "hn4_s0",
+   907
+  ],
+  [
+   "hn4_s1",
+   905
+  ],
+  [
+   "hn4_s2",
+   906
+  ],
+  [
+   "hn4_decoy",
+   905
+  ]
+ ],
+ "gpu_stage_wall_hours": 1.0916666666666666,
+ "area_cm2": 5.853573734399999,
+ "cm2_per_gpu_h": 5.36205227578626,
+ "sheet_windows_px_in_crop": [
+  [
+   623,
+   2393
+  ],
+  [
+   623,
+   1768
+  ],
+  [
+   623,
+   1268
+  ],
+  [
+   623,
+   768
+  ]
+ ],
+ "sheet": "/data/b0/runs/native/b0_sheet.png (rows = windows, cols = CT layer20 of the input used | prod | prodd | TRACE)"
+}

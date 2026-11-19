@@ -1,0 +1,322 @@
+{
+ "stage": "masks",
+ "ours": "/data/train_e2e/self/pool",
+ "shipped": "/data/winner/hf-data/data/1_pool_masks",
+ "regions": {
+  "A6": {
+   "dist": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 2512225,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 0.9999999999999999
+   },
+   "qual": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 2304,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 0.9999999999999998
+   },
+   "cov24p": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 5184200
+   },
+   "H": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "W": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "json": {
+    "ours": {
+     "region": "A6",
+     "shape": [
+      6440,
+      6440
+     ],
+     "ct_cm2": 29.81,
+     "allowed0_cm2": 26.53,
+     "allowed07_cm2": 17.9,
+     "onsheet_frac": 0.908,
+     "pool_cm2": 16.17
+    },
+    "shipped": {
+     "region": "A6",
+     "shape": [
+      6440,
+      6440
+     ],
+     "ct_cm2": 29.81,
+     "allowed0_cm2": 26.53,
+     "allowed07_cm2": 17.9,
+     "onsheet_frac": 0.908,
+     "pool_cm2": 16.17
+    }
+   },
+   "files": [
+    "/data/train_e2e/self/pool/A6_masks.npz",
+    "/data/winner/hf-data/data/1_pool_masks/A6_masks.npz"
+   ]
+  },
+  "w052": {
+   "dist": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 658725,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 1.0
+   },
+   "qual": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 590,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 1.0
+   },
+   "cov24p": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1961680
+   },
+   "H": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "W": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "json": {
+    "ours": {
+     "region": "w052",
+     "shape": [
+      2260,
+      6940
+     ],
+     "ct_cm2": 7.76,
+     "allowed0_cm2": 6.54,
+     "allowed07_cm2": 3.61,
+     "onsheet_frac": 0.642,
+     "pool_cm2": 3.36
+    },
+    "shipped": {
+     "region": "w052",
+     "shape": [
+      2260,
+      6940
+     ],
+     "ct_cm2": 7.76,
+     "allowed0_cm2": 6.54,
+     "allowed07_cm2": 3.61,
+     "onsheet_frac": 0.642,
+     "pool_cm2": 3.36
+    }
+   },
+   "files": [
+    "/data/train_e2e/self/pool/w052_masks.npz",
+    "/data/winner/hf-data/data/1_pool_masks/w052_masks.npz"
+   ]
+  },
+  "w053": {
+   "dist": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 684075,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 1.0
+   },
+   "qual": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 607,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 1.0
+   },
+   "cov24p": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 2022700
+   },
+   "H": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "W": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "json": {
+    "ours": {
+     "region": "w053",
+     "shape": [
+      2260,
+      7160
+     ],
+     "ct_cm2": 8.05,
+     "allowed0_cm2": 6.28,
+     "allowed07_cm2": 3.0,
+     "onsheet_frac": 0.648,
+     "pool_cm2": 2.73
+    },
+    "shipped": {
+     "region": "w053",
+     "shape": [
+      2260,
+      7160
+     ],
+     "ct_cm2": 8.05,
+     "allowed0_cm2": 6.28,
+     "allowed07_cm2": 3.0,
+     "onsheet_frac": 0.648,
+     "pool_cm2": 2.73
+    }
+   },
+   "files": [
+    "/data/train_e2e/self/pool/w053_masks.npz",
+    "/data/winner/hf-data/data/1_pool_masks/w053_masks.npz"
+   ]
+  },
+  "w059": {
+   "dist": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 761575,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 1.0
+   },
+   "qual": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 694,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 1.0
+   },
+   "cov24p": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 2248860
+   },
+   "H": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "W": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "json": {
+    "ours": {
+     "region": "w059",
+     "shape": [
+      2220,
+      8100
+     ],
+     "ct_cm2": 8.97,
+     "allowed0_cm2": 2.61,
+     "allowed07_cm2": 1.79,
+     "onsheet_frac": 0.647,
+     "pool_cm2": 1.66
+    },
+    "shipped": {
+     "region": "w059",
+     "shape": [
+      2220,
+      8100
+     ],
+     "ct_cm2": 8.97,
+     "allowed0_cm2": 2.61,
+     "allowed07_cm2": 1.79,
+     "onsheet_frac": 0.647,
+     "pool_cm2": 1.66
+    }
+   },
+   "files": [
+    "/data/train_e2e/self/pool/w059_masks.npz",
+    "/data/winner/hf-data/data/1_pool_masks/w059_masks.npz"
+   ]
+  },
+  "w109": {
+   "dist": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 329750,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 1.0
+   },
+   "qual": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 300,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 1.0
+   },
+   "cov24p": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 946720
+   },
+   "H": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "W": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1
+   },
+   "json": {
+    "ours": {
+     "region": "w109",
+     "shape": [
+      2440,
+      3100
+     ],
+     "ct_cm2": 3.89,
+     "allowed0_cm2": 3.71,
+     "allowed07_cm2": 3.38,
+     "onsheet_frac": 0.553,
+     "pool_cm2": 2.74
+    },
+    "shipped": {
+     "region": "w109",
+     "shape": [
+      2440,
+      3100
+     ],
+     "ct_cm2": 3.89,
+     "allowed0_cm2": 3.71,
+     "allowed07_cm2": 3.38,
+     "onsheet_frac": 0.553,
+     "pool_cm2": 2.74
+    }
+   },
+   "files": [
+    "/data/train_e2e/self/pool/w109_masks.npz",
+    "/data/winner/hf-data/data/1_pool_masks/w109_masks.npz"
+   ]
+  }
+ }
+}

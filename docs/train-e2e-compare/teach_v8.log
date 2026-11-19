@@ -1,0 +1,24 @@
+Loading weights from local directory
+A6 v8 band 0-1024 170s peak 5.93 GB
+A6 v8 band 1024-2048 179s peak 5.96 GB
+A6 v8 band 2048-3072 177s peak 5.96 GB
+A6 v8 band 3072-4096 152s peak 5.96 GB
+A6 v8 band 4096-5120 275s peak 5.96 GB
+A6 v8 band 5120-6144 297s peak 5.96 GB
+A6 v8 band 6144-6440 43s peak 5.96 GB
+A6 v8 done (6440, 6440)
+w052 v8 band 0-1024 124s peak 5.96 GB
+w052 v8 band 1024-2048 153s peak 5.97 GB
+w052 v8 band 2048-2260 5s peak 5.97 GB
+w052 v8 done (2260, 6876)
+w053 v8 band 0-1024 114s peak 5.97 GB
+w053 v8 band 1024-2048 117s peak 5.98 GB
+w053 v8 band 2048-2260 3s peak 5.98 GB
+w053 v8 done (2260, 7096)
+w059 v8 band 0-1024 76s peak 5.98 GB
+w059 v8 band 1024-2048 54s peak 5.98 GB
+w059 v8 done (2048, 4702)
+w109 v8 band 0-1024 116s peak 5.98 GB
+w109 v8 band 1024-1944 92s peak 5.98 GB
+w109 v8 done (1944, 3100)
+all done

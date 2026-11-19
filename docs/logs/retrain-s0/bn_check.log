@@ -1,0 +1,45 @@
+Loading weights from local directory
+[W1114 23:30:07.647643720 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 805306368 bytes (free: 2469789696, total: 12877955072).
+[W1114 23:30:20.902622693 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 805306368 bytes (free: 2469789696, total: 12877955072).
+plain arm OOM at micro 4
+Loading weights from local directory
+/opt/fl/train/W/.claude/worktrees/leadA-push3/x_push3/m306/denoise/cloud_code/v8306lib.py:340: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  return w_dice * dice + w_bce * bce, float(dice), float(bce)
+Loading weights from local directory
+Loading weights from local directory
+{
+ "plain_micro4": "OOM",
+ "micro": 2,
+ "plain_running_mean_change_max": 0.28797435760498047,
+ "plain": {
+  "bn_updates_per_step": [
+   4
+  ],
+  "running_mean_maxdiff_vs_plain": 0.0,
+  "running_var_maxdiff_vs_plain": 0.0,
+  "param_maxdiff_vs_plain": 0.0,
+  "peak_alloc_gb": 8.38
+ },
+ "block": {
+  "bn_updates_per_step": [
+   4
+  ],
+  "running_mean_maxdiff_vs_plain": 0.0,
+  "running_var_maxdiff_vs_plain": 0.0,
+  "param_maxdiff_vs_plain": 3.993511199951172e-05,
+  "peak_alloc_gb": 3.82
+ },
+ "block_norestore": {
+  "bn_updates_per_step": [
+   8
+  ],
+  "running_mean_maxdiff_vs_plain": 0.19837188720703125,
+  "running_var_maxdiff_vs_plain": 2.7438507080078125,
+  "param_maxdiff_vs_plain": 3.993511199951172e-05,
+  "peak_alloc_gb": 3.82
+ },
+ "PASS": true
+}
+BN_CHECK PASS
+[rt_bn exit/oomkilled: 0 false]

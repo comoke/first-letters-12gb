@@ -1,0 +1,63 @@
+2026-11-14 18:28:38 RETRAIN chain start (bench 200 steps, gate 11264 MiB)
+2026-11-14 18:28:38 pack sha256 (8 files vs hf-data SHA256SUMS)
+2026-11-14 18:29:20 packs OK: 8 files
+2026-11-14 18:31:42 BN check exit=0 (142s)
+2026-11-14 18:31:42 BN check PASS
+2026-11-14 18:37:54 bench exit=1 372s: ; whole-card peak 11207 MiB; projected 600 steps 0.00 h
+2026-11-14 18:37:54 PROBE_FAIL bench exit 1
+--- restart 2026-11-14 18:38:30 (bench fix: throwaway SELF_ROOT, expandable_segments)
+2026-11-14 18:38:31 RETRAIN chain start (bench 120 steps, gate 11264 MiB)
+2026-11-14 18:38:31 pack sha256 (8 files vs hf-data SHA256SUMS)
+2026-11-14 18:39:03 packs OK: 8 files
+2026-11-14 18:39:03 BN check PASS
+/mnt/d/Workspace/vesuvius-data/retrain/scripts/retrain_chain.sh: line 56: rc: unbound variable
+--- restart 2026-11-14 20:15:38 (fix: rc assignment, exit trap, reuse completed bench, 300 MiB margin)
+2026-11-14 20:15:39 RETRAIN chain start (bench 120 steps, gate 11264 MiB)
+2026-11-14 20:15:39 pack sha256 (8 files vs hf-data SHA256SUMS)
+2026-11-14 20:16:13 packs OK: 8 files
+2026-11-14 20:16:13 BN check PASS
+2026-11-14 20:16:13 reusing the completed bench in logs/bench.log
+2026-11-14 20:16:13 bench exit=0 s: BENCH 4.85 s/step, peak 7.94 GB; whole-card peak 9468 MiB; projected 600 steps 0.81 h
+2026-11-14 20:16:13 PROBE_OK {"bench_steps": 120, "sec_per_step": 4.85, "peak_alloc_gb": 7.94, "card_peak_mib": 9468, "gate_mib": 11264, "projected_hours_600_steps": 0.81, "bench_wall_s": }
+--- restart 2026-11-14 20:28:36 (after 20:22 host commit exhaustion / VM loss: container cap, watchdog, host_mem log)
+2026-11-14 20:28:37 RETRAIN chain start (container cap 8g, halt if C: < 3072 MB or Windows commit < 1024 MB; bench 120 steps, gate 11264 MiB)
+2026-11-14 20:28:37 PROBE_OK {"bench_steps": 120, "sec_per_step": 4.85, "peak_alloc_gb": 7.94, "card_peak_mib": 9468, "gate_mib": 11264, "projected_hours_600_steps": 0.81, "bench_wall_s": 603}
+2026-11-14 20:30:52 watchdog: low C: space (1308 MB free < 3072) -> stopping rt_train
+2026-11-14 20:31:50 TRAIN_FAIL low C: space (1308 MB free < 3072) (container stopped cleanly; free memory/space, then rerun start_retrain.sh)
+--- restart 2026-11-14 23:58:58 (C: now 47 GB free; cache-drop watchdog)
+2026-11-14 23:58:59 RETRAIN chain start (container cap 8g, halt if C: < 3072 MB or Windows commit < 1536 MB; bench 120 steps, gate 11264 MiB)
+2026-11-14 23:58:59 PROBE_OK {"bench_steps": 120, "sec_per_step": 4.85, "peak_alloc_gb": 7.94, "card_peak_mib": 9468, "gate_mib": 11264, "projected_hours_600_steps": 0.81, "bench_wall_s": 603}
+2026-11-15 00:02:33 watchdog: low Windows commit (1113 MB free < 1536) -> stopping rt_train
+2026-11-15 00:03:13 TRAIN_FAIL low Windows commit (1113 MB free < 1536) (container stopped cleanly; free memory/space, then rerun start_retrain.sh)
+--- restart 2026-11-15 01:46:10 (after B0; MIN_COMMIT_MB=512: C: has room, the pagefile grows; C: guard 3 GB stays)
+2026-11-15 01:46:10 RETRAIN chain start (container cap 8g, halt if C: < 3072 MB or Windows commit < 512 MB; bench 120 steps, gate 11264 MiB)
+2026-11-15 01:46:10 PROBE_OK {"bench_steps": 120, "sec_per_step": 4.85, "peak_alloc_gb": 7.94, "card_peak_mib": 9468, "gate_mib": 11264, "projected_hours_600_steps": 0.81, "bench_wall_s": 603}
+2026-11-15 01:50:09 watchdog: low Windows commit (396 MB free < 512) -> stopping rt_train
+2026-11-15 01:51:54 TRAIN_FAIL low Windows commit (396 MB free < 512) (container stopped cleanly; free memory/space, then rerun start_retrain.sh)
+--- restart 2026-11-15 01:53:23 (growth-aware commit halt; ceiling RAM + pagefile max)
+2026-11-15 01:53:24 RETRAIN chain start (container cap 8g, halt if C: < 3072 MB or Windows commit < 512 MB; bench 120 steps, gate 11264 MiB)
+2026-11-15 01:53:24 PROBE_OK {"bench_steps": 120, "sec_per_step": 4.85, "peak_alloc_gb": 7.94, "card_peak_mib": 9468, "gate_mib": 11264, "projected_hours_600_steps": 0.81, "bench_wall_s": 603}
+2026-11-15 02:44:23 train pass 1 exit=0 (3058s, total 3058s) {"step": 600, "loss": 0.49766, "l1447": 0.5458, "l306": 0.44953, "lr": 2.000136697775855e-06, "gnorm": 0.7708, "tiles_per_s": 3.21, "peak_gb": 8.56, "t": 3016.9}
+2026-11-15 02:44:23 TRAIN_DONE {"name":"hn4_s0_pc","steps":600,"final":"/selfroot/runs/hn4_s0_pc/final","sha256":"b47254aaa511e55101619102eb8f4652fe0d2e0ec89b66da4fab9ab4de06fbe6","minutes_this_chunk":50.4}
+2026-11-15 03:40:19 eval pass 1 exit=0 (3356s)
+2026-11-15 03:40:59 RETRAIN_FAIL compare exit 1
+--- restart 2026-11-15 03:41:36 (compare: embed frame-sized maps)
+2026-11-15 03:41:36 RETRAIN chain start (container cap 8g, halt if C: < 3072 MB or Windows commit < 512 MB; bench 120 steps, gate 11264 MiB)
+2026-11-15 03:41:36 PROBE_OK {"bench_steps": 120, "sec_per_step": 4.85, "peak_alloc_gb": 7.94, "card_peak_mib": 9468, "gate_mib": 11264, "projected_hours_600_steps": 0.81, "bench_wall_s": 603}
+2026-11-15 03:41:36 TRAIN_DONE {"name":"hn4_s0_pc","steps":600,"final":"/selfroot/runs/hn4_s0_pc/final","sha256":"b47254aaa511e55101619102eb8f4652fe0d2e0ec89b66da4fab9ab4de06fbe6","minutes_this_chunk":50.4}
+# A-hn s0 retrain on the 4070 vs shipped
+
+| pair | r | mean abs | max abs | px |
+|---|---|---|---|---|
+| shipped_s0~shipped_s1 | 0.93238 | 0.03569 | 0.4976 | 27526276 |
+| shipped_s0~shipped_s2 | 0.93665 | 0.03475 | 0.6132 | 27526276 |
+| shipped_s1~shipped_s2 | 0.94223 | 0.04253 | 0.5068 | 27526276 |
+| retrained_s0~shipped_s0 | 0.99958 | 0.002458 | 0.0638 | 27526276 |
+| retrained_s0~shipped_s1 | 0.93142 | 0.03594 | 0.5159 | 27526276 |
+| retrained_s0~shipped_s2 | 0.93651 | 0.03471 | 0.6148 | 27526276 |
+| replay_shipped_s0~shipped_s0 | 1.00000 | 5.345e-05 | 0.0007355 | 27526276 |
+
+seed spread r: [0.9323782155100732, 0.94223174708958]  verdict: within seed spread
+train wall s: 3058  peak alloc GB: 8.56  card peak MiB: 10655
+config diff vs hn4_s0.json: {'name': ['hn4_s0', 'hn4_s0_pc'], 'training.grad_ckpt': [False, 'block'], 'training.vram_gb': [30.0, 10.5]}
+2026-11-15 03:42:13 RETRAIN_DONE

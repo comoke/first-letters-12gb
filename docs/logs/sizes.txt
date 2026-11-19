@@ -1,0 +1,20 @@
+# sizes measured on the 4070 PC, 2026-11-17 04:56:18; data dir = $VESUVIUS_DATA
+## downloads (du -sh --apparent-size)
+6.3G	$VESUVIUS_DATA/winner/hf-model
+29G	$VESUVIUS_DATA/winner/hf-data   (includes the 12 GB unpacked tar below; the download itself is about 17 GB)
+786M	$VESUVIUS_DATA/winner/repo
+## image archive and unpacked tar (ls -l)
+12031608832 $VESUVIUS_DATA/winner/hf-data/docker/fl-claim-a7_final.tar
+6618543741 $VESUVIUS_DATA/winner/hf-data/docker/fl-claim-a7_final.tar.zst
+## loaded image (docker image ls)
+fl-claim-a7:final 24.1GB
+## outputs of the full training chain (du -sh --apparent-size)
+6.8G	$VESUVIUS_DATA/train_e2e/self
+873M	$VESUVIUS_DATA/train_e2e/maps
+49K	$VESUVIUS_DATA/train_e2e/compare
+548K	$VESUVIUS_DATA/train_e2e/logs
+1.3G	$VESUVIUS_DATA/train_e2e/stage9
+## not part of the training chain (follow-up checks): maps_v2, shuf, anchors_rebuild
+1.1G	$VESUVIUS_DATA/train_e2e/maps_v2
+1.8G	$VESUVIUS_DATA/train_e2e/shuf
+1.5G	$VESUVIUS_DATA/train_e2e/anchors_rebuild

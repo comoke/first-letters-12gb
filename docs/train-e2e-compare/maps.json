@@ -1,0 +1,187 @@
+{
+ "our_dir": "/data/train_e2e/maps",
+ "claim_box_render_px": [
+  1639,
+  2745,
+  2431,
+  6829
+ ],
+ "maps": {
+  "tr": {
+   "whole": {
+    "n": 28134195,
+    "pearson": 0.9999999999438361,
+    "mean_abs": 7.896723853303782e-10,
+    "max_abs": 0.000732421875,
+    "within_1e3": 1.0,
+    "bit_equal": 0.999998791506208
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 1.0,
+    "mean_abs": 0.0,
+    "max_abs": 0.0,
+    "within_1e3": 1.0,
+    "bit_equal": 1.0
+   },
+   "files": [
+    "/data/train_e2e/maps/fwd_tr.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_trace_v3B.npy"
+   ]
+  },
+  "s0": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.9925977398801289,
+    "mean_abs": 0.01062230777243352,
+    "max_abs": 0.2590116858482361,
+    "within_1e3": 0.10927082907982177,
+    "bit_equal": 8.355652613524619e-07
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9943591031943702,
+    "mean_abs": 0.014194193792527834,
+    "max_abs": 0.2590116858482361,
+    "within_1e3": 0.0800774970046388,
+    "bit_equal": 6.167524774947021e-07
+   },
+   "files": [
+    "/data/train_e2e/maps/fwd_hn4_s0.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_hn4_s0.npy"
+   ]
+  },
+  "s1": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.9933981832666255,
+    "mean_abs": 0.009943970149792262,
+    "max_abs": 0.2636914849281311,
+    "within_1e3": 0.10670898598851512,
+    "bit_equal": 8.355652613524619e-07
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9960164924153176,
+    "mean_abs": 0.012060749412739102,
+    "max_abs": 0.17017173767089844,
+    "within_1e3": 0.10149237652820985,
+    "bit_equal": 6.167524774947021e-07
+   },
+   "files": [
+    "/data/train_e2e/maps/fwd_hn4_s1.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_hn4_s1.npy"
+   ]
+  },
+  "s2": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.9925289024781799,
+    "mean_abs": 0.011379102264414982,
+    "max_abs": 0.2591385245323181,
+    "within_1e3": 0.09241918521778972,
+    "bit_equal": 8.355652613524619e-07
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9950954429571172,
+    "mean_abs": 0.013656316629429165,
+    "max_abs": 0.19570231437683105,
+    "within_1e3": 0.09053083474569651,
+    "bit_equal": 1.4390891141543049e-06
+   },
+   "files": [
+    "/data/train_e2e/maps/fwd_hn4_s2.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_hn4_s2.npy"
+   ]
+  },
+  "decoy": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.9994043828518122,
+    "mean_abs": 0.0027116920097026423,
+    "max_abs": 0.046060383319854736,
+    "within_1e3": 0.32386255227550576,
+    "bit_equal": 5.267694038961173e-06
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9994856128100607,
+    "mean_abs": 0.0035497808924120373,
+    "max_abs": 0.03528773784637451,
+    "within_1e3": 0.23738720625107418,
+    "bit_equal": 5.139603979122517e-06
+   },
+   "files": [
+    "/data/train_e2e/maps/fwd_hn4_decoy.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_hn4_decoy.npy"
+   ]
+  },
+  "ensA": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.9974270651812956,
+    "mean_abs": 0.006548393236253125,
+    "max_abs": 0.115478515625,
+    "within_1e3": 0.15624950501840495,
+    "bit_equal": 0.011066625939520479
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9983318726042181,
+    "mean_abs": 0.007977869844802142,
+    "max_abs": 0.115478515625,
+    "within_1e3": 0.1461808219583618,
+    "bit_equal": 0.013686148643925769
+   },
+   "files": [
+    "/data/train_e2e/maps/fused/fwd_ensA.npy",
+    "/data/winner/hf-data/results/fused/fwd_ensA.npy"
+   ]
+  },
+  "prod": {
+   "whole": {
+    "n": 27520437,
+    "pearson": 0.9992298450265961,
+    "mean_abs": 0.0015600869449393937,
+    "max_abs": 0.049560546875,
+    "within_1e3": 0.5735034658061571,
+    "bit_equal": 0.01412241382649556
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9995508096584946,
+    "mean_abs": 0.0022798971029229257,
+    "max_abs": 0.0413818359375,
+    "within_1e3": 0.4609166010853199,
+    "bit_equal": 0.017114058913841323
+   },
+   "files": [
+    "/data/train_e2e/maps/fused/fwd_prod.npy",
+    "/data/winner/hf-data/results/fused/fwd_prod.npy"
+   ]
+  },
+  "prodd": {
+   "whole": {
+    "n": 27520437,
+    "pearson": 0.9998514553847128,
+    "mean_abs": 0.0006262346351540351,
+    "max_abs": 0.020751953125,
+    "within_1e3": 0.8151838940638915,
+    "bit_equal": 0.04064546649459091
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9999005443045066,
+    "mean_abs": 0.0009662094227824164,
+    "max_abs": 0.01220703125,
+    "within_1e3": 0.6673601020355299,
+    "bit_equal": 0.037580578711184684
+   },
+   "files": [
+    "/data/train_e2e/maps/fused/fwd_prodd.npy",
+    "/data/winner/hf-data/results/fused/fwd_prodd.npy"
+   ]
+  }
+ }
+}

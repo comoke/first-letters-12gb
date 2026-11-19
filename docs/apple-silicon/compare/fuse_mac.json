@@ -1,0 +1,40 @@
+{
+ "rule": "product of probabilities (TRACE v3B x A), A = mean of the member maps",
+ "inputs": {
+  "trace": {
+   "path": "~/Workspace/vesuvius-data-mac/runs/native_ref/fwd_tr.npy",
+   "sha256": "593079708ce5f9b44e8e64df625cb7a841a1942b3ff4acceb25c6cfef47ea7b9"
+  },
+  "member0": {
+   "path": "~/Workspace/vesuvius-data-mac/runs/native_full/fused/members/s0_full.npy",
+   "sha256": "22eb51fa43aaca92997361a772fa3c7d9aca8e83a9a439a3679acdcc54958d0d"
+  },
+  "member1": {
+   "path": "~/Workspace/vesuvius-data-mac/runs/native_full/fused/members/s1_full.npy",
+   "sha256": "b51e389d1436e6cb4f90a5a2010f071916e675055ded042813dcb7f83e54ace7"
+  },
+  "member2": {
+   "path": "~/Workspace/vesuvius-data-mac/runs/native_full/fused/members/s2_full.npy",
+   "sha256": "2eaec025f1ccef7ad88d6885838bbe44c87a42579184edaec9fd8e66ecd4da3f"
+  },
+  "decoy": {
+   "path": "~/Workspace/vesuvius-data-mac/runs/native_full/fused/members/decoy_full.npy",
+   "sha256": "6db2d84fb79d680542bd915444effd3ff47444fbbdb54628a78189d7b7934679"
+  }
+ },
+ "outputs": {
+  "ensA": {
+   "path": "~/Workspace/vesuvius-data-mac/runs/native_full/fused/fwd_ensA.npy",
+   "sha256": "775e88d58e9bc81a20f55d29d3c88cebb316003beeb0f0a6a3a0f34dae3d75c4"
+  },
+  "prod": {
+   "path": "~/Workspace/vesuvius-data-mac/runs/native_full/fused/fwd_prod.npy",
+   "sha256": "09e7efd66602038521fefb03f507e0685baaf2822fdd3b97ee9cdc3dcb9d0533"
+  },
+  "prodd": {
+   "path": "~/Workspace/vesuvius-data-mac/runs/native_full/fused/fwd_prodd.npy",
+   "sha256": "543b7775a7b74d9db14a17558656d2c9bbe0155193ee161c0787a5b5422d7577"
+  }
+ },
+ "expect": {}
+}

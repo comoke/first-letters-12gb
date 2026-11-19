@@ -1,0 +1,62 @@
+{
+ "box_render_px": [
+  1639,
+  2745,
+  2431,
+  6829
+ ],
+ "seeds": {
+  "s0~s1": {
+   "px": 4864188,
+   "r": 0.96061,
+   "top1_jaccard": 0.3195,
+   "top5_jaccard": 0.7364
+  },
+  "s0~s2": {
+   "px": 4864188,
+   "r": 0.9573,
+   "top1_jaccard": 0.2947,
+   "top5_jaccard": 0.5782
+  },
+  "s1~s2": {
+   "px": 4864188,
+   "r": 0.96295,
+   "top1_jaccard": 0.2839,
+   "top5_jaccard": 0.5924
+  }
+ },
+ "retrain": {
+  "s0_pc~s0": {
+   "px": 4864188,
+   "r": 0.9997,
+   "top1_jaccard": 0.9082,
+   "top5_jaccard": 0.968
+  }
+ },
+ "e2e": {
+  "s0~s0": {
+   "px": 4864188,
+   "r": 0.99436,
+   "top1_jaccard": 0.5359,
+   "top5_jaccard": 0.7864
+  },
+  "s1~s1": {
+   "px": 4864188,
+   "r": 0.99602,
+   "top1_jaccard": 0.6034,
+   "top5_jaccard": 0.8395
+  },
+  "s2~s2": {
+   "px": 4864188,
+   "r": 0.9951,
+   "top1_jaccard": 0.6724,
+   "top5_jaccard": 0.836
+  },
+  "decoy~decoy": {
+   "px": 4864188,
+   "r": 0.99949,
+   "top1_jaccard": 0.8666,
+   "top5_jaccard": 0.9283
+  }
+ }
+}

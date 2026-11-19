@@ -1,0 +1,141 @@
+{
+ "source": "Step 0 geometry gate of the fine-tune demo (docs/finetune-protocol-2026-11-17.md, gate 2), computed 2026-11-17 on the public Scroll 1 (PHercParis4) segment meshes and HF supervision masks; metrics only.",
+ "method": "Each segment mesh (tifxyz x/y/z, every 8th grid row, interpolated to about 20-voxel spacing) is a surface point set. For each ordered pair, 60,000 labelled points (inside the supervision mask) of segment 'labelled' are sampled and their nearest-neighbour distance to the whole surface of segment 'surface' is measured, in voxels of the 2.4 um scan (1 voxel = 2.4 um; 50 voxels = 0.12 mm). f20 / f50 = share of those labelled points within 20 / 50 voxels. The nearest-neighbour search is capped at 500 voxels (1.2 mm): median_distance_vox null means the median is above the cap. labelled_radius_vox_p5_p50_p95: radius of each segment's labelled points from the scroll axis, estimated per 1000-voxel z band (percentiles 5 / 50 / 95). This is a sampled check: it finds no labelled point of one segment near another's surface; it is not a proof over every point of the papyrus.",
+ "segments": {
+  "w00": {
+   "id": "20231016151002",
+   "labelled_area_mm2": 552.6,
+   "labelled_radius_vox_p5_p50_p95": [
+    1010,
+    1516,
+    2023
+   ]
+  },
+  "w03": {
+   "id": "20231106155351",
+   "labelled_area_mm2": 562.0,
+   "labelled_radius_vox_p5_p50_p95": [
+    936,
+    2272,
+    2989
+   ]
+  },
+  "w06": {
+   "id": "20231210121321",
+   "labelled_area_mm2": 1007.0,
+   "labelled_radius_vox_p5_p50_p95": [
+    1798,
+    3007,
+    3808
+   ]
+  },
+  "w09": {
+   "id": "20230929220926",
+   "labelled_area_mm2": 480.3,
+   "labelled_radius_vox_p5_p50_p95": [
+    2819,
+    3879,
+    4644
+   ]
+  }
+ },
+ "pairs": [
+  {
+   "labelled": "w03",
+   "surface": "w00",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w06",
+   "surface": "w00",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w09",
+   "surface": "w00",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w00",
+   "surface": "w03",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w06",
+   "surface": "w03",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w09",
+   "surface": "w03",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w00",
+   "surface": "w06",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w03",
+   "surface": "w06",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": 437.9
+  },
+  {
+   "labelled": "w09",
+   "surface": "w06",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w00",
+   "surface": "w09",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w03",
+   "surface": "w09",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  },
+  {
+   "labelled": "w06",
+   "surface": "w09",
+   "n": 60000,
+   "f20": 0.0,
+   "f50": 0.0,
+   "median_distance_vox": null
+  }
+ ],
+ "search_cap_vox": 500
+}

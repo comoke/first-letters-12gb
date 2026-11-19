@@ -1,0 +1,16 @@
+Run plan, training-memory run (written 2026-11-17; GPU ~50 min on the home RTX 4070, $0, no rental):
+  input: e2e packs train_e2e/self/packs (306_*.npz from stage 5, anchors a_w058/a_w060 sha256 80084f2a../9e092b87..), config = shipped hn4_s0.json with vram_gb 10.5 + grad_ckpt block (written by the train stage), init base v8-in from the image
+  control: the run repeats hn4_s0_e2e exactly (same packs, seed 0, config); its weights are compared with that run (same data -> any difference is GPU non-determinism); loss curve vs the shipped run record (trainlog_vram.json)
+  layer order / reading face: n/a (training on the shipped packs, the winner's own layer handling)
+  kill rule: host guard watchdog (halts cleanly, trainer saves state and exits 3, chain resumes up to 10 passes); any other exit ends TRAINVRAM_FAIL
+  expected: ~50 min GPU + 1 min compare; cap 2 h; whole card logged every 500 ms (logs/vram_train_hn4_s0_vram.csv), Windows commit + container memory every 30 s (host_mem.csv)
+2026-11-17 01:56:17 TRAINVRAM start run=20261117-015617-18061; idle card 1008 MiB
+2026-11-17 01:56:17 host_mem.csv rows from here on belong to this run (first row after 2026-11-17 01:56:17)
+2026-11-17 01:56:18 E2E chain start run=20261117-015617-18061-train: stages train
+2026-11-17 02:43:34 train hn4_s0 pass 1 exit=0 (2829s) {"step": 600, "loss": 0.49866, "l1447": 0.54777, "l306": 0.44955, "lr": 2.000136697775855e-06, "gnorm": 0.847, "tiles_per_s": 3.48, "peak_gb": 7.94, "t": 2812.8}
+2026-11-17 02:43:34 train hn4_s0 whole-card VRAM peak 9706 MiB (logs/vram_train_hn4_s0_vram.csv)
+2026-11-17 02:43:34 train hn4_s0 done: {"name":"hn4_s0_vram","steps":600,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/hn4_s0_vram/final","sha256":"9ffd8d147184a98dbf375fb79522d8f9c36dafbbe5c1ca807a0c812b8d590ede","minutes_this_chunk":47.0}
+2026-11-17 02:43:48 compare trainlog: hn4_s1 {'steps_common': 60, 'steps_ours': 60, 'steps_shipped': 60, 'pearson_loss': 0.9718095390624435, 'max_abs_loss': 0.035150000000000015, 'first': {'step': 10, 'ours': 0.57405, 'shipped': 0.57691}, 'final': {'step': 600, 'ours': 0.54096, 'shipped': 0.53815}} hn4_s2 {'steps_common': 60, 'steps_ours': 60, 'steps_shipped': 60, 'pearson_loss': 0.9889708850633571, 'max_abs_loss': 0.008420000000000039, 'first': {'step': 10, 'ours': 0.5921, 'shipped': 0.59288}, 'final': {'step': 600, 'ours': 0.57946, 'shipped': 0.57842}} hn4_decoy {'steps_common': 60, 'steps_ours': 60, 'steps_shipped': 60, 'pearso
+2026-11-17 02:43:48 stage train done (2843s)
+2026-11-17 02:43:48 E2E_DONE run=20261117-015617-18061-train stages train
+2026-11-17 02:44:28 TRAINVRAM_DONE run=20261117-015617-18061 2026-11-17 02:43:34 train hn4_s0 whole-card VRAM peak 9706 MiB (logs/vram_train_hn4_s0_vram.csv) | weights {"tensors": 284, "params": 83374531, "bit_equal_share": 6.092987797436605e-06, "max_abs": 0.9557230472564697, "tensors_identical": 0}

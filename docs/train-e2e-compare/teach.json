@@ -1,0 +1,257 @@
+{
+ "stage": "teach",
+ "ours": "/data/train_e2e/self/teach",
+ "shipped": "/data/winner/hf-data/data/2_teacher_maps",
+ "regions": {
+  "A6": {
+   "v3": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 41473600,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 0.9999999999999999,
+    "files": [
+     "/data/train_e2e/self/teach/A6_v3.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/A6_v3.npy"
+    ]
+   },
+   "trace": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 41473600,
+    "max_abs": 0.0013427734375,
+    "mean_abs": 2.142741105184985e-09,
+    "pearson": 0.9999999998103037,
+    "files": [
+     "/data/train_e2e/self/teach/A6_trace.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/A6_trace.npy"
+    ]
+   },
+   "rv2": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 41473600,
+    "max_abs": 0.00146484375,
+    "mean_abs": 5.798351617052776e-10,
+    "pearson": 1.0,
+    "files": [
+     "/data/train_e2e/self/teach/A6_rv2.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/A6_rv2.npy"
+    ]
+   },
+   "v8": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 25393152,
+    "max_abs": 0.00048828125,
+    "mean_abs": 1.927307223358388e-05,
+    "pearson": 0.9999999079523824,
+    "files": [
+     "/data/train_e2e/self/teach/A6_v8.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/A6_v8.npy"
+    ]
+   }
+  },
+  "w052": {
+   "v3": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 15539760,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 1.0,
+    "files": [
+     "/data/train_e2e/self/teach/w052_v3.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w052_v3.npy"
+    ]
+   },
+   "trace": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 15539760,
+    "max_abs": 0.00146484375,
+    "mean_abs": 9.897745766343882e-09,
+    "pearson": 0.9999999995095569,
+    "files": [
+     "/data/train_e2e/self/teach/w052_trace.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w052_trace.npy"
+    ]
+   },
+   "rv2": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 15539760,
+    "max_abs": 0.00146484375,
+    "mean_abs": 2.3723168424094066e-09,
+    "pearson": 0.9999999999387501,
+    "files": [
+     "/data/train_e2e/self/teach/w052_rv2.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w052_rv2.npy"
+    ]
+   },
+   "v8": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 5770240,
+    "max_abs": 0.00048828125,
+    "mean_abs": 1.813734963390821e-05,
+    "pearson": 0.9999999261660887,
+    "files": [
+     "/data/train_e2e/self/teach/w052_v8.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w052_v8.npy"
+    ]
+   }
+  },
+  "w053": {
+   "v3": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 16036960,
+    "max_abs": 0.00146484375,
+    "mean_abs": 6.508098616414832e-09,
+    "pearson": 0.9999999998422175,
+    "files": [
+     "/data/train_e2e/self/teach/w053_v3.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w053_v3.npy"
+    ]
+   },
+   "trace": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 16036960,
+    "max_abs": 0.00146484375,
+    "mean_abs": 6.865853745036466e-09,
+    "pearson": 0.9999999998358389,
+    "files": [
+     "/data/train_e2e/self/teach/w053_trace.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w053_trace.npy"
+    ]
+   },
+   "rv2": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 16036960,
+    "max_abs": 0.00146484375,
+    "mean_abs": 5.282597005604554e-09,
+    "pearson": 0.9999999999089108,
+    "files": [
+     "/data/train_e2e/self/teach/w053_rv2.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w053_rv2.npy"
+    ]
+   },
+   "v8": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 4831232,
+    "max_abs": 0.00048828125,
+    "mean_abs": 1.7857086663531164e-05,
+    "pearson": 0.999999929286208,
+    "files": [
+     "/data/train_e2e/self/teach/w053_v8.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w053_v8.npy"
+    ]
+   }
+  },
+  "w059": {
+   "v3": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 9629696,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 0.9999999999999998,
+    "files": [
+     "/data/train_e2e/self/teach/w059_v3.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w059_v3.npy"
+    ]
+   },
+   "trace": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 9629696,
+    "max_abs": 0.0013427734375,
+    "mean_abs": 1.759490577376482e-08,
+    "pearson": 0.9999999993734251,
+    "files": [
+     "/data/train_e2e/self/teach/w059_trace.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w059_trace.npy"
+    ]
+   },
+   "rv2": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 9629696,
+    "max_abs": 0.00146484375,
+    "mean_abs": 3.676169073769307e-09,
+    "pearson": 0.9999999998817234,
+    "files": [
+     "/data/train_e2e/self/teach/w059_rv2.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w059_rv2.npy"
+    ]
+   },
+   "v8": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 2612224,
+    "max_abs": 0.00048828125,
+    "mean_abs": 1.867010938284772e-05,
+    "pearson": 0.9999999106123504,
+    "files": [
+     "/data/train_e2e/self/teach/w059_v8.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w059_v8.npy"
+    ]
+   }
+  },
+  "w109": {
+   "v3": {
+    "equal": true,
+    "finite_agree": 1.0,
+    "n": 6026400,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "pearson": 0.9999999999999998,
+    "files": [
+     "/data/train_e2e/self/teach/w109_v3.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w109_v3.npy"
+    ]
+   },
+   "trace": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 6026400,
+    "max_abs": 0.0013427734375,
+    "mean_abs": 5.894474468588212e-09,
+    "pearson": 0.9999999991415897,
+    "files": [
+     "/data/train_e2e/self/teach/w109_trace.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w109_trace.npy"
+    ]
+   },
+   "rv2": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 6026400,
+    "max_abs": 0.00146484375,
+    "mean_abs": 6.461640396837249e-09,
+    "pearson": 0.9999999993963614,
+    "files": [
+     "/data/train_e2e/self/teach/w109_rv2.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w109_rv2.npy"
+    ]
+   },
+   "v8": {
+    "equal": false,
+    "finite_agree": 1.0,
+    "n": 4250624,
+    "max_abs": 0.00048828125,
+    "mean_abs": 1.9110633332710384e-05,
+    "pearson": 0.9999998950343696,
+    "files": [
+     "/data/train_e2e/self/teach/w109_v8.npy",
+     "/data/winner/hf-data/data/2_teacher_maps/w109_v8.npy"
+    ]
+   }
+  }
+ }
+}

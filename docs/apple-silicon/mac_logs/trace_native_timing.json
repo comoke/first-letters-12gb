@@ -1,0 +1,1 @@
+{"shape": [41, 4900, 7780], "timing": {"tr": 443.8}, "crop": "1516,2916,2038,7639", "recipe": "x_deepread/ink_full.py members, tta8, d-1..+1, face fwd, row tiles + 192 px context"}

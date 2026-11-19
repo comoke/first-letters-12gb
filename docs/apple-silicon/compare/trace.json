@@ -1,0 +1,23 @@
+{
+ "kind": "tr",
+ "mac": "~/Workspace/vesuvius-data-mac/runs/native_ref/fwd_tr.npy",
+ "cols": null,
+ "cuda": {
+  "px": 7841400,
+  "nan_mismatch": 0,
+  "pearson": 0.9999990373556484,
+  "max_abs": 0.00244140625,
+  "mean_abs": 2.5226026991731487e-05,
+  "p999_abs": 0.0009765625,
+  "same_u8": 0.9935266661565537
+ },
+ "shipped": {
+  "px": 7841400,
+  "nan_mismatch": 0,
+  "pearson": 0.9999990373556484,
+  "max_abs": 0.00244140625,
+  "mean_abs": 2.5226026991731487e-05,
+  "p999_abs": 0.0009765625,
+  "same_u8": 0.9935266661565537
+ }
+}

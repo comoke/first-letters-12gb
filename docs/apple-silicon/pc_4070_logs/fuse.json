@@ -1,0 +1,40 @@
+{
+ "rule": "product of probabilities (TRACE v3B x A), A = mean of the member maps",
+ "inputs": {
+  "trace": {
+   "path": "/data/b0/runs/native/fwd_tr.npy",
+   "sha256": "bf9fc000d9c3a9d0228272bf1e1af8ba4dc137f1aa775185d9de7277d695b92c"
+  },
+  "member0": {
+   "path": "/data/b0/runs/native/fwd_hn4_s0.npy",
+   "sha256": "c3541df06d95db7e7fbd6d0f47ba5c177583629436eb56ddea19b4e1499c36a2"
+  },
+  "member1": {
+   "path": "/data/b0/runs/native/fwd_hn4_s1.npy",
+   "sha256": "8a911f44d64761c54aafaa85f332ddd0dceed19473be3b6538e5e763cbcecfe3"
+  },
+  "member2": {
+   "path": "/data/b0/runs/native/fwd_hn4_s2.npy",
+   "sha256": "c366534b508536ec5377bd21257681e0d92d7237d923d5a86133e45dce1e8e41"
+  },
+  "decoy": {
+   "path": "/data/b0/runs/native/fwd_hn4_decoy.npy",
+   "sha256": "9a4ddea2b254637d2d28b7881772cee2f93607ee26d4f6adc543915b03d34693"
+  }
+ },
+ "outputs": {
+  "ensA": {
+   "path": "/data/b0/runs/native/fused/fwd_ensA.npy",
+   "sha256": "d77d319b227d0f5159dd2a40acba0ebbdc1b50862a49bbd6f1e8d12974ce1082"
+  },
+  "prod": {
+   "path": "/data/b0/runs/native/fused/fwd_prod.npy",
+   "sha256": "cc0c28003cade185dd9bf921217386f491f7cb7dd334fdb5554b40c1bdbbeff0"
+  },
+  "prodd": {
+   "path": "/data/b0/runs/native/fused/fwd_prodd.npy",
+   "sha256": "5e672a022223f91759bb22725c77094967ed918530986899fb60ca8d85d4a941"
+  }
+ },
+ "expect": {}
+}

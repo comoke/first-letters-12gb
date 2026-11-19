@@ -1,0 +1,51 @@
+2026-11-15 17:49:10 E2E chain start run=20261115-174909-71819: stages masks
+2026-11-15 18:01:19 compare masks: A6 {"dist": {"equal": true, "max_abs": 0.0, "pearson": 0.9999999999999999}, "qual": {"equal": true, "max_abs": 0.0, "pearson": 0.9999999999999998}, "cov24p": {"equal": true, "n_diff": 0}, "H": {"equal": true, "n_diff": 0}, "W": {"equal": true, "n_diff": 0}} w052 {"dist": {"equal": true, "max_abs": 0.0, "pearson": 1.0}, "qual": {"equal": true, "max_abs": 0.0, "pearson": 1.0}, "cov24p": {"equal": true, "n_diff": 0}, "H": {"equal": true, "n_diff": 0}, "W": {"equal": true, "n_diff": 0}} w053 {"dist": {"equal": true, "max_abs": 0.0, "pearson": 1.0}, "qual": {"equal": true, "max_abs": 0.0, "pearson": 1.0}, "cov24p": {"equal": true, "n_diff": 0}, "H": {"equal": true, "n_diff": 0}, "W": {"equal": tr
+2026-11-15 18:01:19 stage masks done (729s)
+2026-11-15 18:01:19 E2E_DONE run=20261115-174909-71819 stages masks
+2026-11-15 18:01:59 E2E chain start run=20261115-180158-72119: stages teach_readers,teach_v8,labels
+2026-11-15 20:40:53 E2E_FAIL run=20261115-180158-72119 teachers readers exit 1 (logs/teach_readers.log)
+2026-11-15 20:41:39 E2E chain start run=20261115-204139-76154: stages teach_readers,teach_v8,labels
+2026-11-15 21:15:45 stage teach_readers done (2046s)
+2026-11-15 21:54:15 compare teach: A6 {"v3": {"equal": true, "max_abs": 0.0, "pearson": 0.9999999999999999}, "trace": {"equal": false, "max_abs": 0.0013427734375, "pearson": 0.9999999998103037}, "rv2": {"equal": false, "max_abs": 0.00146484375, "pearson": 1.0}, "v8": {"equal": false, "max_abs": 0.00048828125, "pearson": 0.9999999079523824}} w052 {"v3": {"equal": true, "max_abs": 0.0, "pearson": 1.0}, "trace": {"equal": false, "max_abs": 0.00146484375, "pearson": 0.9999999995095569}, "rv2": {"equal": false, "max_abs": 0.00146484375, "pearson": 0.9999999999387501}, "v8": {"equal": false, "max_abs": 0.00048828125, "pearson": 0.9999999261660887}} w053 {"v3": {"equal": false, "max_abs": 0.00146484375, "pearson": 0.9999999998422175
+2026-11-15 21:54:15 stage teach_v8 done (2310s)
+2026-11-15 21:56:53 compare labels: A6 {"main": {"same_class_frac": 0.999994888314494, "ink_jaccard": 0.9999867279456377}, "sc": {"same_class_frac": 0.999994309633116, "ink_jaccard": 0.9999210231325792}, "decoy": {"same_class_frac": 0.9999966002469041, "ink_jaccard": 0.9999919140953489}, "fz": {"equal": false, "max_abs": 0.00390625, "pearson": 0.999999988913756}, "valid": {"equal": true, "n_diff": 0}} w052 {"main": {"same_class_frac": 0.9999976833619052, "ink_jaccard": 0.9999924404496421}, "sc": {"same_class_frac": 0.9999963963407414, "ink_jaccard": 0.9993749255863793}, "decoy": {"same_class_frac": 0.9999996138936509, "ink_jaccard": 1.0}, "fz": {"equal": false, "max_abs": 0.00390625, "pearson": 0.9999999904613563}, "valid": {"
+2026-11-15 21:56:53 stage labels done (158s)
+2026-11-15 21:56:53 E2E_DONE run=20261115-204139-76154 stages teach_readers,teach_v8,labels
+2026-11-15 21:58:08 E2E chain start run=20261115-215808-77788: stages exclusion,packs
+2026-11-15 21:59:49 compare exclusion:   exclusion w053: {'zarr': '/home/liam/projects/vesuvius-work/x_focus306/renders/w053.zarr', 'mesh': '/home/liam/projects/vesuvius-work/x_vast_plan/results/PHerc0306B_z8400/results/flat/w053/tifxyz/flatten.tifxyz', 'offset_yx': [0, 0], 'variant': 'main', 'tiles': 2066, 'rule_a_centre_corners_pad07_o
+2026-11-15 21:59:49 stage exclusion done (101s)
+2026-11-15 22:04:23 compare packs: A6 {"img": {"equal": true, "n_diff": 0}, "info": {}, "ink_decoy": {"equal": true, "n_diff": 0}, "ink_main": {"equal": true, "n_diff": 0}, "ink_sc": {"equal": true, "n_diff": 0}, "lab_decoy": {"equal": false, "n_diff": 141}, "lab_main": {"equal": false, "n_diff": 212}, "lab_sc": {"equal": false, "n_diff": 236}, "org_decoy": {"equal": true, "n_diff": 0}, "org_main": {"equal": true, "n_diff": 0}, "org_sc": {"equal": true, "n_diff": 0}} w052 {"img": {"equal": true, "n_diff": 0}, "info": {}, "ink_decoy": {"equal": true, "n_diff": 0}, "ink_main": {"equal": true, "n_diff": 0}, "ink_sc": {"equal": true, "n_diff": 0}, "lab_decoy": {"equal": false, "n_diff": 6}, "lab_main": {"equal": false, "n_diff": 
+2026-11-15 22:04:23 stage packs done (274s)
+2026-11-15 22:04:23 E2E_DONE run=20261115-215808-77788 stages exclusion,packs
+2026-11-15 22:06:00 E2E chain start run=20261115-220559-78100: stages anchors_shipped,train,members,fuse
+2026-11-15 22:06:04 anchor a_w058.npz sha256 ok (80084f2a001bc8a3222f1c2f16d14a6fff0387e081d637f6928c66ffb2c939cd)
+2026-11-15 22:06:12 anchor a_w060.npz sha256 ok (9e092b87ddaed4f54d7ba2a45ca094cc084d15d9b1e7d5390064d2b0783cb666)
+2026-11-15 22:06:12 stage anchors_shipped done (12s)
+2026-11-15 22:53:30 train hn4_s0 pass 1 exit=0 (2828s) {"step": 600, "loss": 0.49826, "l1447": 0.5476, "l306": 0.44892, "lr": 2.000136697775855e-06, "gnorm": 0.8184, "tiles_per_s": 3.47, "peak_gb": 7.94, "t": 2810.7}
+2026-11-15 22:53:30 train hn4_s0 done: {"name":"hn4_s0_e2e","steps":600,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/hn4_s0_e2e/final","sha256":"a1276369f0c3f7e7676f4d374815ed56dd41e4b7a28cedf1b9819fefed194fc1","minutes_this_chunk":46.9}
+2026-11-15 23:24:20 watchdog: Windows commit unreadable 5 checks in a row (fail closed) -> halting
+2026-11-15 23:24:46 train hn4_s1 pass 1 exit=3 (1867s) {"step": 370, "loss": 0.52136, "l1447": 0.55137, "l306": 0.49136, "lr": 8.360749663539819e-06, "gnorm": 0.8655, "tiles_per_s": 3.39, "peak_gb": 7.94, "t": 1793.1}
+2026-11-15 23:24:46 E2E_FAIL run=20261115-220559-78100 halted during train hn4_s1: Windows commit unreadable 5 checks in a row (fail closed)
+2026-11-15 23:25:33 E2E chain start run=20261115-232532-82237: stages train,members,fuse
+2026-11-15 23:25:40 train hn4_s0 done: {"name":"hn4_s0_e2e","steps":600,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/hn4_s0_e2e/final","sha256":"a1276369f0c3f7e7676f4d374815ed56dd41e4b7a28cedf1b9819fefed194fc1","minutes_this_chunk":46.9}
+2026-11-15 23:40:36 watchdog: Windows commit unreadable 5 checks in a row (fail closed) -> halting
+2026-11-15 23:41:29 train hn4_s1 pass 1 exit=3 (943s) {"step": 540, "loss": 0.56798, "l1447": 0.61304, "l306": 0.52293, "lr": 2.503880457427003e-06, "gnorm": 0.8338, "tiles_per_s": 3.25, "peak_gb": 8.56, "t": 863.1}
+2026-11-15 23:41:29 E2E_FAIL run=20261115-232532-82237 halted during train hn4_s1: Windows commit unreadable 5 checks in a row (fail closed)
+2026-11-15 23:43:40 E2E chain start run=20261115-234340-83204: stages train,members,fuse
+2026-11-15 23:43:47 train hn4_s0 done: {"name":"hn4_s0_e2e","steps":600,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/hn4_s0_e2e/final","sha256":"a1276369f0c3f7e7676f4d374815ed56dd41e4b7a28cedf1b9819fefed194fc1","minutes_this_chunk":46.9}
+2026-11-15 23:50:40 train hn4_s1 pass 1 exit=0 (407s) {"step": 600, "loss": 0.54096, "l1447": 0.58195, "l306": 0.49997, "lr": 2.000136697775855e-06, "gnorm": 1.4127, "tiles_per_s": 2.89, "peak_gb": 8.56, "t": 380.4}
+2026-11-15 23:50:40 train hn4_s1 done: {"name":"hn4_s1_e2e","steps":600,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/hn4_s1_e2e/final","sha256":"1f402afb42b8023cd6039eee8de9a06548fe299decba21e22f23da37ae27852e","minutes_this_chunk":6.4}
+2026-11-16 00:40:29 train hn4_s2 pass 1 exit=0 (2962s) {"step": 600, "loss": 0.57946, "l1447": 0.61204, "l306": 0.54689, "lr": 2.000136697775855e-06, "gnorm": 0.9661, "tiles_per_s": 3.46, "peak_gb": 7.94, "t": 2924.0}
+2026-11-16 00:40:29 train hn4_s2 done: {"name":"hn4_s2_e2e","steps":600,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/hn4_s2_e2e/final","sha256":"20d1c5f2fe13c07dc4756c96cc7b9089db90be84cc28810c4b1cbe26f22104b9","minutes_this_chunk":48.8}
+2026-11-16 01:27:50 train hn4_decoy pass 1 exit=0 (2831s) {"step": 600, "loss": 0.55611, "l1447": 0.54789, "l306": 0.56433, "lr": 2.000136697775855e-06, "gnorm": 1.0246, "tiles_per_s": 3.49, "peak_gb": 7.94, "t": 2800.8}
+2026-11-16 01:27:50 train hn4_decoy done: {"name":"hn4_decoy_e2e","steps":600,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/hn4_decoy_e2e/final","sha256":"335d2e69df2deeae9aae82464ff1e54db2f2727f1e0168e6b8aa4c2307b4f6cf","minutes_this_chunk":46.7}
+2026-11-16 01:28:02 compare trainlog: hn4_s0 {'steps_common': 60, 'steps_ours': 60, 'steps_shipped': 60, 'pearson_loss': 0.9875612080529154, 'max_abs_loss': 0.01039000000000001, 'first': {'step': 10, 'ours': 0.5417, 'shipped': 0.53959}, 'final': {'step': 600, 'ours': 0.49826, 'shipped': 0.498}} hn4_s1 {'steps_common': 60, 'steps_ours': 60, 'steps_shipped': 60, 'pearson_loss': 0.9718095390624435, 'max_abs_loss': 0.035150000000000015, 'first': {'step': 10, 'ours': 0.57405, 'shipped': 0.57691}, 'final': {'step': 600, 'ours': 0.54096, 'shipped': 0.53815}} hn4_s2 {'steps_common': 60, 'steps_ours': 60, 'steps_shipped': 60, 'pearson_loss
+2026-11-16 01:28:02 stage train done (2843s)
+2026-11-16 02:23:38 map hn4_s0 pass 1 exit=0 (3331s)
+2026-11-16 03:18:24 map hn4_s1 pass 1 exit=0 (3286s)
+2026-11-16 04:12:52 map hn4_s2 pass 1 exit=0 (3268s)
+2026-11-16 05:07:17 map hn4_decoy pass 1 exit=0 (3265s)
+2026-11-16 05:07:17 stage members done (3265s)
+2026-11-16 05:08:10 compare maps: map             r   mean|d|    max|d|   <=1e-3      box r   box max tr      1.0000000  7.90e-10  7.32e-04  1.00000  1.0000000  0.00e+00 s0      0.9925977  1.06e-02  2.59e-01  0.10927  0.9943591  2.59e-01 s1      0.9933982  9.94e-03  2.64e-01  0.10671  0.9960165  1.70e-01 s2      0.9925289  1.14e-02  2.59e-01  0.09242  0.9950954  1.96e-01 decoy   0.9994044  2.71e-03  4.61e-02  0.32386  0.9994856  3.53e-02 ensA    0.9974271  6.55e-03  1.15e-01  0.15625  0.9983319  1.15e-01 prod    0.9992298  1.56e-03  4.96e-02  0.57350  0.9995508  4.14e-02 prodd   0.9998515  6.26e-04  2.08e-02  0.81518  0.9999005  1.22e-02 
+2026-11-16 05:08:10 stage fuse done (53s)
+2026-11-16 05:08:10 E2E_DONE run=20261115-234340-83204 stages train,members,fuse

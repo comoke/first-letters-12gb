@@ -1,0 +1,387 @@
+{
+ "stage": "packs",
+ "ours": "/data/train_e2e/self/packs",
+ "shipped": "/data/winner/hf-data/data/3b_cloud_packs",
+ "regions": {
+  "A6": {
+   "img": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1035326976
+   },
+   "info": {
+    "in_ours": true,
+    "in_shipped": true
+   },
+   "ink_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 9096
+   },
+   "ink_main": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 14233
+   },
+   "ink_sc": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 14136
+   },
+   "lab_decoy": {
+    "equal": false,
+    "n_diff": 141,
+    "n": 43138624
+   },
+   "lab_main": {
+    "equal": false,
+    "n_diff": 212,
+    "n": 43138624
+   },
+   "lab_sc": {
+    "equal": false,
+    "n_diff": 236,
+    "n": 43138624
+   },
+   "org_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 18192,
+    "tiles_ours": 9096,
+    "tiles_shipped": 9096,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "org_main": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 28466,
+    "tiles_ours": 14233,
+    "tiles_shipped": 14233,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "org_sc": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 28272,
+    "tiles_ours": 14136,
+    "tiles_shipped": 14136,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "files": [
+    "/data/train_e2e/self/packs/306_A6.npz",
+    "/data/winner/hf-data/data/3b_cloud_packs/306_A6.npz"
+   ]
+  },
+  "w052": {
+   "img": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 401413248
+   },
+   "info": {
+    "in_ours": true,
+    "in_shipped": true
+   },
+   "ink_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1325
+   },
+   "ink_main": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 2810
+   },
+   "ink_sc": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 2701
+   },
+   "lab_decoy": {
+    "equal": false,
+    "n_diff": 6,
+    "n": 16725552
+   },
+   "lab_main": {
+    "equal": false,
+    "n_diff": 36,
+    "n": 16725552
+   },
+   "lab_sc": {
+    "equal": false,
+    "n_diff": 56,
+    "n": 16725552
+   },
+   "org_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 2650,
+    "tiles_ours": 1325,
+    "tiles_shipped": 1325,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "org_main": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 5620,
+    "tiles_ours": 2810,
+    "tiles_shipped": 2810,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "org_sc": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 5402,
+    "tiles_ours": 2701,
+    "tiles_shipped": 2701,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "files": [
+    "/data/train_e2e/self/packs/306_w052.npz",
+    "/data/winner/hf-data/data/3b_cloud_packs/306_w052.npz"
+   ]
+  },
+  "w053": {
+   "img": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 414021888
+   },
+   "info": {
+    "in_ours": true,
+    "in_shipped": true
+   },
+   "ink_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 885
+   },
+   "ink_main": {
+    "shape_ours": [
+     2066
+    ],
+    "shape_shipped": [
+     2065
+    ],
+    "equal": false
+   },
+   "ink_sc": {
+    "shape_ours": [
+     1954
+    ],
+    "shape_shipped": [
+     1953
+    ],
+    "equal": false
+   },
+   "lab_decoy": {
+    "equal": false,
+    "n_diff": 10,
+    "n": 17250912
+   },
+   "lab_main": {
+    "equal": false,
+    "n_diff": 30,
+    "n": 17250912
+   },
+   "lab_sc": {
+    "equal": false,
+    "n_diff": 32,
+    "n": 17250912
+   },
+   "org_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1770,
+    "tiles_ours": 885,
+    "tiles_shipped": 885,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "org_main": {
+    "shape_ours": [
+     2066,
+     2
+    ],
+    "shape_shipped": [
+     2065,
+     2
+    ],
+    "equal": false,
+    "tiles_ours": 2066,
+    "tiles_shipped": 2065,
+    "only_ours": 1,
+    "only_shipped": 0
+   },
+   "org_sc": {
+    "shape_ours": [
+     1954,
+     2
+    ],
+    "shape_shipped": [
+     1953,
+     2
+    ],
+    "equal": false,
+    "tiles_ours": 1954,
+    "tiles_shipped": 1953,
+    "only_ours": 1,
+    "only_shipped": 0
+   },
+   "files": [
+    "/data/train_e2e/self/packs/306_w053.npz",
+    "/data/winner/hf-data/data/3b_cloud_packs/306_w053.npz"
+   ]
+  },
+  "w059": {
+   "img": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 252241920
+   },
+   "info": {
+    "in_ours": true,
+    "in_shipped": true
+   },
+   "ink_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 785
+   },
+   "ink_main": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1503
+   },
+   "ink_sc": {
+    "equal": false,
+    "n_diff": 1,
+    "n": 1480
+   },
+   "lab_decoy": {
+    "equal": false,
+    "n_diff": 12,
+    "n": 10510080
+   },
+   "lab_main": {
+    "equal": false,
+    "n_diff": 31,
+    "n": 10510080
+   },
+   "lab_sc": {
+    "equal": false,
+    "n_diff": 37,
+    "n": 10510080
+   },
+   "org_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1570,
+    "tiles_ours": 785,
+    "tiles_shipped": 785,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "org_main": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 3006,
+    "tiles_ours": 1503,
+    "tiles_shipped": 1503,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "org_sc": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 2960,
+    "tiles_ours": 1480,
+    "tiles_shipped": 1480,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "files": [
+    "/data/train_e2e/self/packs/306_w059.npz",
+    "/data/winner/hf-data/data/3b_cloud_packs/306_w059.npz"
+   ]
+  },
+  "w109": {
+   "img": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 160521984
+   },
+   "info": {
+    "in_ours": true,
+    "in_shipped": true
+   },
+   "ink_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 1445
+   },
+   "ink_main": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 2720
+   },
+   "ink_sc": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 2676
+   },
+   "lab_decoy": {
+    "equal": false,
+    "n_diff": 20,
+    "n": 6688416
+   },
+   "lab_main": {
+    "equal": false,
+    "n_diff": 45,
+    "n": 6688416
+   },
+   "lab_sc": {
+    "equal": false,
+    "n_diff": 52,
+    "n": 6688416
+   },
+   "org_decoy": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 2890,
+    "tiles_ours": 1445,
+    "tiles_shipped": 1445,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "org_main": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 5440,
+    "tiles_ours": 2720,
+    "tiles_shipped": 2720,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "org_sc": {
+    "equal": true,
+    "n_diff": 0,
+    "n": 5352,
+    "tiles_ours": 2676,
+    "tiles_shipped": 2676,
+    "only_ours": 0,
+    "only_shipped": 0
+   },
+   "files": [
+    "/data/train_e2e/self/packs/306_w109.npz",
+    "/data/winner/hf-data/data/3b_cloud_packs/306_w109.npz"
+   ]
+  }
+ }
+}

@@ -1,0 +1,92 @@
+[2026-11-16 19:08:33] start rev=7e4d918712a8d8642a6fdeee45b80217c1e98317
+[2026-11-16 19:08:38] got w058/labels/inklabels.png 351810 B
+[2026-11-16 19:08:38] got w058/labels/mask.png 199898 B
+[2026-11-16 19:08:48] got w058/layers/00.tif 22265562 B
+[2026-11-16 19:08:59] got w058/layers/01.tif 22225584 B
+[2026-11-16 19:09:11] got w058/layers/02.tif 22185596 B
+[2026-11-16 19:09:13] got w058/layers/03.tif 22147114 B
+[2026-11-16 19:09:15] got w058/layers/04.tif 22118162 B
+[2026-11-16 19:09:17] got w058/layers/05.tif 22100604 B
+[2026-11-16 19:09:20] got w058/layers/06.tif 22106804 B
+[2026-11-16 19:09:22] got w058/layers/07.tif 22139202 B
+[2026-11-16 19:09:24] got w058/layers/08.tif 22188598 B
+[2026-11-16 19:09:29] got w058/layers/09.tif 22259448 B
+[2026-11-16 19:09:32] got w058/layers/10.tif 22332600 B
+[2026-11-16 19:09:40] got w058/layers/11.tif 22401812 B
+[2026-11-16 19:09:42] got w058/layers/12.tif 22468514 B
+[2026-11-16 19:09:44] got w058/layers/13.tif 22520118 B
+[2026-11-16 19:09:47] got w058/layers/14.tif 22567832 B
+[2026-11-16 19:09:50] got w058/layers/15.tif 22602428 B
+[2026-11-16 19:09:53] got w058/layers/16.tif 22621302 B
+[2026-11-16 19:10:00] got w058/layers/17.tif 22610582 B
+[2026-11-16 19:10:13] got w058/layers/18.tif 22572412 B
+[2026-11-16 19:10:20] got w058/layers/19.tif 22517286 B
+[2026-11-16 19:10:26] got w058/layers/20.tif 22455710 B
+[2026-11-16 19:10:39] got w058/layers/21.tif 22402094 B
+[2026-11-16 19:10:48] got w058/layers/22.tif 22366126 B
+[2026-11-16 19:10:50] got w058/layers/23.tif 22349258 B
+[2026-11-16 19:10:50] got w060/labels/inklabels.png 358173 B
+[2026-11-16 19:10:51] got w060/labels/mask.png 245184 B
+[2026-11-16 19:10:53] got w060/layers/00.tif 23146864 B
+[2026-11-16 19:10:57] got w060/layers/01.tif 23100568 B
+[2026-11-16 19:10:59] got w060/layers/02.tif 23052028 B
+[2026-11-16 19:11:02] got w060/layers/03.tif 22986318 B
+[2026-11-16 19:11:05] got w060/layers/04.tif 22916940 B
+[2026-11-16 19:11:07] got w060/layers/05.tif 22841538 B
+[2026-11-16 19:11:09] got w060/layers/06.tif 22766772 B
+[2026-11-16 19:11:12] got w060/layers/07.tif 22703402 B
+[2026-11-16 19:11:15] got w060/layers/08.tif 22655178 B
+[2026-11-16 19:11:23] got w060/layers/09.tif 22637828 B
+[2026-11-16 19:11:30] got w060/layers/10.tif 22635702 B
+[2026-11-16 19:11:36] got w060/layers/11.tif 22630926 B
+[2026-11-16 19:11:39] got w060/layers/12.tif 22627524 B
+[2026-11-16 19:11:44] got w060/layers/13.tif 22646258 B
+[2026-11-16 19:11:46] got w060/layers/14.tif 22678188 B
+[2026-11-16 19:11:50] got w060/layers/15.tif 22734378 B
+[2026-11-16 19:11:53] got w060/layers/16.tif 22806946 B
+[2026-11-16 19:11:56] got w060/layers/17.tif 22897536 B
+[2026-11-16 19:12:00] got w060/layers/18.tif 22987682 B
+[2026-11-16 19:12:03] got w060/layers/19.tif 23062748 B
+[2026-11-16 19:12:06] got w060/layers/20.tif 23128064 B
+[2026-11-16 19:12:09] got w060/layers/21.tif 23180416 B
+[2026-11-16 19:12:11] got w060/layers/22.tif 23220958 B
+[2026-11-16 19:12:14] got w060/layers/23.tif 23256874 B
+[2026-11-16 19:12:14] download ok: 1086990423 B in /mnt/d/Workspace/vesuvius-data/train_e2e/anchors_rebuild/raw/pherc1447
+python: can't open file '/drv/anchors_rebuild.py': [Errno 2] No such file or directory
+[2026-11-16 19:12:44] ANCHORS_FAIL build (docker exit 2)
+[2026-11-16 19:13:32] start rev=7e4d918712a8d8642a6fdeee45b80217c1e98317
+[2026-11-16 19:17:07] download ok: 1086990423 B in /mnt/d/Workspace/vesuvius-data/train_e2e/anchors_rebuild/raw/pherc1447
+PK /out/self/packs D1447 /home/liam/projects/vesuvius-work/data/pherc1447 TILE/DEPTH/CLIP/CTX 64 24 200 128
+anchor w058 1447 1512 tiles
+anchor w060 1447 1206 tiles
+BUILD_OK
+{"sha256_rebuilt": "80084f2a001bc8a3222f1c2f16d14a6fff0387e081d637f6928c66ffb2c939cd", "sha256_shipped": "80084f2a001bc8a3222f1c2f16d14a6fff0387e081d637f6928c66ffb2c939cd", "identical_file": true, "all_keys_equal": true, "identical_after_ts_normalisation": true}
+  group {"dtype": ["<U4", "<U4"], "shape": [[], []], "n_diff": 0, "n": 1, "equal": true}
+  img {"dtype": ["uint8", "uint8"], "shape": [[1712, 3968, 24], [1712, 3968, 24]], "n_diff": 0, "n": 163037184, "max_abs_diff": 0.0, "equal": true}
+  info {"dtype": ["<U331", "<U331"], "shape": [[], []], "info_diff": {}, "equal": true}
+  keep {"dtype": ["uint8", "uint8"], "shape": [[1712, 3968], [1712, 3968]], "n_diff": 0, "n": 6793216, "max_abs_diff": 0.0, "equal": true}
+  lab {"dtype": ["float16", "float16"], "shape": [[1712, 3968], [1712, 3968]], "n_diff": 0, "n": 6793216, "max_abs_diff": 0.0, "equal": true}
+  org {"dtype": ["int64", "int64"], "shape": [[1512, 2], [1512, 2]], "n_diff": 0, "n": 3024, "max_abs_diff": 0.0, "equal": true}
+[2026-11-16 19:35:34] ANCHORS_FAIL compare w060 (docker exit 137)
+[2026-11-16 19:35:41] start rev=7e4d918712a8d8642a6fdeee45b80217c1e98317
+[2026-11-16 19:37:05] download ok: 1086990423 B in /mnt/d/Workspace/vesuvius-data/train_e2e/anchors_rebuild/raw/pherc1447
+PK /out/self/packs D1447 /home/liam/projects/vesuvius-work/data/pherc1447 TILE/DEPTH/CLIP/CTX 64 24 200 128
+anchor w058 1447 1512 tiles
+anchor w060 1447 1206 tiles
+BUILD_OK
+{"sha256_rebuilt": "80084f2a001bc8a3222f1c2f16d14a6fff0387e081d637f6928c66ffb2c939cd", "sha256_shipped": "80084f2a001bc8a3222f1c2f16d14a6fff0387e081d637f6928c66ffb2c939cd", "identical_file": true, "all_keys_equal": true, "identical_after_ts_normalisation": true}
+  group {"dtype": ["<U4", "<U4"], "shape": [[], []], "n_diff": 0, "n": 1, "equal": true}
+  img {"dtype": ["uint8", "uint8"], "shape": [[1712, 3968, 24], [1712, 3968, 24]], "n_diff": 0, "n": 163037184, "max_abs_diff": 0.0, "equal": true}
+  info {"dtype": ["<U331", "<U331"], "shape": [[], []], "info_diff": {}, "equal": true}
+  keep {"dtype": ["uint8", "uint8"], "shape": [[1712, 3968], [1712, 3968]], "n_diff": 0, "n": 6793216, "max_abs_diff": 0.0, "equal": true}
+  lab {"dtype": ["float16", "float16"], "shape": [[1712, 3968], [1712, 3968]], "n_diff": 0, "n": 6793216, "max_abs_diff": 0.0, "equal": true}
+  org {"dtype": ["int64", "int64"], "shape": [[1512, 2], [1512, 2]], "n_diff": 0, "n": 3024, "max_abs_diff": 0.0, "equal": true}
+{"sha256_rebuilt": "9e092b87ddaed4f54d7ba2a45ca094cc084d15d9b1e7d5390064d2b0783cb666", "sha256_shipped": "9e092b87ddaed4f54d7ba2a45ca094cc084d15d9b1e7d5390064d2b0783cb666", "identical_file": true, "all_keys_equal": true, "identical_after_ts_normalisation": true}
+  group {"dtype": ["<U4", "<U4"], "shape": [[], []], "n_diff": 0, "n": 1, "equal": true}
+  img {"dtype": ["uint8", "uint8"], "shape": [[3488, 3008, 24], [3488, 3008, 24]], "n_diff": 0, "n": 251805696, "max_abs_diff": 0.0, "equal": true}
+  info {"dtype": ["<U331", "<U331"], "shape": [[], []], "info_diff": {}, "equal": true}
+  keep {"dtype": ["uint8", "uint8"], "shape": [[3488, 3008], [3488, 3008]], "n_diff": 0, "n": 10491904, "max_abs_diff": 0.0, "equal": true}
+  lab {"dtype": ["float16", "float16"], "shape": [[3488, 3008], [3488, 3008]], "n_diff": 0, "n": 10491904, "max_abs_diff": 0.0, "equal": true}
+  org {"dtype": ["int64", "int64"], "shape": [[1206, 2], [1206, 2]], "n_diff": 0, "n": 2412, "max_abs_diff": 0.0, "equal": true}
+[2026-11-16 19:40:39] wall 298 s
+[2026-11-16 19:40:39] ANCHORS_DONE

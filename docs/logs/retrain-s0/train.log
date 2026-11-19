@@ -1,0 +1,92 @@
+hn4_s0_pc: anchor tiles 2718, 0306B tiles 23331 (ink 1405) (33s)
+Loading weights from local directory
+/opt/fl/train/W/.claude/worktrees/leadA-push3/x_push3/m306/denoise/cloud_code/v8306lib.py:340: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  return w_dice * dice + w_bce * bce, float(dice), float(bce)
+chunk end at step 1/600
+[rt_train exit/oomkilled: 3 false]
+hn4_s0_pc: anchor tiles 2718, 0306B tiles 23331 (ink 1405) (34s)
+Loading weights from local directory
+resumed at step 1/600
+/opt/fl/train/W/.claude/worktrees/leadA-push3/x_push3/m306/denoise/cloud_code/v8306lib.py:340: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  return w_dice * dice + w_bce * bce, float(dice), float(bce)
+{"step": 10, "loss": 0.53772, "l1447": 0.54336, "l306": 0.53207, "lr": 6.666666666666667e-06, "gnorm": 1.2846, "tiles_per_s": 1.21, "peak_gb": 8.56, "t": 180.6}
+chunk end at step 10/600
+[rt_train exit/oomkilled: 3 false]
+hn4_s0_pc: anchor tiles 2718, 0306B tiles 23331 (ink 1405) (116s)
+Loading weights from local directory
+resumed at step 10/600
+/opt/fl/train/W/.claude/worktrees/leadA-push3/x_push3/m306/denoise/cloud_code/v8306lib.py:340: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  return w_dice * dice + w_bce * bce, float(dice), float(bce)
+chunk end at step 11/600
+[rt_train exit/oomkilled: 3 false]
+hn4_s0_pc: anchor tiles 2718, 0306B tiles 23331 (ink 1405) (40s)
+Loading weights from local directory
+resumed at step 11/600
+/opt/fl/train/W/.claude/worktrees/leadA-push3/x_push3/m306/denoise/cloud_code/v8306lib.py:340: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  return w_dice * dice + w_bce * bce, float(dice), float(bce)
+{"step": 20, "loss": 0.57018, "l1447": 0.62436, "l306": 0.51599, "lr": 1.3333333333333333e-05, "gnorm": 0.833, "tiles_per_s": 0.83, "peak_gb": 8.56, "t": 251.0}
+{"step": 30, "loss": 0.57514, "l1447": 0.60775, "l306": 0.54254, "lr": 2e-05, "gnorm": 1.9866, "tiles_per_s": 1.38, "peak_gb": 8.56, "t": 296.8}
+{"step": 40, "loss": 0.51907, "l1447": 0.56487, "l306": 0.47326, "lr": 1.9988929722334746e-05, "gnorm": 0.577, "tiles_per_s": 1.75, "peak_gb": 8.56, "t": 342.4}
+{"step": 50, "loss": 0.54151, "l1447": 0.58992, "l306": 0.49309, "lr": 1.995069705831446e-05, "gnorm": 1.1256, "tiles_per_s": 1.88, "peak_gb": 8.56, "t": 409.7}
+{"step": 60, "loss": 0.57023, "l1447": 0.57884, "l306": 0.56162, "lr": 1.988528142150735e-05, "gnorm": 1.24, "tiles_per_s": 2.08, "peak_gb": 8.56, "t": 454.7}
+{"step": 70, "loss": 0.54373, "l1447": 0.57878, "l306": 0.50869, "lr": 1.9792881477052394e-05, "gnorm": 1.1853, "tiles_per_s": 2.23, "peak_gb": 8.56, "t": 499.8}
+{"step": 80, "loss": 0.53982, "l1447": 0.59008, "l306": 0.48956, "lr": 1.9673777840544036e-05, "gnorm": 0.9394, "tiles_per_s": 2.36, "peak_gb": 8.56, "t": 544.7}
+{"step": 90, "loss": 0.54279, "l1447": 0.55878, "l306": 0.52679, "lr": 1.9528332225811816e-05, "gnorm": 1.5244, "tiles_per_s": 2.47, "peak_gb": 8.56, "t": 589.5}
+{"step": 100, "loss": 0.55911, "l1447": 0.62435, "l306": 0.49387, "lr": 1.9356986346407364e-05, "gnorm": 1.1576, "tiles_per_s": 2.55, "peak_gb": 8.56, "t": 634.9}
+{"step": 110, "loss": 0.58868, "l1447": 0.64121, "l306": 0.53616, "lr": 1.9160260574134877e-05, "gnorm": 0.845, "tiles_per_s": 2.63, "peak_gb": 8.56, "t": 680.5}
+{"step": 120, "loss": 0.60698, "l1447": 0.64691, "l306": 0.56706, "lr": 1.893875235869902e-05, "gnorm": 1.2432, "tiles_per_s": 2.62, "peak_gb": 8.56, "t": 743.0}
+{"step": 130, "loss": 0.57285, "l1447": 0.58111, "l306": 0.5646, "lr": 1.8693134413269854e-05, "gnorm": 1.7106, "tiles_per_s": 2.68, "peak_gb": 8.56, "t": 787.9}
+{"step": 140, "loss": 0.5635, "l1447": 0.58042, "l306": 0.54659, "lr": 1.8424152671475006e-05, "gnorm": 1.3131, "tiles_per_s": 2.73, "peak_gb": 8.56, "t": 832.9}
+{"step": 150, "loss": 0.58274, "l1447": 0.65937, "l306": 0.50611, "lr": 1.8132624022023787e-05, "gnorm": 1.383, "tiles_per_s": 2.78, "peak_gb": 8.56, "t": 877.8}
+{"step": 160, "loss": 0.57353, "l1447": 0.62853, "l306": 0.51854, "lr": 1.7819433827843014e-05, "gnorm": 1.0477, "tiles_per_s": 2.82, "peak_gb": 8.56, "t": 922.7}
+{"step": 170, "loss": 0.54225, "l1447": 0.57052, "l306": 0.51397, "lr": 1.7485533237258907e-05, "gnorm": 1.6531, "tiles_per_s": 2.86, "peak_gb": 8.56, "t": 967.5}
+{"step": 180, "loss": 0.60506, "l1447": 0.67706, "l306": 0.53305, "lr": 1.713193629539088e-05, "gnorm": 0.7692, "tiles_per_s": 2.89, "peak_gb": 8.56, "t": 1012.4}
+{"step": 190, "loss": 0.52079, "l1447": 0.56767, "l306": 0.47391, "lr": 1.675971686452985e-05, "gnorm": 0.8118, "tiles_per_s": 2.87, "peak_gb": 8.56, "t": 1075.8}
+{"step": 200, "loss": 0.55592, "l1447": 0.61122, "l306": 0.50061, "lr": 1.6370005362853737e-05, "gnorm": 1.681, "tiles_per_s": 2.9, "peak_gb": 8.56, "t": 1120.9}
+{"step": 210, "loss": 0.55283, "l1447": 0.59911, "l306": 0.50656, "lr": 1.5963985331384633e-05, "gnorm": 0.9016, "tiles_per_s": 2.93, "peak_gb": 8.56, "t": 1165.7}
+{"step": 220, "loss": 0.54386, "l1447": 0.62213, "l306": 0.46559, "lr": 1.5542889839613596e-05, "gnorm": 1.2564, "tiles_per_s": 2.95, "peak_gb": 8.56, "t": 1210.6}
+{"step": 230, "loss": 0.54835, "l1447": 0.60092, "l306": 0.49578, "lr": 1.510799774070914e-05, "gnorm": 0.9809, "tiles_per_s": 2.97, "peak_gb": 8.56, "t": 1255.5}
+{"step": 240, "loss": 0.54463, "l1447": 0.58829, "l306": 0.50096, "lr": 1.4660629787682203e-05, "gnorm": 1.1875, "tiles_per_s": 2.99, "peak_gb": 8.56, "t": 1300.7}
+{"step": 250, "loss": 0.52946, "l1447": 0.56554, "l306": 0.49339, "lr": 1.420214462230265e-05, "gnorm": 0.9957, "tiles_per_s": 2.97, "peak_gb": 8.56, "t": 1365.9}
+{"step": 260, "loss": 0.52386, "l1447": 0.54977, "l306": 0.49795, "lr": 1.373393464894887e-05, "gnorm": 1.1214, "tiles_per_s": 2.99, "peak_gb": 8.56, "t": 1410.9}
+{"step": 270, "loss": 0.53584, "l1447": 0.59685, "l306": 0.47482, "lr": 1.3257421805921461e-05, "gnorm": 1.0922, "tiles_per_s": 3.0, "peak_gb": 8.56, "t": 1456.4}
+{"step": 280, "loss": 0.5354, "l1447": 0.58068, "l306": 0.49013, "lr": 1.2774053247063322e-05, "gnorm": 0.9017, "tiles_per_s": 3.02, "peak_gb": 8.56, "t": 1501.2}
+{"step": 290, "loss": 0.56537, "l1447": 0.60671, "l306": 0.52403, "lr": 1.2285296946801007e-05, "gnorm": 1.498, "tiles_per_s": 3.04, "peak_gb": 8.56, "t": 1546.0}
+{"step": 300, "loss": 0.54025, "l1447": 0.58888, "l306": 0.49162, "lr": 1.179263724195464e-05, "gnorm": 1.1988, "tiles_per_s": 3.06, "peak_gb": 8.56, "t": 1590.8}
+saved step_0300 8ed36dda359f
+{"step": 310, "loss": 0.55431, "l1447": 0.62526, "l306": 0.48337, "lr": 1.1297570323855773e-05, "gnorm": 1.3273, "tiles_per_s": 3.06, "peak_gb": 8.56, "t": 1640.9}
+{"step": 320, "loss": 0.55703, "l1447": 0.63132, "l306": 0.48274, "lr": 1.0801599694463491e-05, "gnorm": 1.5906, "tiles_per_s": 3.04, "peak_gb": 8.56, "t": 1702.4}
+{"step": 330, "loss": 0.56119, "l1447": 0.63614, "l306": 0.48624, "lr": 1.0306231600278375e-05, "gnorm": 1.1222, "tiles_per_s": 3.06, "peak_gb": 8.56, "t": 1747.2}
+{"step": 340, "loss": 0.53394, "l1447": 0.57965, "l306": 0.48822, "lr": 9.812970457921378e-06, "gnorm": 1.3858, "tiles_per_s": 3.07, "peak_gb": 8.56, "t": 1792.2}
+{"step": 350, "loss": 0.52277, "l1447": 0.56438, "l306": 0.48116, "lr": 9.323314285270017e-06, "gnorm": 1.0659, "tiles_per_s": 3.08, "peak_gb": 8.56, "t": 1836.9}
+{"step": 360, "loss": 0.53133, "l1447": 0.54386, "l306": 0.5188, "lr": 8.838750152027273e-06, "gnorm": 1.1796, "tiles_per_s": 3.09, "peak_gb": 8.56, "t": 1881.7}
+{"step": 370, "loss": 0.53394, "l1447": 0.61688, "l306": 0.451, "lr": 8.360749663539819e-06, "gnorm": 1.2314, "tiles_per_s": 3.11, "peak_gb": 8.56, "t": 1926.6}
+{"step": 380, "loss": 0.56221, "l1447": 0.6076, "l306": 0.51683, "lr": 7.890764491580923e-06, "gnorm": 0.8209, "tiles_per_s": 3.12, "peak_gb": 8.56, "t": 1971.4}
+{"step": 390, "loss": 0.54752, "l1447": 0.60944, "l306": 0.4856, "lr": 7.430221965670995e-06, "gnorm": 0.7791, "tiles_per_s": 3.1, "peak_gb": 8.56, "t": 2032.4}
+{"step": 400, "loss": 0.53327, "l1447": 0.5909, "l306": 0.47563, "lr": 6.980520738324742e-06, "gnorm": 1.1014, "tiles_per_s": 3.11, "peak_gb": 8.56, "t": 2077.2}
+{"step": 410, "loss": 0.52401, "l1447": 0.58716, "l306": 0.46086, "lr": 6.5430265373894495e-06, "gnorm": 0.6737, "tiles_per_s": 3.12, "peak_gb": 8.56, "t": 2122.0}
+{"step": 420, "loss": 0.5227, "l1447": 0.56346, "l306": 0.48194, "lr": 6.1190680183743956e-06, "gnorm": 0.993, "tiles_per_s": 3.13, "peak_gb": 8.56, "t": 2166.8}
+{"step": 430, "loss": 0.5775, "l1447": 0.64889, "l306": 0.5061, "lr": 5.709932729367743e-06, "gnorm": 1.2321, "tiles_per_s": 3.14, "peak_gb": 8.56, "t": 2212.0}
+{"step": 440, "loss": 0.55932, "l1447": 0.61611, "l306": 0.50253, "lr": 5.316863200795303e-06, "gnorm": 1.0815, "tiles_per_s": 3.15, "peak_gb": 8.56, "t": 2256.7}
+{"step": 450, "loss": 0.57366, "l1447": 0.60415, "l306": 0.54317, "lr": 4.941053171896478e-06, "gnorm": 1.2414, "tiles_per_s": 3.14, "peak_gb": 8.56, "t": 2316.3}
+{"step": 460, "loss": 0.57555, "l1447": 0.65883, "l306": 0.49227, "lr": 4.583643965377427e-06, "gnorm": 1.3626, "tiles_per_s": 3.15, "peak_gb": 8.56, "t": 2361.0}
+{"step": 470, "loss": 0.54501, "l1447": 0.5977, "l306": 0.49233, "lr": 4.245721021251508e-06, "gnorm": 1.2509, "tiles_per_s": 3.15, "peak_gb": 8.56, "t": 2405.7}
+{"step": 480, "loss": 0.52806, "l1447": 0.61754, "l306": 0.43857, "lr": 3.928310600393645e-06, "gnorm": 1.0825, "tiles_per_s": 3.16, "peak_gb": 8.56, "t": 2450.5}
+{"step": 490, "loss": 0.57987, "l1447": 0.64914, "l306": 0.5106, "lr": 3.632376667819769e-06, "gnorm": 1.2782, "tiles_per_s": 3.17, "peak_gb": 8.56, "t": 2495.2}
+{"step": 500, "loss": 0.58261, "l1447": 0.64248, "l306": 0.52274, "lr": 3.358817965156756e-06, "gnorm": 1.501, "tiles_per_s": 3.18, "peak_gb": 8.56, "t": 2540.0}
+{"step": 510, "loss": 0.5316, "l1447": 0.58398, "l306": 0.47921, "lr": 3.108465281193643e-06, "gnorm": 1.7634, "tiles_per_s": 3.18, "peak_gb": 8.56, "t": 2584.7}
+{"step": 520, "loss": 0.53353, "l1447": 0.59184, "l306": 0.47523, "lr": 2.8820789288033698e-06, "gnorm": 1.3349, "tiles_per_s": 3.17, "peak_gb": 8.56, "t": 2645.1}
+{"step": 530, "loss": 0.53645, "l1447": 0.56991, "l306": 0.50299, "lr": 2.6803464358975966e-06, "gnorm": 1.7212, "tiles_per_s": 3.18, "peak_gb": 8.56, "t": 2689.9}
+{"step": 540, "loss": 0.51618, "l1447": 0.55449, "l306": 0.47787, "lr": 2.503880457427003e-06, "gnorm": 0.9429, "tiles_per_s": 3.19, "peak_gb": 8.56, "t": 2734.6}
+{"step": 550, "loss": 0.54702, "l1447": 0.60795, "l306": 0.48609, "lr": 2.3532169147683664e-06, "gnorm": 1.0433, "tiles_per_s": 3.19, "peak_gb": 8.56, "t": 2779.4}
+{"step": 560, "loss": 0.5442, "l1447": 0.61855, "l306": 0.46986, "lr": 2.228813368148938e-06, "gnorm": 1.4251, "tiles_per_s": 3.2, "peak_gb": 8.56, "t": 2824.2}
+{"step": 570, "loss": 0.52954, "l1447": 0.57876, "l306": 0.48033, "lr": 2.1310476270510728e-06, "gnorm": 1.5854, "tiles_per_s": 3.2, "peak_gb": 8.56, "t": 2868.9}
+{"step": 580, "loss": 0.50342, "l1447": 0.53816, "l306": 0.46869, "lr": 2.0602166028172564e-06, "gnorm": 1.2003, "tiles_per_s": 3.21, "peak_gb": 8.56, "t": 2913.7}
+{"step": 590, "loss": 0.54757, "l1447": 0.61477, "l306": 0.48036, "lr": 2.0165354069401087e-06, "gnorm": 1.0661, "tiles_per_s": 3.2, "peak_gb": 8.56, "t": 2972.2}
+{"step": 600, "loss": 0.49766, "l1447": 0.5458, "l306": 0.44953, "lr": 2.000136697775855e-06, "gnorm": 0.7708, "tiles_per_s": 3.21, "peak_gb": 8.56, "t": 3016.9}
+done /selfroot/runs/hn4_s0_pc b47254aaa511e55101619102eb8f4652fe0d2e0ec89b66da4fab9ab4de06fbe6
+[rt_train exit/oomkilled: 0 false]

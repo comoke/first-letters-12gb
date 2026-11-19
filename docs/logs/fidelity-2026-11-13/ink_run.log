@@ -1,0 +1,26 @@
+2026-11-13 16:17:25 [0s] INK start: winner/hf-data/results/claim_surface_render_41layers.zarr -> p0306b/fidelity 
+2026-11-13 16:17:47 [22s] checkpoints sha256 ok
+2026-11-13 16:17:47 [22s] TRACE start
+2026-11-13 16:17:51 [26s]   container ink_fidelity__trace started
+2026-11-13 16:31:53 [868s] TRACE exit=0 oom=false (846s)
+2026-11-13 16:31:53 [868s] hn4_s0 start
+2026-11-13 16:31:59 [874s]   container ink_fidelity__hn4_s0 started
+2026-11-13 17:35:08 [4663s] hn4_s0 pass 1 exit=0 oom=false (3795s)
+2026-11-13 17:35:08 [4663s] hn4_s1 start
+2026-11-13 17:35:12 [4667s]   container ink_fidelity__hn4_s1 started
+2026-11-13 18:36:32 [8347s] hn4_s1 pass 1 exit=0 oom=false (3684s)
+2026-11-13 18:36:32 [8347s] hn4_s2 start
+2026-11-13 18:36:35 [8350s]   container ink_fidelity__hn4_s2 started
+2026-11-13 19:34:39 [11834s] hn4_s2 pass 1 exit=0 oom=false (3487s)
+2026-11-13 19:34:51 [11846s]   container ink_fidelity__fuse started
+2026-11-13 19:35:52 [11907s] FUSE exit=0 oom=false
+  fused: fuse.json
+  fused: fwd_ensA.npy
+  fused: fwd_prod.npy
+2026-11-13 19:35:52 [11907s] PRIMARY_DONE (TRACE x A-hn product in p0306b/fidelity/fused)
+2026-11-13 19:35:52 [11907s] hn4_decoy start
+2026-11-13 19:35:55 [11910s]   container ink_fidelity__hn4_decoy started
+2026-11-13 20:33:59 [15394s] hn4_decoy pass 1 exit=0 oom=false (3487s)
+2026-11-13 20:34:05 [15400s]   container ink_fidelity__fuse_decoy started
+2026-11-13 20:35:06 [15461s] FUSE+decoy exit=0 oom=false
+2026-11-13 20:35:06 [15461s] INK_DONE

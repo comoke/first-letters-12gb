@@ -1,0 +1,18 @@
+2026-11-18 06:48:28 FRESH start run=20261118-064827-13075: export /mnt/d/entry-fresh-r6/export (188 files, FILES.sha256 ed3541662704), data /mnt/c/entry-fresh-data, C: free 43808 MB
+2026-11-18 07:29:08 copied 0_inputs (4.0G, 2439s); C: free 39845 MB
+2026-11-18 07:31:53 1. download check: image archive sha256 against the dataset's .sha256 (archive read from the existing download)
+fl-claim-a7_final.tar.zst: OK
+2026-11-18 08:35:10 download_winner.sh parses
+2026-11-18 08:35:10 2. e2e_chain.sh STAGES=masks
+2026-11-18 08:35:12 E2E chain start run=20261118-083511-23302: stages masks
+2026-11-18 08:47:06 compare masks: A6 {"dist": {"equal": true, "max_abs": 0.0, "pearson": 0.9999999999999999}, "qual": {"equal": true, "max_abs": 0.0, "pearson": 0.9999999999999998}, "cov24p": {"equal": true, "n_diff": 0}, "H": {"equal": true, "n_diff": 0}, "W": {"equal": true, "n_diff": 0}} w052 {"dist": {"equal": true, "max_abs": 0.0, "pearson": 1.0}, "qual": {"equal": true, "max_abs": 0.0, "pearson": 1.0}, "cov24p": {"equal": true, "n_diff": 0}, "H": {"equal": true, "n_diff": 0}, "W": {"equal": true, "n_diff": 0}} w053 {"dist": {"equal": true, "max_abs": 0.0, "pearson": 1.0}, "qual": {"equal": true, "max_abs": 0.0, "pearson": 1.0}, "cov24p": {"equal": true, "n_diff": 0}, "H": {"equal": true, "n_diff": 0}, "W": {"equal": tr
+2026-11-18 08:47:06 stage masks done (714s)
+2026-11-18 08:47:06 E2E_DONE run=20261118-083511-23302 stages masks
+2026-11-18 08:47:06 3. stage9.sh
+2026-11-18 08:47:06 STAGE9 start
+2026-11-18 08:52:48 shipped final: exit 0 (256s): [249s] MATCH: byte-identical to the package PNGs; PHerc0306B_20250521133212_w074own_touchup_V5Rc.png = c6_grey
+2026-11-18 08:57:51 ours final: done (303s)
+2026-11-18 08:59:38 STAGE9_DONE lead ['PHerc0306B_20250521133212_w074own_touchup_V5Rc.png'] {'shape': [4417, 7385, 3], 'byte_identical': False, 'px_differ_share': 0.316294, 'px_differ_gt8_share': 0.000416, 'mean_abs': 0.3978, 'max_abs': 240}
+2026-11-18 08:59:38 kept: diff.json masks.json shipped.log 
+2026-11-18 08:59:38 paths check: lines naming our checkouts or data dir outside this test's own copy steps:
+2026-11-18 08:59:39 FRESH_DONE run=20261118-064827-13075 masks  stage9 2026-11-18 08:52:48 shipped final: exit 0 (256s): [249s] MATCH: byte-identical t

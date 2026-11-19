@@ -1,0 +1,25 @@
+{
+ "what": "Row-block evaluation (pc/finetune/eval_map.py) against one pass, on a 640 x 594 test crop of w03 with the shipped s0 (zero-shot, --reverse). EVAL_BLK=150 (blocks of 150 rows) vs EVAL_BLK=4096 (one block = one pass). Metrics only; the maps are not published.",
+ "crop_shape": [
+  640,
+  594
+ ],
+ "dtype": "float16",
+ "finite_px": {
+  "blocks_150": 280687,
+  "one_pass": 280687
+ },
+ "same_finite_set": true,
+ "bit_equal_share": 0.997809,
+ "max_abs_diff": 0.000244140625,
+ "mean_abs_diff": 2.7572555239466024e-07,
+ "seconds": {
+  "blocks_150": 44.0,
+  "one_pass": 43.4
+ },
+ "peak_gb": {
+  "blocks_150": 5.76,
+  "one_pass": 5.76
+ },
+ "recipe": "infer.predict_array tta 1 nsig 3 stride 21 min_cov 0.25, roi = supervision mask (or eval tiles)"
+}

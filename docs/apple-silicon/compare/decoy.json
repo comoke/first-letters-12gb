@@ -1,0 +1,14 @@
+{
+ "kind": "decoy",
+ "mac": "~/Workspace/vesuvius-data-mac/runs/native_full/decoy_full.npy",
+ "cols": null,
+ "cuda": {
+  "px": 7749169,
+  "nan_mismatch": 0,
+  "pearson": 0.9999999341720098,
+  "max_abs": 0.0003654956817626953,
+  "mean_abs": 4.020979758934118e-05,
+  "p999_abs": 0.00018781423568725586,
+  "same_u8": 0.9896871522611005
+ }
+}

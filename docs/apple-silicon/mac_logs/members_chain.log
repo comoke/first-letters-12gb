@@ -1,0 +1,10 @@
+== s1 start Mon Nov 16 19:03:12 EST 2026
+== s1 end rc=0 Mon Nov 16 20:02:26 EST 2026
+{"rc": 0, "wall_s": 3550.9, "mps_driver_peak_gb": 3.47, "max_rss_gb": 0.93}
+== s2 start Mon Nov 16 20:02:26 EST 2026
+== s2 end rc=0 Mon Nov 16 21:02:59 EST 2026
+{"rc": 0, "wall_s": 3630.8, "mps_driver_peak_gb": 3.47, "max_rss_gb": 0.93}
+== decoy start Mon Nov 16 21:02:59 EST 2026
+== decoy end rc=0 Mon Nov 16 22:32:27 EST 2026
+{"rc": 0, "wall_s": 5365.5, "mps_driver_peak_gb": 3.47, "max_rss_gb": 0.93}
+== s0fast start Mon Nov 16 22:32:27 EST 2026

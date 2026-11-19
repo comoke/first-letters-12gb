@@ -1,0 +1,9 @@
+2026-11-13 18:21:53 EXACT waiting for FID_DONE/FID_FAIL
+2026-11-13 20:35:56 fidelity chain ended: FID_DONE
+2026-11-13 20:47:42 TRACE exit=0 (706s)
+2026-11-13 21:40:23 s0 pass 1 exit=0 (3161s)
+tr_vs_image {"n_px": 28134195, "ours_finite": 28134195, "ref_finite": 28134195, "pearson": 0.9999999999438361, "mae": 7.89672383039175e-10, "p99_abs": 0.0, "max_abs": 0.000732421875, "equal_frac": 0.999998791506208, "within_1e3": 1.0}
+s0_vs_image_f16 {"n_px": 27526276, "ours_finite": 27526276, "ref_finite": 27526276, "pearson": 0.9999998821366322, "mae": 5.344578676158562e-05, "p99_abs": 0.0002371668815612793, "max_abs": 0.0007354617118835449, "equal_frac": 0.00011185675824801001, "within_1e3": 1.0}
+hf member_maps s0 shape (4900, 7780) ours (4051, 6944)
+s0_vs_hf_member {"n_px": 27526276, "ours_finite": 27526276, "ref_finite": 27526276, "pearson": 0.9999998821366322, "mae": 5.344578676158562e-05, "p99_abs": 0.0002371668815612793, "max_abs": 0.0007354617118835449, "equal_frac": 0.00011185675824801001, "within_1e3": 1.0}
+2026-11-13 21:40:34 EXACT_DONE

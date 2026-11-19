@@ -1,0 +1,51 @@
+{
+ "box_px": [
+  1639,
+  2745,
+  2431,
+  6829
+ ],
+ "shuffle": "render layers 8..31 permuted, seed 1 (winner shuffle_control.py prep)",
+ "maps": {
+  "tr": {
+   "px": 4864188,
+   "r_shuf_vs_orig": 0.0425
+  },
+  "s0": {
+   "px": 4864188,
+   "r_shuf_vs_orig": 0.0878
+  },
+  "s1": {
+   "px": 4864188,
+   "r_shuf_vs_orig": 0.0945
+  },
+  "s2": {
+   "px": 4864188,
+   "r_shuf_vs_orig": 0.0575
+  },
+  "decoy": {
+   "px": 4864188,
+   "r_shuf_vs_orig": 0.0062
+  },
+  "ensA": {
+   "px": 4864188,
+   "r_shuf_vs_orig": 0.078,
+   "top1_jaccard": 0.0004,
+   "shuf_above_orig_top1": 0.0
+  },
+  "prod": {
+   "px": 4864188,
+   "r_shuf_vs_orig": 0.0514,
+   "top1_jaccard": 0.0003,
+   "shuf_above_orig_top1": 0.0
+  },
+  "prodd": {
+   "px": 4864188,
+   "r_shuf_vs_orig": 0.0236,
+   "top1_jaccard": 0.0084,
+   "shuf_above_orig_top1": 0.0
+  }
+ },
+ "trace_ensA_r_orig": 0.7672,
+ "trace_ensA_r_shuf": 0.1229
+}

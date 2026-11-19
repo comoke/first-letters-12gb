@@ -1,0 +1,20 @@
+2026-11-17 23:56:18 FT start run=20261117-192233-47550 (protocol docs/finetune-protocol-2026-11-17.md @ amendment-1)
+2026-11-17 23:56:19 training packs ready: 306_A6.npz 306_w052.npz 306_w053.npz 306_w059.npz 306_w109.npz a_p4w03.npz a_p4w09.npz a_w058.npz a_w060.npz p4_packs_check.json 
+2026-11-18 00:27:05 orderA_rev exit=0 (1846s; chain GPU 1846 s) card peak 10192 MiB
+2026-11-18 00:57:19 orderA_fwd exit=0 (1813s; chain GPU 3659 s) card peak 10192 MiB
+2026-11-18 00:58:23 layer order on A: AUC reversed (training convention) 0.507220234295179, not reversed 0.8693571431655384
+2026-11-18 00:58:23 not-reversed order wins: flipping the stored layers of w06 and w00 and rebuilding the pack of w06
+2026-11-18 01:26:31 train_b1 exit=0 (1590s; chain GPU 5248 s) card peak 9621 MiB
+2026-11-18 01:26:31 train b1 done: {"name":"ft2_b1","steps":300,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/ft2_b1/final","sha256":"1f1432a0afa958baa0b37e87e207b30fd48c2e45fedf1c5bfde
+2026-11-18 01:52:59 train_b2 exit=0 (1575s; chain GPU 6823 s) card peak 9741 MiB
+2026-11-18 01:52:59 train b2 done: {"name":"ft2_b2","steps":300,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/ft2_b2/final","sha256":"63e2e37c19d0d32c5f9d23a7fa5416a2f46aeb86c06134080af
+2026-11-18 02:18:43 train_c1 exit=0 (1534s; chain GPU 8357 s) card peak 9747 MiB
+2026-11-18 02:18:43 train c1 done: {"name":"ft2_c1","steps":300,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/ft2_c1/final","sha256":"79d3f6c4602222d17ad5dfca9a8801d5c026db95d7be83f87b3
+2026-11-18 02:45:53 train_c2 exit=0 (1618s; chain GPU 9975 s) card peak 9728 MiB
+2026-11-18 02:45:53 train c2 done: {"name":"ft2_c2","steps":300,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/ft2_c2/final","sha256":"efed2a523bb3422fce128a2fe925e4a50436349b5ede2ebf46b
+2026-11-18 03:02:16 mapB_a exit=0 (962s; chain GPU 10937 s) card peak 10332 MiB
+2026-11-18 03:18:51 mapB_b1 exit=0 (993s; chain GPU 11930 s) card peak 10329 MiB
+2026-11-18 03:34:26 mapB_b2 exit=0 (933s; chain GPU 12863 s) card peak 10336 MiB
+2026-11-18 03:51:39 mapB_c1 exit=0 (1030s; chain GPU 13893 s) card peak 10268 MiB
+2026-11-18 04:07:18 mapB_c2 exit=0 (938s; chain GPU 14831 s) card peak 10268 MiB
+2026-11-18 04:11:29 FT_DONE run=20261117-192233-47550 GPU 14831 s; {'a': 0.8277, 'b1': 0.9636, 'b2': 0.9691, 'c1': 0.8504, 'c2': 0.8299}

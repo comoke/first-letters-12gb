@@ -1,0 +1,31 @@
+2026-11-17 06:29:11 FT start run=20261117-062911-29120 (protocol docs/finetune-protocol-2026-11-17.md @ 40e2eac)
+2026-11-17 07:39:13 FT_FAIL run=20261117-062911-29120 data chain did not finish: 2026-11-17 07:38:45 P4DATA_FAIL run=20261117-061057-28588 check w03:     json.dump(ok, open(t + '/check.json', 'w'), indent=1); print(json.dumps(ok))                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^ OSE
+2026-11-17 07:39:53 resume after the data-chain fix (settings unchanged)
+2026-11-17 07:39:54 FT start run=20261117-073954-31117 (protocol docs/finetune-protocol-2026-11-17.md @ 40e2eac)
+2026-11-17 07:47:54 FT_FAIL run=20261117-073954-31117 data chain did not finish: 2026-11-17 07:47:06 P4DATA_FAIL run=20261117-073953-31111 pack check:     json.dump(out, open('/p/p4_packs_check.json', 'w'), indent=1); print(json.dumps(out))                    ~~~~^^^^^^^^^^^^^^^^^
+2026-11-17 07:47:57 resume after the data-chain fix (settings unchanged)
+2026-11-17 07:47:58 FT start run=20261117-074758-31504 (protocol docs/finetune-protocol-2026-11-17.md @ 40e2eac)
+2026-11-17 07:58:58 training packs ready: 306_A6.npz 306_w052.npz 306_w053.npz 306_w059.npz 306_w109.npz a_p4w03.npz a_p4w09.npz a_w058.npz a_w060.npz p4_packs_check.json 
+2026-11-17 08:02:16 orderA_rev exit=1 (196s; chain GPU 196 s) card peak 10131 MiB
+2026-11-17 08:02:16 FT_FAIL run=20261117-074758-31504 order check rev (logs/orderA_rev.log)
+2026-11-17 08:06:59 resume: the order check OOMed (whole crop uploaded at once); eval_map now runs row blocks (blocked = one pass to float16 precision on a test crop, finetune/blocktest). Settings unchanged; GPU so far 196 s
+2026-11-17 08:07:00 FT start run=20261117-080700-32067 (protocol docs/finetune-protocol-2026-11-17.md @ 40e2eac)
+2026-11-17 08:07:00 training packs ready: 306_A6.npz 306_w052.npz 306_w053.npz 306_w059.npz 306_w109.npz a_p4w03.npz a_p4w09.npz a_w058.npz a_w060.npz p4_packs_check.json 
+2026-11-17 08:23:40 orderA_rev exit=0 (999s; chain GPU 999 s) card peak 10301 MiB
+2026-11-17 08:40:15 orderA_fwd exit=0 (995s; chain GPU 1994 s) card peak 10299 MiB
+2026-11-17 08:40:49 layer order on A: AUC reversed (training convention) 0.4608034491996283, not reversed 0.8609303749099378
+2026-11-17 08:40:49 not-reversed order wins: flipping the stored layers of w03 and w09 and rebuilding the Scroll 1 packs
+2026-11-17 09:07:47 train_b1 exit=0 (1515s; chain GPU 3509 s) card peak 9727 MiB
+2026-11-17 09:07:47 train b1 done: {"name":"ft_b1","steps":300,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/ft_b1/final","sha256":"74db9ef0566d578bb49631f65ad30c3a39207585a3a8d08693f6a
+2026-11-17 09:33:40 train_b2 exit=0 (1545s; chain GPU 5054 s) card peak 9675 MiB
+2026-11-17 09:33:40 train b2 done: {"name":"ft_b2","steps":300,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/ft_b2/final","sha256":"5184dd95555f774dcd05e43ccab7c7154fcb116f5ef9f690880f8
+2026-11-17 09:58:13 train_c1 exit=0 (1462s; chain GPU 6516 s) card peak 9711 MiB
+2026-11-17 09:58:13 train c1 done: {"name":"ft_c1","steps":300,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/ft_c1/final","sha256":"3d852c3dd6b726cdc2cbf28610434b3831c75d79a994974a7e995
+2026-11-17 10:22:47 train_c2 exit=0 (1467s; chain GPU 7983 s) card peak 9731 MiB
+2026-11-17 10:22:47 train c2 done: {"name":"ft_c2","steps":300,"final":"/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/m306/self/runs/ft_c2/final","sha256":"fc4566df80ad125aba610e4e4524d2ca8b256651e539c92f03f61
+2026-11-17 10:36:47 mapB_a exit=0 (839s; chain GPU 8822 s) card peak 10365 MiB
+2026-11-17 10:50:38 mapB_b1 exit=0 (830s; chain GPU 9652 s) card peak 10367 MiB
+2026-11-17 11:04:35 mapB_b2 exit=0 (837s; chain GPU 10489 s) card peak 10424 MiB
+2026-11-17 11:19:29 mapB_c1 exit=0 (892s; chain GPU 11381 s) card peak 10370 MiB
+2026-11-17 11:33:24 mapB_c2 exit=0 (834s; chain GPU 12215 s) card peak 10362 MiB
+2026-11-17 11:36:22 FT_DONE run=20261117-080700-32067 GPU 12215 s; {'a': 0.899, 'b1': 0.9454, 'b2': 0.949, 'c1': 0.895, 'c2': 0.8958}

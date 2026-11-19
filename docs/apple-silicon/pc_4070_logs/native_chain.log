@@ -1,0 +1,39 @@
+2026-11-14 21:00:30 [0s] INK start: winner/hf-data/results/claim_surface_render_41layers.zarr -> b0/runs/native ROI 1516 2915 2038 7638
+2026-11-14 21:00:53 [23s] checkpoints sha256 ok
+2026-11-14 21:00:53 [23s] TRACE start
+2026-11-14 21:00:58 [28s]   container ink_native__trace started
+2026-11-14 21:06:00 [330s] TRACE exit=0 oom=false (307s)
+2026-11-14 21:06:00 [330s] hn4_s0 start
+2026-11-14 21:06:05 [335s]   container ink_native__hn4_s0 started
+2026-11-14 21:21:07 [1237s] hn4_s0 pass 1 exit=0 oom=false (907s)
+2026-11-14 21:21:07 [1237s] hn4_s1 start
+2026-11-14 21:21:10 [1240s]   container ink_native__hn4_s1 started
+2026-11-14 21:36:12 [2142s] hn4_s1 pass 1 exit=0 oom=false (905s)
+2026-11-14 21:36:12 [2142s] hn4_s2 start
+2026-11-14 21:36:16 [2146s]   container ink_native__hn4_s2 started
+2026-11-14 21:51:18 [3048s] hn4_s2 pass 1 exit=0 oom=false (906s)
+2026-11-14 21:51:21 [3051s]   container ink_native__fuse started
+2026-11-14 21:52:22 [3112s] FUSE exit=1 oom=false
+  fused: fwd_ensA.npy
+2026-11-14 21:52:22 [3112s] INK_FAIL fuse exit=1 oom=false
+--- restart 2026-11-14 21:54:20
+2026-11-14 21:54:20 [0s] INK start: winner/hf-data/results/claim_surface_render_41layers.zarr -> b0/runs/native ROI 1516 2915 2038 7638
+2026-11-14 21:54:20 [0s] checkpoints sha256 ok
+2026-11-14 21:54:20 [0s] TRACE: fwd_tr.npy exists, skip
+2026-11-14 21:54:20 [0s] hn4_s0: exists, skip
+2026-11-14 21:54:20 [0s] hn4_s1: exists, skip
+2026-11-14 21:54:20 [0s] hn4_s2: exists, skip
+2026-11-14 21:54:24 [4s]   container ink_native__pad started
+2026-11-14 21:55:28 [68s]   container ink_native__fuse started
+2026-11-14 21:56:29 [129s] FUSE exit=0 oom=false
+  fused: fuse.json
+  fused: fwd_ensA.npy
+  fused: fwd_prod.npy
+2026-11-14 21:56:29 [129s] PRIMARY_DONE (TRACE x A-hn product in b0/runs/native/fused)
+2026-11-14 21:56:29 [129s] hn4_decoy start
+2026-11-14 21:56:33 [133s]   container ink_native__hn4_decoy started
+2026-11-14 22:11:34 [1034s] hn4_decoy pass 1 exit=0 oom=false (905s)
+2026-11-14 22:11:41 [1041s]   container ink_native__pad started
+2026-11-14 22:11:49 [1049s]   container ink_native__fuse_decoy started
+2026-11-14 22:12:51 [1111s] FUSE+decoy exit=0 oom=false
+2026-11-14 22:12:51 [1111s] INK_DONE

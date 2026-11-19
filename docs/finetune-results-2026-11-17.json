@@ -1,0 +1,415 @@
+{
+ "protocol": "docs/finetune-protocol-2026-11-17.md, commit 40e2eac in our private history (2026-11-17 06:04:57 -05:00), available to the judges on request; first GPU step 07:59:00 (docs/finetune-runs/pair1_ft_chain.log)",
+ "run": "20261117-080700-32067",
+ "note": "Metrics only (Scroll 1 licence): no maps, labels or images. pairs: auc_diff = first arm minus second; ci95 = paired bootstrap over 512 px tiles. Top-level keys are pair 1 (A = w03, B = w09); \"pair_2\" is amendment 1 (A2 = w06, B2 = w00).",
+ "layer_order_on_A": {
+  "segment": "PHercParis4 w03 / 20231106155351 (train A), supervision mask",
+  "tiles": 59,
+  "tile_px": 512,
+  "arms": {
+   "rev": {
+    "auc": 0.4608034491996283,
+    "top1_precision": 0.2298403436259016,
+    "f05_at_0p5": 0.08644772810490717,
+    "px": 6169508,
+    "ink_share": 0.34447722573663897
+   },
+   "fwd": {
+    "auc": 0.8609303749099378,
+    "top1_precision": 0.9690736688548505,
+    "f05_at_0p5": 0.7474617837918872,
+    "px": 6169508,
+    "ink_share": 0.34447722573663897
+   }
+  },
+  "pairs": {
+   "rev-fwd": {
+    "auc_diff": -0.40012692571030956,
+    "ci95": [
+     -0.4263010128151364,
+     -0.3386045965896838
+    ]
+   }
+  },
+  "verdict": "not-reversed (stored 00..23 as fetched) wins 0.861 vs 0.461; kill rule (< 0.55 in both) not met; stored layers flipped so training (src_1447 reads 23->0) and evaluation (--reverse) agree"
+ },
+ "test_B": {
+  "segment": "PHercParis4 w09 / 20230929220926 (test B), supervision mask",
+  "tiles": 36,
+  "tile_px": 512,
+  "arms": {
+   "a": {
+    "auc": 0.8989773907445033,
+    "top1_precision": 0.9708094692630775,
+    "f05_at_0p5": 0.7161434163850426,
+    "px": 5238005,
+    "ink_share": 0.28405375710790653
+   },
+   "b1": {
+    "auc": 0.945404107655501,
+    "top1_precision": 0.9416762122947689,
+    "f05_at_0p5": 0.7837046294637469,
+    "px": 5238005,
+    "ink_share": 0.28405375710790653
+   },
+   "b2": {
+    "auc": 0.9490102495080123,
+    "top1_precision": 0.9618938526155021,
+    "f05_at_0p5": 0.82180417583208,
+    "px": 5238005,
+    "ink_share": 0.28405375710790653
+   },
+   "c1": {
+    "auc": 0.8949798227402188,
+    "top1_precision": 0.961340206185567,
+    "f05_at_0p5": 0.5874488925872278,
+    "px": 5238005,
+    "ink_share": 0.28405375710790653
+   },
+   "c2": {
+    "auc": 0.8958304666234788,
+    "top1_precision": 0.9815769377625048,
+    "f05_at_0p5": 0.7131392885413029,
+    "px": 5238005,
+    "ink_share": 0.28405375710790653
+   }
+  },
+  "pairs": {
+   "a-b1": {
+    "auc_diff": -0.046426716910997645,
+    "ci95": [
+     -0.06387730802516087,
+     -0.027590089746969037
+    ]
+   },
+   "a-b2": {
+    "auc_diff": -0.050032858763508936,
+    "ci95": [
+     -0.06846918023682126,
+     -0.03474799727338559
+    ]
+   },
+   "a-c1": {
+    "auc_diff": 0.003997568004284524,
+    "ci95": [
+     -0.00163080231882754,
+     0.010093496700862015
+    ]
+   },
+   "a-c2": {
+    "auc_diff": 0.0031469241210245746,
+    "ci95": [
+     -0.0006729642046970879,
+     0.00874321898830644
+    ]
+   },
+   "b1-b2": {
+    "auc_diff": -0.003606141852511291,
+    "ci95": [
+     -0.01004710667051333,
+     -0.0010285479542559786
+    ]
+   },
+   "b1-c1": {
+    "auc_diff": 0.05042428491528217,
+    "ci95": [
+     0.034280193245148395,
+     0.06488526741983469
+    ]
+   },
+   "b1-c2": {
+    "auc_diff": 0.04957364103202222,
+    "ci95": [
+     0.03271878249457332,
+     0.06603570768886828
+    ]
+   },
+   "b2-c1": {
+    "auc_diff": 0.05403042676779346,
+    "ci95": [
+     0.04034250223561321,
+     0.06951765461837837
+    ]
+   },
+   "b2-c2": {
+    "auc_diff": 0.05317978288453351,
+    "ci95": [
+     0.038168335993720576,
+     0.07271935306725075
+    ]
+   },
+   "c1-c2": {
+    "auc_diff": -0.0008506438832599494,
+    "ci95": [
+     -0.005546935548163734,
+     0.0036873604793710626
+    ]
+   }
+  }
+ },
+ "success_rule": "both (b) seeds beat (a) and both (c) seeds by AUC >= 0.02, each paired 95% CI excluding 0",
+ "success": true,
+ "gpu_seconds": {
+  "order_check": 1994,
+  "oom_attempt": 196,
+  "training": {
+   "b1": 1515,
+   "b2": 1545,
+   "c1": 1462,
+   "c2": 1467
+  },
+  "maps_B": {
+   "a": 839,
+   "b1": 830,
+   "b2": 837,
+   "c1": 892,
+   "c2": 834
+  },
+  "total": 12411,
+  "block_test_outside_chain": 87.4,
+  "note": "total = the chain counter (12,411 s, incl. the 196 s oom_attempt); the row-block test (docs/finetune-runs/blocktest.json: 44.0 + 43.4 s at 08:05-08:06) ran outside it, so with it pair 1 used 12,498 s"
+ },
+ "card_peak_mib": {
+  "training": 9731,
+  "maps": 10424
+ },
+ "hardware": "RTX 4070 12 GB, WSL2",
+ "pair_2": {
+  "protocol": "docs/finetune-protocol-2026-11-17.md, Amendment 1: commit cc5b5c7 in our private history (2026-11-17 19:22:30 -05:00; a wording-only follow-up a2deba9 at 19:50:15), available to the judges on request; first pair-2 GPU step 23:56:19 (docs/finetune-runs/pair2_ft_chain.log)",
+  "run": "20261117-192233-47550",
+  "layer_order_on_A2": {
+   "segment": "PHercParis4 w06 / 20231210121321 (train A2), supervision mask",
+   "tiles": 96,
+   "tile_px": 512,
+   "arms": {
+    "rev": {
+     "auc": 0.507220234295179,
+     "top1_precision": 0.3677210217884006,
+     "f05_at_0p5": 0.11087523009613297,
+     "px": 11074717,
+     "ink_share": 0.3108919171478603
+    },
+    "fwd": {
+     "auc": 0.8693571431655384,
+     "top1_precision": 0.9427162812536682,
+     "f05_at_0p5": 0.7225773846581927,
+     "px": 11074717,
+     "ink_share": 0.3108919171478603
+    }
+   },
+   "pairs": {
+    "rev-fwd": {
+     "auc_diff": -0.3621369088703593,
+     "ci95": [
+      -0.40644867661233475,
+      -0.3275953770255011
+     ]
+    }
+   },
+   "verdict": "not-reversed 0.869 vs reversed 0.507; kill rule (< 0.55 in both) not met; stored layers flipped as in pair 1"
+  },
+  "test_B2": {
+   "segment": "PHercParis4 w00 / 20231016151002 (test B2), supervision mask",
+   "tiles": 48,
+   "tile_px": 512,
+   "arms": {
+    "a": {
+     "auc": 0.827668347491976,
+     "top1_precision": 0.9202262498059977,
+     "f05_at_0p5": 0.5969807545632163,
+     "px": 5798902,
+     "ink_share": 0.2302863542098142
+    },
+    "b1": {
+     "auc": 0.9636097789851615,
+     "top1_precision": 0.9950507854938005,
+     "f05_at_0p5": 0.8454171571451895,
+     "px": 5798902,
+     "ink_share": 0.2302863542098142
+    },
+    "b2": {
+     "auc": 0.9690809768234806,
+     "top1_precision": 0.999103278207936,
+     "f05_at_0p5": 0.7634410772476217,
+     "px": 5798902,
+     "ink_share": 0.2302863542098142
+    },
+    "c1": {
+     "auc": 0.8503540262484234,
+     "top1_precision": 0.9403335115280484,
+     "f05_at_0p5": 0.4786801928272862,
+     "px": 5798902,
+     "ink_share": 0.2302863542098142
+    },
+    "c2": {
+     "auc": 0.8299204047711329,
+     "top1_precision": 0.9359188811671179,
+     "f05_at_0p5": 0.5786885184237847,
+     "px": 5798902,
+     "ink_share": 0.2302863542098142
+    }
+   },
+   "pairs": {
+    "a-b1": {
+     "auc_diff": -0.1359414314931855,
+     "ci95": [
+      -0.1484268422076719,
+      -0.09792665673170084
+     ]
+    },
+    "a-b2": {
+     "auc_diff": -0.14141262933150456,
+     "ci95": [
+      -0.15236731393183586,
+      -0.10149652031874251
+     ]
+    },
+    "a-c1": {
+     "auc_diff": -0.022685678756447336,
+     "ci95": [
+      -0.02764572288942391,
+      -0.012579047445951608
+     ]
+    },
+    "a-c2": {
+     "auc_diff": -0.002252057279156894,
+     "ci95": [
+      -0.008123620008208201,
+      0.0027869572684334483
+     ]
+    },
+    "b1-b2": {
+     "auc_diff": -0.005471197838319064,
+     "ci95": [
+      -0.008017315912148723,
+      -0.0026665753919778937
+     ]
+    },
+    "b1-c1": {
+     "auc_diff": 0.11325575273673816,
+     "ci95": [
+      0.07892429404742604,
+      0.12417013308409103
+     ]
+    },
+    "b1-c2": {
+     "auc_diff": 0.1336893742140286,
+     "ci95": [
+      0.09620127896345726,
+      0.1460731588683375
+     ]
+    },
+    "b2-c1": {
+     "auc_diff": 0.11872695057505722,
+     "ci95": [
+      0.08514515076132219,
+      0.12865581806085094
+     ]
+    },
+    "b2-c2": {
+     "auc_diff": 0.13916057205234766,
+     "ci95": [
+      0.09918290339538602,
+      0.15117239941421767
+     ]
+    },
+    "c1-c2": {
+     "auc_diff": 0.020433621477290442,
+     "ci95": [
+      0.010508035801105094,
+      0.025339670444144584
+     ]
+    }
+   }
+  },
+  "success_rule": "both (b) seeds beat (a) and both (c) seeds by AUC >= 0.02, each paired 95% CI excluding 0",
+  "success": true,
+  "rule_checks": [
+   {
+    "cmp": "b1 - a",
+    "auc_diff": 0.1359414314931855,
+    "ci95": [
+     0.09792665673170084,
+     0.1484268422076719
+    ],
+    "margin_ok": true,
+    "ci_ok": true,
+    "pass_": true
+   },
+   {
+    "cmp": "b1 - c1",
+    "auc_diff": 0.11325575273673816,
+    "ci95": [
+     0.07892429404742604,
+     0.12417013308409103
+    ],
+    "margin_ok": true,
+    "ci_ok": true,
+    "pass_": true
+   },
+   {
+    "cmp": "b1 - c2",
+    "auc_diff": 0.1336893742140286,
+    "ci95": [
+     0.09620127896345726,
+     0.1460731588683375
+    ],
+    "margin_ok": true,
+    "ci_ok": true,
+    "pass_": true
+   },
+   {
+    "cmp": "b2 - a",
+    "auc_diff": 0.14141262933150456,
+    "ci95": [
+     0.10149652031874251,
+     0.15236731393183586
+    ],
+    "margin_ok": true,
+    "ci_ok": true,
+    "pass_": true
+   },
+   {
+    "cmp": "b2 - c1",
+    "auc_diff": 0.11872695057505722,
+    "ci95": [
+     0.08514515076132219,
+     0.12865581806085094
+    ],
+    "margin_ok": true,
+    "ci_ok": true,
+    "pass_": true
+   },
+   {
+    "cmp": "b2 - c2",
+    "auc_diff": 0.13916057205234766,
+    "ci95": [
+     0.09918290339538602,
+     0.15117239941421767
+    ],
+    "margin_ok": true,
+    "ci_ok": true,
+    "pass_": true
+   }
+  ],
+  "gpu_seconds": {
+   "orderA_rev": 1846,
+   "orderA_fwd": 1813,
+   "train_b1": 1590,
+   "train_b2": 1575,
+   "train_c1": 1534,
+   "train_c2": 1618,
+   "mapB_a": 962,
+   "mapB_b1": 993,
+   "mapB_b2": 933,
+   "mapB_c1": 1030,
+   "mapB_c2": 938,
+   "total": 14832
+  },
+  "card_peak_mib": {
+   "training": 9747,
+   "maps": 10336
+  },
+  "hardware": "RTX 4070 12 GB, WSL2"
+ }
+}

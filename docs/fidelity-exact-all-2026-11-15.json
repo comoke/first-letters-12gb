@@ -1,0 +1,187 @@
+{
+ "our_dir": "/data/p0306b/fidelity_exact",
+ "claim_box_render_px": [
+  1639,
+  2745,
+  2431,
+  6829
+ ],
+ "maps": {
+  "tr": {
+   "whole": {
+    "n": 28134195,
+    "pearson": 0.9999999999438361,
+    "mean_abs": 7.896723853303782e-10,
+    "max_abs": 0.000732421875,
+    "within_1e3": 1.0,
+    "bit_equal": 0.999998791506208
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 1.0,
+    "mean_abs": 0.0,
+    "max_abs": 0.0,
+    "within_1e3": 1.0,
+    "bit_equal": 1.0
+   },
+   "files": [
+    "/data/p0306b/fidelity_exact/fwd_tr.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_trace_v3B.npy"
+   ]
+  },
+  "s0": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.9999998821366322,
+    "mean_abs": 5.344578240455455e-05,
+    "max_abs": 0.0007354617118835449,
+    "within_1e3": 1.0,
+    "bit_equal": 0.00011185675824801001
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9999999066604931,
+    "mean_abs": 7.003399836466394e-05,
+    "max_abs": 0.0006046891212463379,
+    "within_1e3": 1.0,
+    "bit_equal": 0.00012047231727063181
+   },
+   "files": [
+    "/data/p0306b/fidelity_exact/fwd_hn4_s0.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_hn4_s0.npy"
+   ]
+  },
+  "s1": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.9999998823673193,
+    "mean_abs": 5.060834894686077e-05,
+    "max_abs": 0.0008032917976379395,
+    "within_1e3": 1.0,
+    "bit_equal": 0.0001098223384812388
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9999999158635074,
+    "mean_abs": 6.616175352233512e-05,
+    "max_abs": 0.0006664395332336426,
+    "within_1e3": 1.0,
+    "bit_equal": 0.00011409920833651989
+   },
+   "files": [
+    "/data/p0306b/fidelity_exact/fwd_hn4_s1.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_hn4_s1.npy"
+   ]
+  },
+  "s2": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.9999998764770189,
+    "mean_abs": 5.5574166361164014e-05,
+    "max_abs": 0.0006940364837646484,
+    "within_1e3": 1.0,
+    "bit_equal": 0.00011647053164765186
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.999999900569113,
+    "mean_abs": 7.17226839384336e-05,
+    "max_abs": 0.0006940364837646484,
+    "within_1e3": 1.0,
+    "bit_equal": 0.00012026673311146691
+   },
+   "files": [
+    "/data/p0306b/fidelity_exact/fwd_hn4_s2.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_hn4_s2.npy"
+   ]
+  },
+  "decoy": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.9999996945533306,
+    "mean_abs": 7.395969898544704e-05,
+    "max_abs": 0.001019209623336792,
+    "within_1e3": 0.9999999273421512,
+    "bit_equal": 0.00012126594966932686
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9999997488105851,
+    "mean_abs": 8.851259607626491e-05,
+    "max_abs": 0.00047707557678222656,
+    "within_1e3": 1.0,
+    "bit_equal": 0.00012910685195555765
+   },
+   "files": [
+    "/data/p0306b/fidelity_exact/fwd_hn4_decoy.npy",
+    "/data/winner/hf-data/results/member_maps/fwd_hn4_decoy.npy"
+   ]
+  },
+  "ensA": {
+   "whole": {
+    "n": 27526276,
+    "pearson": 0.999999850206262,
+    "mean_abs": 2.7973025668189052e-05,
+    "max_abs": 0.00048828125,
+    "within_1e3": 1.0,
+    "bit_equal": 0.8361823081335085
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9999998823034748,
+    "mean_abs": 3.5549370880029204e-05,
+    "max_abs": 0.00048828125,
+    "within_1e3": 1.0,
+    "bit_equal": 0.841662164373581
+   },
+   "files": [
+    "/data/p0306b/fidelity_exact/fused/fwd_ensA.npy",
+    "/data/winner/hf-data/results/fused/fwd_ensA.npy"
+   ]
+  },
+  "prod": {
+   "whole": {
+    "n": 27520437,
+    "pearson": 0.9999999330571162,
+    "mean_abs": 6.741187426971459e-06,
+    "max_abs": 0.00048828125,
+    "within_1e3": 1.0,
+    "bit_equal": 0.8588136518326362
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.999999941420833,
+    "mean_abs": 1.0839284883316148e-05,
+    "max_abs": 0.00048828125,
+    "within_1e3": 1.0,
+    "bit_equal": 0.8615783353768399
+   },
+   "files": [
+    "/data/p0306b/fidelity_exact/fused/fwd_prod.npy",
+    "/data/winner/hf-data/results/fused/fwd_prod.npy"
+   ]
+  },
+  "prodd": {
+   "whole": {
+    "n": 27520437,
+    "pearson": 0.9999997730597189,
+    "mean_abs": 1.714618923847536e-05,
+    "max_abs": 0.00048828125,
+    "within_1e3": 1.0,
+    "bit_equal": 0.703361650834251
+   },
+   "claim_box": {
+    "n": 4864188,
+    "pearson": 0.9999998097188787,
+    "mean_abs": 2.5970910782668147e-05,
+    "max_abs": 0.00048828125,
+    "within_1e3": 1.0,
+    "bit_equal": 0.713827878363254
+   },
+   "files": [
+    "/data/p0306b/fidelity_exact/fused/fwd_prodd.npy",
+    "/data/winner/hf-data/results/fused/fwd_prodd.npy"
+   ]
+  }
+ }
+}
