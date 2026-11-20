@@ -178,6 +178,7 @@ These runs use the winner's image, the shipped claim-surface render (41 × 4900 
 - **Two seeds per arm.**
 - **One labelling process:** the training and test segments' labels come from the same model-in-the-loop labelling, so part of the gain may be agreement with that labeller rather than with the ink. With no hand-labelled Scroll 1 segment, this can't be separated.
 - **Retention not measured:** we did not check how well the fine-tuned models still read PHerc. 0306B.
+- **Stroke width follows the labels:** part of a stroke's width in any ink map comes from how thick its training labels were drawn, and our scores compare pixels with labels, so they inherit that thickness. For scale, Yohann reports that Reader v3 paints strokes about 1.3× wider than the ink in infrared photos on PHerc. 343P and 500P2 (author-reported, Vesuvius Challenge Discord, #general, November 2026). We did not measure stroke width.
 
 It is a demonstration that the 12 GB recipe adapts the winner's model to new labels, not a result about Scroll 1.
 
