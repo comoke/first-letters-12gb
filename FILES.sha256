@@ -1,8 +1,8 @@
 d8e0baced6d4c29f5711879425ad3297a5e4dd13f2f89607943b3252010e7831 *./CLAIMS.md
-ccd2153b2b054b8090f0e480be296bb29a6af3f372030836ed0a6f162e8a0fa2 *./CREDITS.md
+716009c82d8516c8238fbe2ccb6824df0cb1688de27d7603dc91612feacb884f *./CREDITS.md
 2fd3faa826331279961129b7333d6bb21dbc6afaf27676c2785e010926239ff8 *./LICENSE
 41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0 *./LICENSE-DATA
-5bc56b9d85021ad52f210c11fe89ba8fb7bbdc3bd3efb95b94a2edc8f4b05973 *./README.md
+c1cc2c445779ab466af9573cc0c9da0dab092f23c10801023fc80fcfb2d79a44 *./README.md
 6705f2499aa873705201294a5abcb4ae83095b30f80ba759fd504001b75bc0ea *./apple-silicon.md
 af10867350081570e40fa03f537ed28260a98a110ef614578d2f05487bddf71b *./docs/apple-silicon/README.md
 cbf9b8f9ad42de4a16e37db5664a772e88715343196651a753681bb52d8e03d4 *./docs/apple-silicon/compare/decoy.json
@@ -43,7 +43,7 @@ e381debc789572321cad4e1e33ef8a39b046d0de98ece8b1c9c95885ee87d775 *./docs/apple-s
 13625e293c64f1d4787277a0eeafab1c7e60a02c8e92f93de47fcd7222979c59 *./docs/apple-silicon/speedup_check/s0fast_full.log
 64448350523fd5d47bf57a4e9b097b6185296b70832d13756d518435854a3955 *./docs/apple-silicon/speedup_check/s0fast_part1_compare.json
 23eda49ff6d26ff3b81ee6e7fa666ef0a899b99b10325ce1356d3e067e698fc1 *./docs/b0-baseline-2026-11-15.md
-ce89b2363c01ea8aca9cd327886c24a9cf114b0be7e5d6c5d9212e5013fd5b69 *./docs/details.md
+f1eb6eb725bb08bc86380cfdc7b7c35ebf90bea18ae00439ab9e3910537f329b *./docs/details.md
 2a6250de997ceb7fc231d80ed511ed7f4c6e8101ee8dfea99a44772f4352e125 *./docs/fidelity-2026-11-13.md
 d0f5c6d77e664c9dd0dd7e85c3bdb7254dba62c6e8211ff587852ec1c9bb594a *./docs/fidelity-exact-all-2026-11-15.json
 b59c98ddf9c20c31bb3c587da08631e735822eb27e7f9e27a38c7c12ccd71194 *./docs/fidelity-exact-all-2026-11-15.md
@@ -66,6 +66,8 @@ c3f5f6705a42e3f49e402456acc9184e97f7e7d54b6555f1ade91c8f44303c01 *./docs/finetun
 a370c3aad56421ddad525c993e307e3a22e3b6d9d7dd07924094326c15ba4c15 *./docs/finetune-runs/pair2_ft_chain.log
 ea6c8c7191a7aaedcc294c6c462a5e533e5450e2bf6c44835a02c28c2e91dcd3 *./docs/finetune-runs/pair2_order_A.json
 749fb0a0230b3bfeefa1fe0aaffc60f6739266570cad815b90f30eb2a3481089 *./docs/finetune-runs/pair2_score_B.json
+eaf56010dbc895d3d74b51ab3b0939376083a992650d4d53ebc4dcbed2b8a1b2 *./docs/img/scroll1-pair1-w09-before-after.png
+2e9ac19e557ea05d218b5e11c5fb6d6e6edaa975722d90622d06613b5ebbe2d6 *./docs/img/scroll1-pair2-w00-before-after.png
 d0dc3dcd549fe40a11aae87000382fa186881c84bfa4cd72b11b5fef120fb373 *./docs/img/stage9-claimbox-strip-shipped-vs-ours.png
 450c6afabc7950d323fcfed29b7afef2d7cf9392cbba34c782398ddccdd8f9ac *./docs/img/stage9-header-shipped-vs-ours.png
 563feda49cf446460e7b960961877d1d0d0fe7790f79f7f33ab6f9752635ec8e *./docs/logs/anchors/anchors_rebuild.log

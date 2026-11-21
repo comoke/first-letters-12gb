@@ -260,7 +260,7 @@ Every deviation from the protocol is small, and none touches the arms, data spli
 
 ### Images and data
 
-This repository publishes metrics only for Scroll 1. The Scroll 1 data terms forbid publishing ink-label images, or text revealed from them, without the Vesuvius Challenge's written consent. So no Scroll 1 map, label or image is included, and no data is redistributed. The data is CC BY-NC 4.0, Vesuvius Challenge open data, and is credited in [`CREDITS.md`](../CREDITS.md). Data used in the preparation of this work were obtained from the EduceLab-Scrolls dataset (Parsons et al., "EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT", arXiv:2304.02084, 2023).
+For Scroll 1 this repository publishes the metrics and two before/after crops from the held-out test segments, shown in the [README](../README.md#fine-tuning-on-new-labels). The crops are published with the organisers' written consent (Paul, Vesuvius Challenge, 2026-11-20). The Scroll 1 data terms forbid publishing ink-label images, or text revealed from them, without that consent. So no other Scroll 1 map, label or image is included, and no data is redistributed. The data is CC BY-NC 4.0, Vesuvius Challenge open data, and is credited in [`CREDITS.md`](../CREDITS.md). Data used in the preparation of this work were obtained from the EduceLab-Scrolls dataset (Parsons et al., "EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT", arXiv:2304.02084, 2023).
 
 ### Running the demo
 

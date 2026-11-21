@@ -56,9 +56,19 @@ Details: [verification](docs/details.md#verification), [inference on 12 GB](docs
 
 The question was whether the winner's A-hn model, retrained with this 12 GB recipe, can learn from a new scroll's labels and improve on papyrus it never saw. I wrote the protocol before the first GPU run and tested it on two train/test pairs of Scroll 1 segments. Each pair compares the shipped model zero-shot, the model trained further with the new labels, and the same training without them, with two seeds for each trained arm. The new labels raised test AUC by +0.046 / +0.050 on pair 1 and +0.136 / +0.141 on pair 2 over zero-shot, and beat the no-label controls in every comparison, with every paired 95% interval excluding 0.
 
+![Pair 1 before and after, on held-out test segment w09](docs/img/scroll1-pair1-w09-before-after.png)
+
+*Pair 1, held-out test segment w09, trained on w03. From left: CT layer 12, the pseudo-labels, the shipped model zero-shot (a), a 300-step control trained without Scroll 1 labels (c2), and the model fine-tuned with w03's labels (b2).*
+
+![Pair 2 before and after, on held-out test segment w00](docs/img/scroll1-pair2-w00-before-after.png)
+
+*Pair 2, held-out test segment w00, trained on w06: the same panels, with control c1 and the model fine-tuned with w06's labels (b2).*
+
+Each crop is the 768 × 768 px window of the test segment with the most labelled ink, among windows at least 30% inside its supervision mask. Black areas in the map panels lie outside the supervision mask the scores are computed in.
+
 It is a demonstration that the recipe adapts the model to new labels, not a result about Scroll 1. The labels are pseudo-labels from one model-in-the-loop process, so part of the gain may be agreement with that labeller rather than with the ink. The full limits, results, deviations and the commands to run it on your own segment are in [the demo section of the details](docs/details.md#demo-fine-tuning-on-new-labels-from-scroll-1).
 
-This repository publishes metrics only for Scroll 1. Its data terms forbid publishing ink-label images, or text revealed from them, without the Vesuvius Challenge's written consent, so no Scroll 1 map, label or image is included.
+The two crops above are published with the organisers' written consent (Paul, Vesuvius Challenge, 2026-11-20). Scroll 1's data terms forbid publishing ink-label images, or text revealed from them, without that consent, so no other Scroll 1 map, label or image is included. Scroll 1 data comes from the EduceLab-Scrolls dataset (Parsons et al., arXiv:2304.02084, 2023); the full citation is in [`CREDITS.md`](CREDITS.md).
 
 ## Apple Silicon
 
