@@ -141,7 +141,7 @@ I redrew the claim image with the winner's `final` mode, on the CPU, from my end
 | mean abs difference | 0.40 / 255 |
 | byte-identical | no (retrained weights cannot be) |
 
-11 of the 20 image variants are byte-identical. 4 more, which use my TRACE map but no retrained member, differ by at most 1 / 255. The variant most exposed to the retrain, the A-hn mean alone, differs by more than 8 / 255 on 3.3% of pixels. There is a side-by-side strip of the claim box in [`img/stage9-claimbox-strip-shipped-vs-ours.png`](img/stage9-claimbox-strip-shipped-vs-ours.png), and one of the caption digit in [`img/stage9-header-shipped-vs-ours.png`](img/stage9-header-shipped-vs-ours.png).
+11 of the 20 image variants are byte-identical. 4 more, which use my TRACE map but no retrained member, differ by at most 1 / 255. The variant most exposed to the retrain, the A-hn mean alone, differs by more than 8 / 255 on 3.3% of pixels.
 
 Sources: [`train-e2e-stage9-2026-11-16.md`](train-e2e-stage9-2026-11-16.md), [`pc/train_e2e/stage9.sh`](../pc/train_e2e/stage9.sh) and `docs/logs/stage9/shipped.log`.
 
@@ -286,7 +286,7 @@ Every deviation from the protocol is small, and none touches the arms, data spli
 
 ### Images and data
 
-For Scroll 1 this repository publishes the metrics and two before/after crops from the held-out test segments, shown in the [README](../README.md#fine-tuning-on-new-labels). The crops are published with the organisers' written consent (Paul, Vesuvius Challenge, 2026-11-20). The Scroll 1 data terms forbid publishing ink-label images, or text revealed from them, without that consent. So no other Scroll 1 map, label or image is included, and no data is redistributed. The data is CC BY-NC 4.0, Vesuvius Challenge open data, and is credited in [`CREDITS.md`](../CREDITS.md). Data used in the preparation of this work were obtained from the EduceLab-Scrolls dataset (Parsons et al., "EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT", arXiv:2304.02084, 2023).
+For Scroll 1 this repository publishes the metrics and two before/after crops from the held-out test segments, shown below. The [README](../README.md#fine-tuning-on-new-labels) shows two panels cut from the first. The crops are published with the organisers' written consent (Paul, Vesuvius Challenge, 2026-11-20). The Scroll 1 data terms forbid publishing ink-label images, or text revealed from them, without that consent. So no other Scroll 1 map, label or image is included, and no data is redistributed. The data is CC BY-NC 4.0, Vesuvius Challenge open data, and is credited in [`CREDITS.md`](../CREDITS.md). Data used in the preparation of this work were obtained from the EduceLab-Scrolls dataset (Parsons et al., "EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT", arXiv:2304.02084, 2023).
 
 
 ![Pair 1 before and after, on held-out test segment w09](img/scroll1-pair1-w09-before-after.png)
