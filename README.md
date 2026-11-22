@@ -2,9 +2,13 @@
 
 The model that won PHerc. 0306B First Letters (SirProdigle / Liam Warner and Nicola Bodill, [`pherc0306b-first-letters`](https://github.com/SirProdigle/pherc0306b-first-letters)) comes with a guide that says retraining "needs one GPU with 24 GB or more" and marks its training mode "not run end to end". I ran that training end to end on one RTX 4070 with 12 GB and 16 GB of RAM, with the winner's own Docker image, code, weights and data, and compared every stage with their shipped files. The retrained members match the shipped maps more closely than the winner's own seeds match each other. I then fine-tuned the model on new labels from Scroll 1 in a pre-registered demo, at about 25 minutes a training run, and ran the same inference on a Mac.
 
-![The claim box from the winner's shipped claim image and from mine](docs/img/stage9-claimbox-strip-shipped-vs-ours.png)
+![The winners' claim image, cut to its claim box](docs/img/claim-box-winners.png)
 
-*The claim box of the lead claim image: the winner's shipped image beside the one I redrew from my retrained maps. Across the whole lead claim image, 0.042% of pixels differ by more than 8/255.*
+*The winners' claim image*
+
+![My claim image, cut to the same window](docs/img/claim-box-mine.png)
+
+*Mine, retrained end to end on one 12 GB RTX 4070*
 
 Contents: [Results](#results) · [Reproduce it](#reproduce-it) · [The retrain](#the-retrain) · [How close it gets](#how-close-it-gets) · [Fine-tuning on new labels](#fine-tuning-on-new-labels) · [Apple Silicon](#apple-silicon) · [Licence and credits](#licence-and-credits)
 
@@ -56,13 +60,9 @@ Details: [verification](docs/details.md#verification), [inference on 12 GB](docs
 
 The question was whether the winner's A-hn model, retrained with this 12 GB recipe, can learn from a new scroll's labels and improve on papyrus it never saw. I wrote the protocol before the first GPU run and tested it on two train/test pairs of Scroll 1 segments. Each pair compares the shipped model zero-shot, the model trained further with the new labels, and the same training without them, with two seeds for each trained arm. The new labels raised test AUC by +0.046 / +0.050 on pair 1 and +0.136 / +0.141 on pair 2 over zero-shot, and beat the no-label controls in every comparison, with every paired 95% interval excluding 0.
 
-![Pair 1 before and after, on held-out test segment w09](docs/img/scroll1-pair1-w09-before-after.png)
+![Pair 1, held-out test segment w09: the shipped model zero-shot and the fine-tuned model](docs/img/scroll1-pair1-w09-a-vs-b2.png)
 
-*Pair 1, held-out test segment w09, trained on w03. From left: CT layer 12, the pseudo-labels, the shipped model zero-shot (a), a 300-step control trained without Scroll 1 labels (c2), and the model fine-tuned with w03's labels (b2).*
-
-![Pair 2 before and after, on held-out test segment w00](docs/img/scroll1-pair2-w00-before-after.png)
-
-*Pair 2, held-out test segment w00, trained on w06: the same panels, with control c1 and the model fine-tuned with w06's labels (b2).*
+*Scroll 1, pair 1, held-out test segment w09, trained on w03. Left: the shipped model zero-shot (a). Right: the model fine-tuned with w03's labels (b2). The full figures for both pairs are in [the details](docs/details.md#images-and-data).*
 
 Each crop is the 768 × 768 px window of the test segment with the most labelled ink, among windows at least 30% inside its supervision mask. Black areas in the map panels lie outside the supervision mask the scores are computed in.
 

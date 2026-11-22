@@ -288,6 +288,15 @@ Every deviation from the protocol is small, and none touches the arms, data spli
 
 For Scroll 1 this repository publishes the metrics and two before/after crops from the held-out test segments, shown in the [README](../README.md#fine-tuning-on-new-labels). The crops are published with the organisers' written consent (Paul, Vesuvius Challenge, 2026-11-20). The Scroll 1 data terms forbid publishing ink-label images, or text revealed from them, without that consent. So no other Scroll 1 map, label or image is included, and no data is redistributed. The data is CC BY-NC 4.0, Vesuvius Challenge open data, and is credited in [`CREDITS.md`](../CREDITS.md). Data used in the preparation of this work were obtained from the EduceLab-Scrolls dataset (Parsons et al., "EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT", arXiv:2304.02084, 2023).
 
+
+![Pair 1 before and after, on held-out test segment w09](img/scroll1-pair1-w09-before-after.png)
+
+*Pair 1, held-out test segment w09, trained on w03. From left: CT layer 12, the pseudo-labels, the shipped model zero-shot (a), a 300-step control trained without Scroll 1 labels (c2), and the model fine-tuned with w03's labels (b2).*
+
+![Pair 2 before and after, on held-out test segment w00](img/scroll1-pair2-w00-before-after.png)
+
+*Pair 2, held-out test segment w00, trained on w06: the same panels, with control c1 and the model fine-tuned with w06's labels (b2).*
+
 ### Running the demo
 
 Start after steps 0 and 1 of [How to run it](#how-to-run-it), the data directory, the download and the image load. Each command runs for minutes to hours, so run it detached, for example in `tmux`. The data chain needs 40 GB free on the data drive, which is its floor. It reads about 1.3–2.7 GB per segment from the public buckets and takes 2.4–4.6 GB on disk for each.

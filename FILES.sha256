@@ -2,7 +2,7 @@
 690dc94b2dd966da5e446368df99e63ca7ee93c38cbdff508597e7a46f393da1 *./CREDITS.md
 2fd3faa826331279961129b7333d6bb21dbc6afaf27676c2785e010926239ff8 *./LICENSE
 41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0 *./LICENSE-DATA
-820463f9bc20dd68f8eabce8cfb55bc50405b05d91d40be76099a604c8866aa9 *./README.md
+bdc3383861f293ae776e60884968a3af1bcf27147624a7c07db65a0035aed1c6 *./README.md
 d2e3f1e74b7bd83b2b3988d499c72f8f0be8373064f556a3ec5ce0f77e463d5f *./apple-silicon.md
 4606565d1a1251696c5440e24856fb0f35596c30abc76169868356c14f5f4ad4 *./docs/4070-fused-ahn/README.md
 4b047f3813435141ea0805a888b65bf2dc14c2545d71d809ec59378e3e1b549c *./docs/4070-fused-ahn/ahn_b0_cufuse.log
@@ -75,7 +75,7 @@ e381debc789572321cad4e1e33ef8a39b046d0de98ece8b1c9c95885ee87d775 *./docs/apple-s
 1b6b461c8baed67e248c356875c419fff43cd08aaa6c90c5cbe02e37c3fe2a47 *./docs/apple-silicon/unpack_test_m5.log
 021c19a68a50601ecf1027b9bf54d9f758e6600faded5f7103436bb19929af96 *./docs/apple-silicon/unpack_test_m5.sh
 23eda49ff6d26ff3b81ee6e7fa666ef0a899b99b10325ce1356d3e067e698fc1 *./docs/b0-baseline-2026-11-15.md
-07da250ec4442359fb2a383e37e43594bec106326b93fa4b9c090d46151a161f *./docs/details.md
+46d8f0f1a575c7c431a38648bda4d98e999ceae2a928e21668cd7c527a7640b7 *./docs/details.md
 2a6250de997ceb7fc231d80ed511ed7f4c6e8101ee8dfea99a44772f4352e125 *./docs/fidelity-2026-11-13.md
 d0f5c6d77e664c9dd0dd7e85c3bdb7254dba62c6e8211ff587852ec1c9bb594a *./docs/fidelity-exact-all-2026-11-15.json
 b59c98ddf9c20c31bb3c587da08631e735822eb27e7f9e27a38c7c12ccd71194 *./docs/fidelity-exact-all-2026-11-15.md
@@ -98,6 +98,9 @@ c3f5f6705a42e3f49e402456acc9184e97f7e7d54b6555f1ade91c8f44303c01 *./docs/finetun
 a370c3aad56421ddad525c993e307e3a22e3b6d9d7dd07924094326c15ba4c15 *./docs/finetune-runs/pair2_ft_chain.log
 ea6c8c7191a7aaedcc294c6c462a5e533e5450e2bf6c44835a02c28c2e91dcd3 *./docs/finetune-runs/pair2_order_A.json
 749fb0a0230b3bfeefa1fe0aaffc60f6739266570cad815b90f30eb2a3481089 *./docs/finetune-runs/pair2_score_B.json
+2d11f3ee320552cb47211c12b543e23c868e08675be4668633c33fe873bc5387 *./docs/img/claim-box-mine.png
+c2a24eea538fadd3682f188e016e3266e25b6b6325dec1ed87932618deeee35b *./docs/img/claim-box-winners.png
+22c036d08b7cc04ef6e33826f8c91fd764db4039abd34f8b089dc7ea691332fa *./docs/img/scroll1-pair1-w09-a-vs-b2.png
 eaf56010dbc895d3d74b51ab3b0939376083a992650d4d53ebc4dcbed2b8a1b2 *./docs/img/scroll1-pair1-w09-before-after.png
 2e9ac19e557ea05d218b5e11c5fb6d6e6edaa975722d90622d06613b5ebbe2d6 *./docs/img/scroll1-pair2-w00-before-after.png
 d0dc3dcd549fe40a11aae87000382fa186881c84bfa4cd72b11b5fef120fb373 *./docs/img/stage9-claimbox-strip-shipped-vs-ours.png
