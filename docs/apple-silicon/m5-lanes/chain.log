@@ -1,0 +1,8 @@
+== s0 start 05:14:19
+== s0 end rc=0 05:32:35 {"rc": 0, "wall_s": 1094.3, "mps_driver_peak_gb": 1.97, "max_rss_gb": 1.44}
+== decoy start 05:32:58
+== decoy end rc=0 05:51:03 {"rc": 0, "wall_s": 1083.6, "mps_driver_peak_gb": 1.97, "max_rss_gb": 1.43}
+== s1 start 05:51:26
+== s1 end rc=0 06:09:28 {"rc": 0, "wall_s": 1082.4, "mps_driver_peak_gb": 1.97, "max_rss_gb": 1.44}
+== s2 start 06:09:51
+== s2 end rc=0 06:27:54 {"rc": 0, "wall_s": 1081.8, "mps_driver_peak_gb": 1.97, "max_rss_gb": 1.43}

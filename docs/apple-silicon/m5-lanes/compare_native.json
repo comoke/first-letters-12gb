@@ -1,0 +1,38 @@
+{
+ "what": "Mac two-lane A-hn maps (ROI frame 1399 x 5600, render rows 1516-2914, cols 2038-7637) against the 4070's native maps (b0/runs/native/fwd_hn4_*.npy, sha256 as in that run's fuse.json); pixels finite in both",
+ "script": "compare_native.py (s0 run on the PC from D:, s1/s2/decoy from copies of the same 4070 maps with matching sha256)",
+ "members": {
+  "s0": {
+   "px": 7749169,
+   "nan_mismatch": 0,
+   "pearson": 0.9999969346502469,
+   "max_abs": 0.006443321704864502,
+   "same_8bit": 0.9194672357771524,
+   "minutes_last_session": 18.17
+  },
+  "s1": {
+   "px": 7749169,
+   "nan_mismatch": 0,
+   "pearson": 0.9999959388576973,
+   "max_abs": 0.0073220133781433105,
+   "same_8bit": 0.9157797436086372,
+   "minutes_last_session": 17.99
+  },
+  "s2": {
+   "px": 7749169,
+   "nan_mismatch": 0,
+   "pearson": 0.9999967472573491,
+   "max_abs": 0.0071929097175598145,
+   "same_8bit": 0.9122934343024394,
+   "minutes_last_session": 17.98
+  },
+  "decoy": {
+   "px": 7749169,
+   "nan_mismatch": 0,
+   "pearson": 0.999994279169163,
+   "max_abs": 0.004008173942565918,
+   "same_8bit": 0.9044617558347224,
+   "minutes_last_session": 18.01
+  }
+ }
+}

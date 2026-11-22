@@ -1,0 +1,32 @@
+== download 14:34:26
+~/Workspace/vesuvius-data-mac/.native-test/docker/fl-claim-a7_final.tar.zst
+total 12926848
+drwxr-xr-x@ 3 user  staff          96 Nov 22 09:35 .
+drwxr-xr-x  6 user  staff         192 Nov 22 09:34 ..
+-rw-r--r--@ 1 user  staff  6618543741 Nov 22 09:35 fl-claim-a7_final.tar.zst
+unpacked_bytes 12031608832
+== unpack 14:36:00
+unpack: done ~/Workspace/vesuvius-data-mac/.native-test/md
+unpack: done (~/Workspace/vesuvius-data-mac/.native-test/md/code, ~/Workspace/vesuvius-data-mac/.native-test/md/fl)
+== compare 14:36:11
+Only in ~/Workspace/vesuvius-data-mac/code: code.tgz
+Only in ~/Workspace/vesuvius-data-mac/code/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/aclick: p306
+Only in ~/Workspace/vesuvius-data-mac/code/opt/fl: third_party
+Only in ~/Workspace/vesuvius-data-mac/.native-test/md/code/opt/fl/x_deepread/results/b1/out/patchW074: fwd_hec.npy
+Only in ~/Workspace/vesuvius-data-mac/.native-test/md/code/opt/fl/x_deepread/results/b1/out/patchW074: fwd_rv2.npy
+Only in ~/Workspace/vesuvius-data-mac/.native-test/md/code/opt/fl/x_deepread/results/b1/out/patchW074: fwd_tr.npy
+Only in ~/Workspace/vesuvius-data-mac/.native-test/md/fl/third_party/v8in/finalist: hn4_s0.safetensors
+Only in ~/Workspace/vesuvius-data-mac/.native-test/md/fl/third_party/v8in/finalist: hn4_s1.safetensors
+Only in ~/Workspace/vesuvius-data-mac/.native-test/md/fl/third_party/v8in/finalist: hn4_s2.safetensors
+Only in ~/Workspace/vesuvius-data-mac/fl/third_party/v8in/ink8um: __pycache__
+Only in ~/Workspace/vesuvius-data-mac/.native-test/md/fl/third_party/v8in: v8Q_final.safetensors
+differences: code        6, v8in 0, trace        0
+3b94548d7f9ba9f99bc4b0ad8cafcec6d42585c06304e1bd11e47b5d0f88c4cd  ~/Workspace/vesuvius-data-mac/.native-test/md/fl/third_party/v8in/model.safetensors
+197M	~/Workspace/vesuvius-data-mac/.native-test/md/code
+1.8G	~/Workspace/vesuvius-data-mac/.native-test/md/fl
+6.2G	~/Workspace/vesuvius-data-mac/.native-test/docker
+total 12926848
+drwxr-xr-x@ 3 user  staff          96 Nov 22 09:35 .
+drwxr-xr-x  6 user  staff         192 Nov 22 09:34 ..
+-rw-r--r--@ 1 user  staff  6618543741 Nov 22 09:35 fl-claim-a7_final.tar.zst
+NATIVE_DONE rc=0

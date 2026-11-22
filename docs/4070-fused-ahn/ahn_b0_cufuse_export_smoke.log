@@ -1,0 +1,14 @@
+2026-11-22 13:53:32 start ahn_b0_cufuse_export_smoke: bash -c set -e; cd /code; python ahn_fast.py --zarr /data/winner/hf-data/results/claim_surface_render_41layers.zarr --outdir /scratch/b0_cufuse_export_smoke/native --roi 1516 2915 2038 7638 --grid-origin 115 694 --clip --variant cufuse --batch 4 --members hn4_s0 
+Loading weights from local directory
+infer: /data/winner/hf-model/checkpoints/hn4_s0_final/model.safetensors alpha 1.0  fwd_hn4_s0.npy: 16896 tiles x tta 1 in 7 parts
+  part 1/7: 2640 tiles 81 s (33 fwd/s)
+  part 2/7: 2640 tiles 81 s (33 fwd/s)
+  part 3/7: 2640 tiles 81 s (33 fwd/s)
+  part 4/7: 2640 tiles 81 s (33 fwd/s)
+  part 5/7: 2640 tiles 81 s (33 fwd/s)
+  part 6/7: 2640 tiles 81 s (33 fwd/s)
+  part 7/7: 1056 tiles 32 s (33 fwd/s)
+wrote /scratch/b0_cufuse_export_smoke/native/fwd_hn4_s0.npy (1399, 5600)
+hn4_s0: {'wall_s': 570.6, 'tiles': 16896, 'tiles_per_s': 29.61, 'peak_alloc_gb': 2.64}
+AHN_FAST_DONE {"variant": "cufuse", "batch": 4, "cudnn_benchmark": false, "torch": "2.14.1+cu130", "gpu": "NVIDIA GeForce RTX 4070", "members": {"hn4_s0": {"wall_s": 570.6, "tiles": 16896, "tiles_per_s": 29.61, "peak_alloc_gb": 2.64}}, "total_wall_s": 571.1}
+2026-11-22 14:03:17 O4070_DONE ahn_b0_cufuse_export_smoke rc=0 oom=false 579s

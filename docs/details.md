@@ -8,7 +8,7 @@ Contents: [How to run it](#how-to-run-it) · [The retrain](#the-retrain-scope-co
 
 I tested this on one RTX 4070 12 GB with 16 GB of RAM, on Windows 11 with WSL2 Ubuntu and Docker Desktop with GPU support. I used the native Linux `docker` CLI inside WSL, with a pagefile that can grow. Native Linux is untested, and there the host guard does nothing.
 
-You need an NVIDIA GPU with 12 GB and Docker with GPU support, with `nvidia-smi` working. You also need `git`, `uv` for the Hugging Face downloads and the image load, `tmux` for detached runs, and `python3` on the host, which the fine-tune chain uses to read its scores. The Mac recipe also needs `zstd`, and Docker on some machine to copy the code out of the image.
+You need an NVIDIA GPU with 12 GB and Docker with GPU support, with `nvidia-smi` working. You also need `git`, `uv` for the Hugging Face downloads and the image load, `tmux` for detached runs, and `python3` on the host, which the fine-tune chain uses to read its scores. The Mac recipe also needs `zstd` and a `python3` on the PATH to unpack the winner's image archive; Docker isn't needed (see `apple-silicon.md`).
 
 The settings live in `pc/env.sh`. `VESUVIUS_DATA` is the data directory, and its default is my machine's path, `/mnt/d/Workspace/vesuvius-data`. `DOCKER` is the docker CLI, which defaults to `/usr/bin/docker` when present and to `docker` on PATH otherwise. `NVIDIA_SMI` is found on PATH or at the WSL path. The scripts find each other from their own location, so the repository can live anywhere.
 
@@ -35,6 +35,8 @@ Some files changed after that test, in this release. They are the documentation 
 - In `pc/env.sh`, with no docker installed, the docker variable now falls back to `docker`. A step that needs it then fails with "command not found" instead of the script exiting silently. With docker present, which the tested stages need, nothing changes.
 - `pc/finetune/ft_chain.sh`, `data_chain.sh` and `labels_chain.sh` have the resume fix and the portability fixes described in the demo section.
 - `mac/fuse_compare.py` skips the comparison when the 4070's reference maps are absent.
+- New for the M5 Pro Core ML path: `mac/ahn_fold.py`, `ahn_coreml.py`, `ahn_lanes.py`, `ahn_engine.m`, `ahn_bench.py` and `ahn_fold_check.py`; `mac/run_ahn.py` gains `--backend fold|coreml|lanes`; `mac/requirements.txt` adds `coremltools`; `mac/fetch_winner.sh` gains `unpack` (no Docker).
+- New for the 4070's optional fused A-hn forward: `pc/opt4070/` (`ahn_variants.py`, `ahn_fast.py`, `ahn_gate.py`, `ahn_bench.py`, `ahn_cpu_check.py`, `ahn_fold.py`, a copy of `mac/ahn_fold.py` for the bench's 2-D variant, and the job scripts `job_ahn_b0.sh`, `job_ahnbench.sh` and `dk_job.sh`).
 - Only comments changed in `pc/b0/b0_make.py`, `pc/b0/b0_chain.sh`, `pc/retrain/retrain_chain.sh` and `docs/logs/fresh-clone/fresh_clone_test.sh`.
 
 ### Windows/WSL memory
@@ -160,6 +162,30 @@ These runs use the winner's image, the shipped claim-surface render of 41 × 490
 The differences are at the float16 storage step of the shipped maps, and only 2 decoy pixels exceed 1e-3. I made the depth-shuffle maps with the winner's shuffle recipe, with the claim-box ROI and `clip_to_roi` off, on a shuffled render built by their own script. The winner ships no shuffled decoy map. On the 4070, whole-render times are 12–14 min for TRACE and 53–63 min per A-hn member, and the whole card peaked at 10,180 MiB with the desktop included.
 
 Sources: [`fidelity-exact-all-2026-11-15.md`](fidelity-exact-all-2026-11-15.md) and its JSON; `pc/train_e2e/shuf_vs_shipped.py` and `docs/train-e2e-compare/shuf_vs_shipped.json`; [`fidelity-2026-11-13.md`](fidelity-2026-11-13.md) and the logs in `docs/logs/fidelity-2026-11-13/`.
+
+### An optional fused A-hn forward on the 4070
+
+Every map above, and every map the claim uses, comes from the winner's unmodified forward, which stays the reference. Separately, I wrote an optional A-hn forward for the 4070 with the same weights and the same recipe. `CuFused` in [`pc/opt4070/ahn_variants.py`](../pc/opt4070/ahn_variants.py) folds each BatchNorm into its convolution and runs the bias, the ReLU and the residual add inside cuDNN's fused convolution calls (`torch.cudnn_convolution_relu` and `torch.cudnn_convolution_add_relu`), instead of as separate passes over the activations, with float16 weights and channels-last activations. [`pc/opt4070/ahn_fast.py`](../pc/opt4070/ahn_fast.py) calls the winner's `infer.render` unchanged, so the ROI, grid origin, `clip_to_roi`, tile grid, stitch and output files are the shipped recipe's.
+
+It changes the float16 arithmetic, so its maps are not float16-exact and it has to pass a gate, written before the runs ([`pc/opt4070/ahn_gate.py`](../pc/opt4070/ahn_gate.py)): on the B0 native and no-text windows, every member at r ≥ 0.9999 against the unmodified path's map with the same pixels finite, and the no-text and decoy controls scored as `pc/b0/b0_score.py` scores them. It passed ([`docs/4070-fused-ahn/gate_cufuse.json`](4070-fused-ahn/gate_cufuse.json)):
+
+| member | native window: r | max abs diff | no-text window: r | max abs diff |
+|---|---|---|---|---|
+| hn4_s0 | 0.9999983 | 0.0043 | 0.9999949 | 0.0036 |
+| hn4_s1 | 0.9999977 | 0.0058 | 0.9999938 | 0.0035 |
+| hn4_s2 | 0.9999980 | 0.0053 | 0.9999957 | 0.0062 |
+| decoy | 0.9999969 | 0.0030 | 0.9999928 | 0.0043 |
+
+- No pixel changes between finite and empty, on either window (7.75 and 3.13 million pixels).
+- Fused with `fuse_v7.py`'s arithmetic on the unchanged TRACE map, the product map agrees with the unmodified path's at r 0.9999998 on the native window and r 0.9999989 on the no-text window.
+- On the no-text window no product pixel reaches the native top-1 % threshold, as on the unmodified path. The product-decoy top-1 % overlap is 0.4426 against 0.4435 there, and 0.8214 against 0.8213 on the native window.
+- Letter AP against the shipped product map is 0.9999997, against 0.9999998 for the unmodified path.
+
+The speed comparison is like for like: one member, hn4_s0, on the B0 native window (16,896 tiles), through the same runner on the same day. The whole job took 909 s with the unmodified forward and 538 s with the fused one, so the fused forward is 1.69× faster per member. The other three members took 534–540 s each with the fused forward. The forward alone, on 256 B0 tiles at batch 4, goes from 19.3 to 33.8 tiles/s. Peak GPU memory allocated was 2.64 GB, against 3.08 GB. The unmodified forward run through the same runner wrote a map bit-identical to the reference map, so the runner itself changes nothing.
+
+To use it, with the B0 windows built by `pc/b0/b0_chain.sh` and the winner's image loaded, `bash pc/opt4070/job_ahn_b0.sh cufuse 4` runs the four members on both windows and then the gate. `MEMBERS=hn4_s0 WINDOWS=native GATE=0` with `cufuse` or `stock` gives the timing runs above. A run that has to match earlier maps to float16 precision should keep `--variant stock`.
+
+Sources: [`docs/4070-fused-ahn/`](4070-fused-ahn/README.md): `gate_cufuse.json`, the run logs `ahn_b0_cufuse.log` and `ahn_b0_stock.log`, `b0_finish_cufuse.log` and `ahnbench_3.json`.
 
 ## Demo: fine-tuning on new labels from Scroll 1
 

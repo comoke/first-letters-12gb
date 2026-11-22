@@ -14,3 +14,7 @@ imagecodecs==2026.11.11
 opencv-python-headless==5.0.0.93
 pynrrd==1.1.3
 pyyaml==6.0.3
+
+# The faster A-hn path (2026-11-22): Core ML conversion. coremltools 9.0 converts ahn_fold.py with torch 2.15
+# (outside its tested range; it warns and the conversion succeeds). Needed for ahn_coreml.py, ahn_bench.py and --backend coreml.
+coremltools==9.0

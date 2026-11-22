@@ -1,0 +1,39 @@
+{
+ "ckpt": "$VESUVIUS_DATA/winner/hf-model/checkpoints/hn4_s0_final/model.safetensors",
+ "torch": "2.15.0+cu132",
+ "threads": 4,
+ "window_in_crop": [
+  1083,
+  1147,
+  4041,
+  4105
+ ],
+ "grid_origin_in_crop": [
+  6,
+  0
+ ],
+ "f64_small_stack_max_abs_logit_diff": 3.5083047578154947e-14,
+ "f64_small_sum_max_abs_logit_diff": 3.4861002973229915e-14,
+ "f32_stock_s_per_tile": 9.41,
+ "f32_folded_s_per_tile": 18.52,
+ "f32_full_folded_max_abs_logit_diff": 3.7550926208496094e-06,
+ "f32_full_folded_max_abs_prob_diff": 8.344650268554688e-07,
+ "f32_folded_sum_s_per_tile": 11.57,
+ "f32_full_folded_sum_max_abs_logit_diff": 3.814697265625e-06,
+ "f32_full_folded_sum_max_abs_prob_diff": 6.854534149169922e-07,
+ "pipe_stock_s": 418.9,
+ "pipe_folded_s": 404.0,
+ "pipe_tiles": 36,
+ "folded_vs_stock_cpu_r": 0.9999999999999585,
+ "folded_vs_stock_cpu_max_abs": 3.8743019104003906e-07,
+ "folded_vs_stock_cpu_px": 4096,
+ "folded_vs_stock_cpu_nan_mismatch": 0,
+ "stock_cpu_vs_cuda_r": 0.999999978877731,
+ "stock_cpu_vs_cuda_max_abs": 0.0003796815872192383,
+ "stock_cpu_vs_cuda_px": 4096,
+ "stock_cpu_vs_cuda_nan_mismatch": 0,
+ "folded_cpu_vs_cuda_r": 0.9999999788846282,
+ "folded_cpu_vs_cuda_max_abs": 0.0003796219825744629,
+ "folded_cpu_vs_cuda_px": 4096,
+ "folded_cpu_vs_cuda_nan_mismatch": 0
+}

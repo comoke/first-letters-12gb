@@ -1,0 +1,103 @@
+{
+ "n": 64,
+ "torch": "2.15.0",
+ "results": {
+  "stock-mps": {
+   "tiles_per_s": 4.65,
+   "batch": 1,
+   "max_abs_logit_vs_cpu_fp32": 0.007154110819101334,
+   "max_abs_prob_vs_cpu_fp32": 0.0017872452735900879
+  },
+  "fold-mps-stack-fp16-b1": {
+   "tiles_per_s": 9.95,
+   "batch": 1,
+   "max_abs_logit_vs_cpu_fp32": 0.019937381148338318,
+   "max_abs_prob_vs_cpu_fp32": 0.004927515983581543
+  },
+  "fold-mps-stack-fp16-b2": {
+   "tiles_per_s": 9.33,
+   "batch": 2,
+   "max_abs_logit_vs_cpu_fp32": 0.019937381148338318,
+   "max_abs_prob_vs_cpu_fp32": 0.004927515983581543
+  },
+  "fold-mps-stack-fp16-b4": {
+   "tiles_per_s": 9.38,
+   "batch": 4,
+   "max_abs_logit_vs_cpu_fp32": 0.019937381148338318,
+   "max_abs_prob_vs_cpu_fp32": 0.004927515983581543
+  },
+  "fold-mps-sum-fp16-b1": {
+   "tiles_per_s": 8.82,
+   "batch": 1,
+   "max_abs_logit_vs_cpu_fp32": 0.02061086893081665,
+   "max_abs_prob_vs_cpu_fp32": 0.005114138126373291
+  },
+  "fold-mps-sum-fp16-b2": {
+   "tiles_per_s": 8.68,
+   "batch": 2,
+   "max_abs_logit_vs_cpu_fp32": 0.02061086893081665,
+   "max_abs_prob_vs_cpu_fp32": 0.005114138126373291
+  },
+  "fold-mps-sum-fp16-b4": {
+   "tiles_per_s": 8.66,
+   "batch": 4,
+   "max_abs_logit_vs_cpu_fp32": 0.02061086893081665,
+   "max_abs_prob_vs_cpu_fp32": 0.005114138126373291
+  },
+  "fold-mps-stack-fp16-cl-b1": {
+   "tiles_per_s": 7.09,
+   "batch": 1,
+   "max_abs_logit_vs_cpu_fp32": 0.020669803023338318,
+   "max_abs_prob_vs_cpu_fp32": 0.005108773708343506
+  },
+  "fold-mps-stack-fp16-cl-b2": {
+   "tiles_per_s": 5.91,
+   "batch": 2,
+   "max_abs_logit_vs_cpu_fp32": 0.020669803023338318,
+   "max_abs_prob_vs_cpu_fp32": 0.005108773708343506
+  },
+  "fold-mps-stack-fp16-cl-b4": {
+   "tiles_per_s": 5.99,
+   "batch": 4,
+   "max_abs_logit_vs_cpu_fp32": 0.020603805780410767,
+   "max_abs_prob_vs_cpu_fp32": 0.005078554153442383
+  },
+  "fold-mps-sum-fp16-cl": {
+   "error": "RuntimeError('required rank 4 tensor to use channels_last format')"
+  },
+  "coreml-CPU_AND_NE": {
+   "tiles_per_s": 7.37,
+   "batch": 1,
+   "max_abs_logit_vs_cpu_fp32": 0.02744680643081665,
+   "max_abs_prob_vs_cpu_fp32": 0.006812304258346558,
+   "load_s": 2.2,
+   "ops_by_device": {
+    "none": 720,
+    "MLNeuralEngineComputeDevice": 227,
+    "MLCPUComputeDevice": 17
+   }
+  },
+  "coreml-CPU_AND_GPU": {
+   "tiles_per_s": 11.3,
+   "batch": 1,
+   "max_abs_logit_vs_cpu_fp32": 0.015142768621444702,
+   "max_abs_prob_vs_cpu_fp32": 0.003656744956970215,
+   "load_s": 0.3,
+   "ops_by_device": {
+    "none": 720,
+    "MLGPUComputeDevice": 244
+   }
+  },
+  "coreml-ALL": {
+   "tiles_per_s": 11.14,
+   "batch": 1,
+   "max_abs_logit_vs_cpu_fp32": 0.015142768621444702,
+   "max_abs_prob_vs_cpu_fp32": 0.003656744956970215,
+   "load_s": 0.4,
+   "ops_by_device": {
+    "none": 720,
+    "MLGPUComputeDevice": 244
+   }
+  }
+ }
+}

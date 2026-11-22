@@ -32,5 +32,12 @@ Every number in the Apple Silicon appendix comes from a file in this folder.
 | A-hn 3.47 GB MPS driver + 0.93 GB RSS | `mac_logs/{s0,s1,s2,decoy}_full.log` (last line: `mps_driver_peak_gb`, `max_rss_gb`) |
 | TRACE 2.31 GB MPS driver + 2.03 GB RSS | `mac_logs/trace_native.log` (last line: `mps_driver_gb`, `max_rss_gb`) |
 
+## The no-Docker unpack (`mac/fetch_winner.sh unpack`)
+| number | file |
+|---|---|
+| One test on the M5 Pro, 2026-11-22: the archive (6,618,543,741 bytes, from the winner's dataset) unpacks to 12,031,608,832 bytes; the code and v8-in/TRACE weights it writes are byte-identical to an earlier copy of the same files wherever both have a file, and the v8-in base weights' sha256 matches | `unpack_test_m5.log` (`unpacked_bytes`, the `diff -rq` lines: only "Only in" lines, no "differ"; the sha256 line), from `unpack_test_m5.sh`. The files only in the unpack (`finalist/`, `v8Q_final.safetensors`, three `.npy` under `x_deepread/results`) are in the image; the earlier copy had left them out. The files only in the earlier copy (`code.tgz`, `aclick/p306`, `code/opt/fl/third_party`) were added to it later and aren't used by the recipe. No inference ran in this test; it was unpacked with macOS's `/usr/bin/python3`. The log's `v8in 0` count is a constant in the script; the `diff -rq` lines are the check |
+
+| The setup in "How to run it", run once from a clean folder on the M5 Pro with the exported repository (2026-11-22): download, `shasum` check (`fl-claim-a7_final.tar.zst: OK`), unpack, `uv` packages, Hugging Face downloads, `link` checks (`v8-in base weights: sha256 OK`, `A-hn infer.py: OK`, `TRACE ink_v2.py: OK`), then 16 A-hn tiles from the unpacked code (`run_ahn.py --max-tiles 16`, which writes no map) | `recipe_test_m5.log` (home paths shortened; 628 lines of download progress removed), from `recipe_test_m5.sh`, which takes the recipe's lines verbatim and points `MD` into the test folder |
+
 ## Run recipes
 `mac_logs/run_s0_full.sh` (s0) and `mac_logs/chain2.sh` (s1, s2 and decoy, then the speed-up check). `*_full.meta.json` holds each member's `infer.py` sidecar: ROI, frame, grid origin, checkpoint sha256, tile count and Mac settings.

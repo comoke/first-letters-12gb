@@ -1,0 +1,27 @@
+2026-11-22 09:43:14 waiting for: o4070_b0_cufuse_n_s0 o4070_b0_cufuse_n_s1 o4070_b0_cufuse_n_s2 o4070_b0_cufuse_n_decoy o4070_b0_cufuse_notext (and o4070_b0_stock_n_s0 if queued)
+2026-11-22 11:12:19 member timings (model load to map written, inside one process each):
+hn4_s0: {'wall_s': 523.9, 'tiles': 16896, 'tiles_per_s': 32.25, 'peak_alloc_gb': 2.64}
+hn4_s1: {'wall_s': 524.1, 'tiles': 16896, 'tiles_per_s': 32.24, 'peak_alloc_gb': 2.64}
+hn4_s2: {'wall_s': 524.5, 'tiles': 16896, 'tiles_per_s': 32.22, 'peak_alloc_gb': 2.64}
+hn4_decoy: {'wall_s': 524.6, 'tiles': 16896, 'tiles_per_s': 32.21, 'peak_alloc_gb': 2.64}
+hn4_s0: {'wall_s': 212.2, 'tiles': 6584, 'tiles_per_s': 31.02, 'peak_alloc_gb': 2.64}
+hn4_s1: {'wall_s': 206.2, 'tiles': 6584, 'tiles_per_s': 31.93, 'peak_alloc_gb': 2.64}
+hn4_s2: {'wall_s': 206.9, 'tiles': 6584, 'tiles_per_s': 31.82, 'peak_alloc_gb': 2.64}
+hn4_decoy: {'wall_s': 206.4, 'tiles': 6584, 'tiles_per_s': 31.9, 'peak_alloc_gb': 2.64}
+  all parts: 93920 tiles in 2874 s of forward and stitch = 32.7 tiles/s
+2026-11-22 11:12:19 gate:
+native hn4_s0 {'r': 0.9999983288735558, 'max_abs': 0.004276394844055176, 'mean_abs': 0.00022450908727478236, 'nan_mismatch': 0, 'px': 7749169, 'pass': True}
+native hn4_s1 {'r': 0.9999976849154063, 'max_abs': 0.005803406238555908, 'mean_abs': 0.0002545268216636032, 'nan_mismatch': 0, 'px': 7749169, 'pass': True}
+native hn4_s2 {'r': 0.9999979764109845, 'max_abs': 0.00530165433883667, 'mean_abs': 0.0003172877768520266, 'nan_mismatch': 0, 'px': 7749169, 'pass': True}
+native hn4_decoy {'r': 0.9999969009610913, 'max_abs': 0.002954840660095215, 'mean_abs': 0.00027545311604626477, 'nan_mismatch': 0, 'px': 7749169, 'pass': True}
+native controls {"new": {"decoy_jaccard_top1": 0.8213959051572504, "ensA_decoy_jaccard_top1": 0.12087108613373093, "trace_ensA_r": 0.7450658937170969, "letter_ap": 0.9999997226645574, "letter_auc": 0.9999999853766776, "prod_top1_threshold": 0.5419921875}, "current": {"decoy_jaccard_top1": 0.8213489997420202, "ensA_decoy_jaccard_top1": 0.1207701785049139, "trace_ensA_r": 0.7450489372078711, "letter_ap": 0.9999998299591808, "letter_auc": 0.9999999910364581, "prod_top1_threshold": 0.5419921875}, "prod_r": 0.9999997727973255, "ensA_r": 0.9999993344088888, "pass": true}
+notext hn4_s0 {'r': 0.9999949480513602, 'max_abs': 0.0036495327949523926, 'mean_abs': 0.00015701065422035754, 'nan_mismatch': 0, 'px': 3132949, 'pass': True}
+notext hn4_s1 {'r': 0.9999938058130756, 'max_abs': 0.003454267978668213, 'mean_abs': 0.00015196589811239392, 'nan_mismatch': 0, 'px': 3132949, 'pass': True}
+notext hn4_s2 {'r': 0.9999957306341951, 'max_abs': 0.006197541952133179, 'mean_abs': 0.00018273552996106446, 'nan_mismatch': 0, 'px': 3132949, 'pass': True}
+notext hn4_decoy {'r': 0.999992777705369, 'max_abs': 0.0043448805809021, 'mean_abs': 0.00025938989710994065, 'nan_mismatch': 0, 'px': 3132949, 'pass': True}
+notext controls {"new": {"decoy_jaccard_top1": 0.4425773527653901, "ensA_decoy_jaccard_top1": 0.062091724488069044, "trace_ensA_r": 0.4419935794208404}, "current": {"decoy_jaccard_top1": 0.44351685755025066, "ensA_decoy_jaccard_top1": 0.062107702979342545, "trace_ensA_r": 0.44197326918199975}, "prod_r": 0.9999988917840246, "ensA_r": 0.9999980722046233, "pass": true, "false_ink_frac_new_map_vs_current_native_threshold": 0.0, "false_ink_frac_new_map_vs_new_native_threshold": 0.0, "false_ink_frac_current": 0.0, "prod_p99": {"new": 0.147705078125, "current": 0.147705078125}, "prod_max": {"new": 0.451416015625, "current": 0.451416015625}}
+AHN_GATE_PASS
+2026-11-22 11:27:38 stock forward, same harness (hn4_s0, native):
+hn4_s0: {'wall_s': 897.7, 'tiles': 16896, 'tiles_per_s': 18.82, 'peak_alloc_gb': 3.08}
+stock same-harness map vs current 4070 map: identical True max abs 0.0 nan mismatch 0
+2026-11-22 11:27:45 O4070_B0_FINISHED pass

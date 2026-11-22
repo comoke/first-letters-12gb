@@ -1,0 +1,7 @@
+2026-11-22 11:53:00 waiting for o4070_export_smoke
+wrote /scratch/b0_cufuse_export_smoke/native/fwd_hn4_s0.npy (1399, 5600)
+hn4_s0: {'wall_s': 570.6, 'tiles': 16896, 'tiles_per_s': 29.61, 'peak_alloc_gb': 2.64}
+AHN_FAST_DONE {"variant": "cufuse", "batch": 4, "cudnn_benchmark": false, "torch": "2.14.1+cu130", "gpu": "NVIDIA GeForce RTX 4070", "members": {"hn4_s0": {"wall_s": 570.6, "tiles": 16896, "tiles_per_s": 29.61, "peak_alloc_gb": 2.64}}, "total_wall_s": 571.1}
+2026-11-22 14:03:17 O4070_DONE ahn_b0_cufuse_export_smoke rc=0 oom=false 579s
+SMOKE_CMP {"r_vs_reference": 0.9999983288735558, "gate_r_vs_reference": 0.9999983288735558, "r_diff_from_gate": 0.0, "max_abs": 0.004276394844055176, "nan_mismatch": 0, "px": 7749169, "gate_px": 7749169, "pass": true}
+2026-11-22 14:03:53 SMOKE_FINISHED pass

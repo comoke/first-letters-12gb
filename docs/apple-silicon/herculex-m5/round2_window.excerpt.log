@@ -1,0 +1,5 @@
+09:22:32 pieces rows-0000-0012 rc=0 wall=605s (production stock: 677 s, draws 215 s) 'draws': 124.0 maxrss=8.5GB
+09:22:40 pieces files 30188 differing (record.json aside): 0
+09:23:31 reader u55: 9, "wall_s": 37.61710254201898, "Mpx": 295.618388, "max_abs_diff": 0.01306036114692688, "pearson_all_pixels": 0.9999736472173425, "worst_map_pearson": 0.9989702630760536, "compared_px": 295618388}
+09:24:03 reader u44big: , "wall_s": 27.216560834029224, "Mpx": 306.422784, "max_abs_diff": 0.010336756706237793, "pearson_all_pixels": 0.9999767222537645, "worst_map_pearson": 0.9997829076544233, "compared_px": 306422784}
+09:33:57 sampler 48 pieces: serial sampler wall 40.7 s for 48 pieces, 244 Mpx bbox, 217 Mpx covered (stock serial: 45.0 s) identical captures: 48/48

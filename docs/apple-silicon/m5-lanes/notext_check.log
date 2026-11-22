@@ -1,0 +1,13 @@
+fwd_hn4_s0.npy         r 0.9999910  max 0.0060  nan_mismatch 0  top1 J 0.9905  ok
+fwd_hn4_s1.npy         r 0.9999895  max 0.0043  nan_mismatch 0  top1 J 0.9925  ok
+fwd_hn4_s2.npy         r 0.9999929  max 0.0048  nan_mismatch 0  top1 J 0.9948  ok
+fwd_hn4_decoy.npy      r 0.9999877  max 0.0051  nan_mismatch 0  top1 J 0.9941  ok
+fused/fwd_ensA.npy     r 0.9999957  max 0.0027  nan_mismatch 0  top1 J 0.9958  ok
+fused/fwd_prod.npy     r 0.9999976  max 0.0007  nan_mismatch 0  top1 J 0.9976  ok
+fused/fwd_prodd.npy    r 0.9999919  max 0.0013  nan_mismatch 0  top1 J 0.9952  ok
+prod_p99                         CUDA 0.1477  Mac 0.1477
+prod_max                         CUDA 0.4514  Mac 0.4517
+false_ink_frac_vs_native_top1    CUDA 0.0000  Mac 0.0000
+decoy_jaccard_top1               CUDA 0.4435  Mac 0.4423
+ensA_decoy_jaccard_top1          CUDA 0.0621  Mac 0.0621
+NOTEXT_PASS

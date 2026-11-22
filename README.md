@@ -1,6 +1,6 @@
 # Retraining the PHerc. 0306B First Letters winner's members on a 12 GB GPU
 
-The model that won PHerc. 0306B First Letters (SirProdigle / Liam Warner and Nicola Bodill, [`pherc0306b-first-letters`](https://github.com/SirProdigle/pherc0306b-first-letters)) comes with a guide that says retraining "needs one GPU with 24 GB or more" and marks its training mode "not run end to end". I ran that training end to end on one RTX 4070 with 12 GB and 16 GB of RAM, with the winner's own Docker image, code, weights and data, and compared every stage with their shipped files. As far as I know, this had not been done for a First Letters winner before. The retrained members match the shipped maps more closely than the winner's own seeds match each other. I then fine-tuned the model on new labels from Scroll 1 in a pre-registered demo, at about 25 minutes a training run, and ran the same inference on a Mac.
+The model that won PHerc. 0306B First Letters (SirProdigle / Liam Warner and Nicola Bodill, [`pherc0306b-first-letters`](https://github.com/SirProdigle/pherc0306b-first-letters)) comes with a guide that says retraining "needs one GPU with 24 GB or more" and marks its training mode "not run end to end". I ran that training end to end on one RTX 4070 with 12 GB and 16 GB of RAM, with the winner's own Docker image, code, weights and data, and compared every stage with their shipped files. The retrained members match the shipped maps more closely than the winner's own seeds match each other. I then fine-tuned the model on new labels from Scroll 1 in a pre-registered demo, at about 25 minutes a training run, and ran the same inference on a Mac.
 
 ![The claim box from the winner's shipped claim image and from mine](docs/img/stage9-claimbox-strip-shipped-vs-ours.png)
 
@@ -16,9 +16,9 @@ The full write-up, with every table, deviation and source file, is in [`docs/det
 |---|---|
 | retrain on 12 GB | stages 1–8 of the winner's training for the A-hn members, on an RTX 4070 with 16 GB of RAM: 8.4 GPU-hours, whole-card peak 9,706 MiB |
 | how close | retrained members r 0.9925–0.9934 against the shipped maps, closer than the winner's own seeds agree (0.932–0.942); fused claim map r 0.9992; the redrawn claim image differs by more than 8/255 on 0.042% of pixels |
-| exact inference | every map the claim uses, rerun with the shipped recipe: r ≥ 0.9999997 against the shipped maps, and r ≥ 0.999994 for the depth-shuffle control maps |
+| exact inference | every map the claim uses, rerun with the shipped recipe: r ≥ 0.9999997 against the shipped maps, and r ≥ 0.999994 for the depth-shuffle control maps. Separately, an optional fused A-hn forward on the same 4070, gated and not float16-exact (members r 0.999997–0.999998 on the B0 native window, no-text control passed), runs a member 1.69× faster |
 | fine-tune demo | with the new labels, +0.046 / +0.050 AUC over zero-shot on pair 1 and +0.136 / +0.141 on pair 2, ahead of the same training without them in every comparison; 24–27 min per training run |
-| Apple Silicon | all five maps and the winner's fusion on an M5 Pro: TRACE r 0.999999, members r ≥ 0.99999993, fused product r 0.99999977 against the 4070 |
+| Apple Silicon | all five maps and the winner's fusion on an M5 Pro: TRACE r 0.999999, members r ≥ 0.99999993, fused product r 0.99999977 against the 4070, float16-exact. Separately, a gated Core ML rewrite of A-hn on the same M5 Pro, not float16-exact (members r ≥ 0.999994, fused product r 0.9999993, no-text control passed), runs the four members in 1.20× the time of the 4070's unmodified path, against 4.7× before |
 
 I also opened a pull request to the winner's repository with the 12 GB configs and a REPRODUCE note: [SirProdigle/pherc0306b-first-letters#8](https://github.com/SirProdigle/pherc0306b-first-letters/pull/8).
 
@@ -50,7 +50,7 @@ Each member was retrained with its own seed, as shipped, from training data I re
 
 Two checks hold up. On the winner's depth-shuffled render my retrained models lose the claim, as theirs do, and regenerating TRACE or rerunning a member map gives bit-identical maps. I redrew the claim image with their `final` mode and pixel-diffed it against theirs, which is the figure above.
 
-Details: [verification](docs/details.md#verification), [inference on 12 GB](docs/details.md#inference-on-12-gb-every-map-the-claim-uses-to-float16-precision).
+Details: [verification](docs/details.md#verification), [inference on 12 GB](docs/details.md#inference-on-12-gb-every-map-the-claim-uses-to-float16-precision), [the optional fused A-hn forward](docs/details.md#an-optional-fused-a-hn-forward-on-the-4070).
 
 ## Fine-tuning on new labels
 
@@ -72,7 +72,9 @@ The two crops above are published with the organisers' written consent (Paul, Ve
 
 ## Apple Silicon
 
-The winner's inference code also runs on an Apple M5 Pro through PyTorch's MPS backend, with a device shim and a small harness and no model, weight or method change. All five maps and the winner's own fusion match the 4070's CUDA maps to float16 precision on the B0 native window, about 5.85 cm² of the claim render. B0 is my name for a fixed test window around the claim box, defined in [`docs/b0-baseline-2026-11-15.md`](docs/b0-baseline-2026-11-15.md) with its code in `pc/b0/`. The Mac takes 1.71× as long on TRACE, and the whole chain runs at 1.21 cm²/GPU-h against the 4070's 5.36. See [`apple-silicon.md`](apple-silicon.md).
+The winner's inference code also runs on an Apple M5 Pro through PyTorch's MPS backend, with a device shim and a small harness and no model, weight or method change. All five maps and the winner's own fusion match the 4070's CUDA maps to float16 precision on the B0 native window, about 5.85 cm² of the claim render. B0 is my name for a fixed test window around the claim box, defined in [`docs/b0-baseline-2026-11-15.md`](docs/b0-baseline-2026-11-15.md) with its code in `pc/b0/`. The Mac takes 1.71× as long on TRACE, and the whole chain runs at 1.21 cm²/GPU-h against the 4070's 5.36.
+
+A-hn was most of that gap. Following villa PR #2634 (campbelltron1) and HerculeX's stem fold (Adam Betka), which run 3-D convolutions through 2-D kernels on Apple silicon, I rewrote A-hn's network with 2-D operations only (same weights, BatchNorm folded), converted it to Core ML and ran it on the M5 Pro's Neural Engine and GPU at once. On that path the four members take 4,342 s against 3,623 s on the 4070's unmodified path, and the chain runs at 4.40 cm²/GPU-h on the M5 Pro. It changes the float16 arithmetic, so it is a separate, gated path: members r ≥ 0.999994 with 90–92 % of pixels on the same 8-bit level, fused product r 0.9999993, and the no-text control behaves as on the 4070. The appendix also has a short note on speeding up HerculeX on the same Mac. See [`apple-silicon.md`](apple-silicon.md).
 
 ## Licence and credits
 

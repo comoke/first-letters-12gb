@@ -1,0 +1,45 @@
+== start 14:56:34
++ export MD=~/Workspace/m5-recipe-test/data
++ MD=~/Workspace/m5-recipe-test/data
++ curl -L -o fl-claim-a7_final.tar.zst https://huggingface.co/datasets/Prodigle/pherc0306b-first-letters/resolve/main/docker/fl-claim-a7_final.tar.zst
++ echo '1832832330ab67b134795eaedd43d6d5c3dcf004596e1fd287d2e71b3af73536  fl-claim-a7_final.tar.zst'
++ shasum -a 256 -c
+fl-claim-a7_final.tar.zst: OK
++ bash mac/fetch_winner.sh unpack fl-claim-a7_final.tar.zst
+unpack: done ~/Workspace/m5-recipe-test/data
+unpack: done (~/Workspace/m5-recipe-test/data/code, ~/Workspace/m5-recipe-test/data/fl)
++ uv venv --python 3.13 ~/Workspace/m5-recipe-test/data/.venv
+Using CPython 3.13.15
+Creating virtual environment at: ~/Workspace/m5-recipe-test/data/.venv
++ uv pip install --python ~/Workspace/m5-recipe-test/data/.venv/bin/python -r mac/requirements.txt
+Using Python 3.13.15 environment at: ~/Workspace/m5-recipe-test/data/.venv
+Installed 43 packages in 392ms
++ PY=~/Workspace/m5-recipe-test/data/.venv/bin/python
++ bash mac/fetch_winner.sh hf
+(628 lines of Hugging Face download progress removed)
+hf: done
++ bash mac/fetch_winner.sh link
+v8-in base weights: sha256 OK
+A-hn infer.py: OK
+TRACE ink_v2.py: OK
++ source mac/paths.sh
+++ export MD=~/Workspace/m5-recipe-test/data
+++ MD=~/Workspace/m5-recipe-test/data
+++ export FL_ROOT=~/Workspace/m5-recipe-test/data/fl V8_DIR=~/Workspace/m5-recipe-test/data/fl/third_party/v8in VILLA_SRC=~/Workspace/m5-recipe-test/data/code/opt/villa/vesuvius/src
+++ FL_ROOT=~/Workspace/m5-recipe-test/data/fl
+++ V8_DIR=~/Workspace/m5-recipe-test/data/fl/third_party/v8in
+++ VILLA_SRC=~/Workspace/m5-recipe-test/data/code/opt/villa/vesuvius/src
+++ export AHN_DIR=~/Workspace/m5-recipe-test/data/code/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/aclick/bench
+++ AHN_DIR=~/Workspace/m5-recipe-test/data/code/home/liam/projects/vesuvius-work/.claude/worktrees/leadA-push3/x_push3/aclick/bench
+++ export PYTORCH_ENABLE_MPS_FALLBACK=0
+++ PYTORCH_ENABLE_MPS_FALLBACK=0
+++ source ~/Workspace/m5-recipe-test/data/.venv/bin/activate
++ R=~/Workspace/m5-recipe-test/data/render/claim_surface_render_41layers.zarr
++ O=~/Workspace/m5-recipe-test/data/runs/native
++ set +x
+== smoke 15:01:10
+Loading weights from local directory
+infer: ~/Workspace/m5-recipe-test/data/ckpt/hn4_s0_final/model.safetensors alpha 1.0  smoke.npy: 16896 tiles x tta 1 in 7 parts
+    band: 16 tiles 7.4s 2.2 tiles/s  mps driver 3.47 GB
+{"tiles": 16, "s": 7.429992914199829, "tiles_per_s": 2.15343408597626, "amp": "ref", "batch": 1, "mps_driver_gb": 3.471710205078125}
+RECIPE_DONE 15:01:29
