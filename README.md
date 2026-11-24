@@ -10,7 +10,7 @@ The model that won PHerc. 0306B First Letters (SirProdigle / Liam Warner and Nic
 
 *Mine, retrained end to end on one 12 GB RTX 4070*
 
-Contents: [Results](#results) · [Reproduce it](#reproduce-it) · [The retrain](#the-retrain) · [How close it gets](#how-close-it-gets) · [Fine-tuning on new labels](#fine-tuning-on-new-labels) · [Apple Silicon](#apple-silicon) · [Licence and credits](#licence-and-credits)
+Contents: [Results](#results) · [Reproduce it](#reproduce-it) · [The retrain](#the-retrain) · [How close it gets](#how-close-it-gets) · [Fine-tuning on new labels](#fine-tuning-on-new-labels) · [Apple Silicon](#apple-silicon) · [Related work](#related-work) · [Licence and credits](#licence-and-credits)
 
 The full write-up, with every table, deviation and source file, is in [`docs/details.md`](docs/details.md). [`CLAIMS.md`](CLAIMS.md) points each claim to its evidence.
 
@@ -75,6 +75,10 @@ The two crops above are published with the organisers' written consent (Paul, Ve
 The winner's inference code also runs on an Apple M5 Pro through PyTorch's MPS backend, with a device shim and a small harness and no model, weight or method change. All five maps and the winner's own fusion match the 4070's CUDA maps to float16 precision on the B0 native window, about 5.85 cm² of the claim render. B0 is my name for a fixed test window around the claim box, defined in [`docs/b0-baseline-2026-11-15.md`](docs/b0-baseline-2026-11-15.md) with its code in `pc/b0/`. The Mac takes 1.71× as long on TRACE, and the whole chain runs at 1.21 cm²/GPU-h against the 4070's 5.36.
 
 A-hn was most of that gap. Following villa PR #2634 (campbelltron1) and HerculeX's stem fold (Adam Betka), which run 3-D convolutions through 2-D kernels on Apple silicon, I rewrote A-hn's network with 2-D operations only (same weights, BatchNorm folded), converted it to Core ML and ran it on the M5 Pro's Neural Engine and GPU at once. On that path the four members take 4,342 s against 3,623 s on the 4070's unmodified path, and the chain runs at 4.40 cm²/GPU-h on the M5 Pro. It changes the float16 arithmetic, so it is a separate, gated path: members r ≥ 0.999994 with 90–92 % of pixels on the same 8-bit level, fused product r 0.9999993, and the no-text control behaves as on the 4070. The appendix also has a short note on speeding up HerculeX on the same Mac. See [`apple-silicon.md`](apple-silicon.md).
+
+## Related work
+
+Two other public runners also run the winner's models. [inkrs](https://github.com/praveenperera/inkrs) by Praveen Perera reimplements them natively and runs the whole 0306B recipe about 1.7× faster than the winner's scripts on an RTX 5090. [ink-sdk](https://github.com/LimeGS/ink-sdk) by LimeGS and pscamillo has run A-hn, TRACE v3B and the product rule since November 10, and since a change by campbelltron1 on November 22 it runs A-hn on a Mac GPU. Neither trains. What this entry adds is the winner's own training on 12 GB, their unchanged inference code on the 4070 and on a Mac, and the Core ML rewrite of A-hn. [`apple-silicon.md`](apple-silicon.md#related-work) has the details and the related villa PRs.
 
 ## Licence and credits
 
