@@ -1,6 +1,6 @@
 # Retraining the PHerc. 0306B First Letters winner's members on a 12 GB GPU
 
-The model that won PHerc. 0306B First Letters (SirProdigle / Liam Warner and Nicola Bodill, [`pherc0306b-first-letters`](https://github.com/SirProdigle/pherc0306b-first-letters)) comes with a guide that says retraining "needs one GPU with 24 GB or more" and marks its training mode "not run end to end". I ran that training end to end on one RTX 4070 with 12 GB and 16 GB of RAM, with the winner's own Docker image, code, weights and data, and compared every stage with their shipped files. The retrained members match the shipped maps more closely than the winner's own seeds match each other. I then fine-tuned the model on new labels from Scroll 1 in a pre-registered demo, at about 25 minutes a training run, and ran the same inference on a Mac.
+The model that won PHerc. 0306B First Letters (SirProdigle / Liam Warner and Nicola Bodill, [`pherc0306b-first-letters`](https://github.com/SirProdigle/pherc0306b-first-letters)) came with a guide that said retraining "needs one GPU with 24 GB or more" and marked its training mode "not run end to end". I ran that training end to end on one RTX 4070 with 12 GB and 16 GB of RAM, with the winner's own Docker image, code, weights and data, and compared every stage with their shipped files. My 12 GB configs are now merged into the 0306B winners' repository ([#8](https://github.com/SirProdigle/pherc0306b-first-letters/pull/8)), and their guide offers 12 GB as an option and links here. The retrained members match the shipped maps more closely than the winner's own seeds match each other. I then fine-tuned the model on new labels from Scroll 1 in a pre-registered demo, at about 25 minutes a training run, and ran the same inference on a Mac.
 
 ![The winners' claim image, cut to its claim box](docs/img/claim-box-winners.png)
 
@@ -24,7 +24,7 @@ The full write-up, with every table, deviation and source file, is in [`docs/det
 | fine-tune demo | with the new labels, +0.046 / +0.050 AUC over zero-shot on pair 1 and +0.136 / +0.141 on pair 2, ahead of the same training without them in every comparison; 24–27 min per training run |
 | Apple Silicon | all five maps and the winner's fusion on an M5 Pro: TRACE r 0.999999, members r ≥ 0.99999993, fused product r 0.99999977 against the 4070, float16-exact. Separately, a gated Core ML rewrite of A-hn on the same M5 Pro, not float16-exact (members r ≥ 0.999994, fused product r 0.9999993, no-text control passed), runs the four members in 1.20× the time of the 4070's unmodified path, against 4.7× before |
 
-I also opened a pull request to the winner's repository with the 12 GB configs and a REPRODUCE note: [SirProdigle/pherc0306b-first-letters#8](https://github.com/SirProdigle/pherc0306b-first-letters/pull/8).
+The 12 GB configs and a REPRODUCE note are merged into the 0306B winners' repository: [SirProdigle/pherc0306b-first-letters#8](https://github.com/SirProdigle/pherc0306b-first-letters/pull/8), merged by Liam Warner on 2026-11-24 at 23:47 UTC.
 
 ## Reproduce it
 

@@ -49,9 +49,9 @@ Source: `docs/train-e2e-compare/host_mem_train_vram.csv`, sampled every 30 s.
 
 ## The retrain: scope, cost and what makes it fit
 
-With this repository you can retrain the trained members, A-hn, of the model that won PHerc. 0306B First Letters on one 12 GB consumer card, then redraw its claim image. TRACE v3B, the other half of the claim map, is a third-party model that the winner's `train` mode doesn't train, so it runs with its shipped weights. I did it on an RTX 4070 with 16 GB of RAM, on Windows 11 with WSL2 and Docker Desktop, using the winner's own Docker image, code, weights and data. Their guide says retraining "needs one GPU with 24 GB or more", notes that their training peaked at 19 GB, and marks its `train` mode "not run end to end".
+With this repository you can retrain the trained members, A-hn, of the model that won PHerc. 0306B First Letters on one 12 GB consumer card, then redraw its claim image. TRACE v3B, the other half of the claim map, is a third-party model that the winner's `train` mode doesn't train, so it runs with its shipped weights. I did it on an RTX 4070 with 16 GB of RAM, on Windows 11 with WSL2 and Docker Desktop, using the winner's own Docker image, code, weights and data. Before my 12 GB configs were merged into it, their guide said retraining "needs one GPU with 24 GB or more", noted that their training peaked at 19 GB, and marked its `train` mode "not run end to end".
 
-Source: the winner's [`docs/REPRODUCE.md`](https://github.com/SirProdigle/pherc0306b-first-letters/blob/main/docs/REPRODUCE.md), lines 41, 28 and 25–26.
+Source: the winner's [`docs/REPRODUCE.md`](https://github.com/SirProdigle/pherc0306b-first-letters/blob/feabff6/docs/REPRODUCE.md) at feabff6, lines 41, 28 and 25–26. Since [#8](https://github.com/SirProdigle/pherc0306b-first-letters/pull/8) was merged on 2026-11-24, the guide reads "needs one GPU with 24 GB or more, or 12 GB with the `hn4_*_12gb.json` configs described above".
 
 The whole training chain took about 8.4 GPU-hours plus 0.4 CPU-hours. The teacher maps took 1.2 h, the four training runs 47–54 min each, the TRACE map 13 min and the four member maps about 55 min each. The claim image then took 7 min on the CPU.
 
